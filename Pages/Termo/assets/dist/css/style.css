@@ -640,7 +640,7 @@ footer .newsletter i {
     padding: 0.5px;
   }
   header nav .logo {
-    padding-left: 50px;
+    padding-left: 0px;
   }
   header nav .toggle.active {
     left: 38%;
@@ -653,7 +653,7 @@ footer .newsletter i {
 
 @media (max-width: 380px) {
   header nav .logo {
-    margin-left: 10px;
+    margin-left: 0px;
     font-size: 12px;
   }
   header .navigation-bar{

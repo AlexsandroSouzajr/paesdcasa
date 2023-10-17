@@ -925,7 +925,7 @@ footer .newsletter i {
   }
 
   header nav .logo {
-    padding-left: 50px;
+    padding-left: 0px;
   }
 
   header nav .toggle.active {
@@ -940,7 +940,7 @@ footer .newsletter i {
 
 @media (max-width: 380px) {
   header nav .logo {
-    margin-left: 10px;
+    margin-left: 0px;
     font-size: 12px;
   }
 
