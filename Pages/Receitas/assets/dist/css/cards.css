@@ -1,0 +1,101 @@
+.fixed-image {
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.201),rgba(0, 0, 0, 0.304)), url("https://conteudo.imguol.com.br/c/entretenimento/ce/2021/10/04/padocaria-1633387515919_v2_1170x540.jpg") fixed center;
+    background-size: cover;
+    height: 250px;
+    margin: 50px auto;
+}
+.fixed-image h2 {
+    color: var(--fixed-image-h2-color);
+    font-family: var(--fixed-image-h2-font-family);
+}
+
+.container-receitas {
+  max-width: 1300px;
+}
+
+.card{
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+  margin-bottom: 5px;
+}
+
+.card-body .card-title{
+  margin-top: 0;
+  margin-bottom: var(--card-title-margin-bottom);
+  font-weight: 500;
+  font-size: 15px;
+  font-family: var(--card-title-family);
+  line-height: var(--card-title-line-height);
+}
+
+.card-body .card-text{
+  margin-top: 0;
+  margin-bottom: var(--card-title-margin-bottom);
+  font-size: 13px;
+}
+
+#filter-buttons .btn-filter {
+  background: var(--btn-filter-color);
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  border: none;
+  outline: none;
+  transition: background 50ms;
+}
+
+#filter-buttons .btn-filter:hover {
+  background: var(--btn-filter-color-hover);
+}
+
+#filter-buttons .btn-filter.active {
+  background: var(--btn-filter-active-color);
+  color: var(--btn-filter-active-text-color); 
+}
+
+#filterable-cards .card {
+  width: 15rem;
+  border: 2px solid transparent;
+  margin: 0 auto;
+}
+
+#filterable-cards .card.hide {
+  display: none;
+}
+  
+  
+@media (max-width: 768px) {
+  #filterable-cards {
+    justify-content: center;
+  }
+  
+  #filterable-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  #filterable-cards {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+  }
+  
+  #filterable-cards .card {
+    width: calc(100% / 1 - 10px);
+    margin: 15px;
+  }
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
