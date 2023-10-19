@@ -263,7 +263,7 @@ body.dark {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   cursor: pointer;
-  z-index: 1;
+  z-index: 99;
 }
 .btn-back-to-top {
   font-size: 25px;
