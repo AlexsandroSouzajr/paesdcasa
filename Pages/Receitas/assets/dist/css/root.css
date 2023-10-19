@@ -221,7 +221,7 @@ body.dark {
   height: 52px;
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 10px;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.3s;
@@ -236,7 +236,7 @@ body.dark {
   width: 60px;
   line-height: 60px;
   position: fixed;
-  right: 27px;
+  right: 8px;
   bottom: 28px;
   color: rgb(255, 122, 65);
   text-align: center;
