@@ -1194,7 +1194,7 @@ header nav .toggle span:not(:last-of-type) {
   font-weight: 500;
 }
 
-.text {
+.contact-info .text {
   color: #333;
   margin: 1.5rem 0 2rem 0;
 }
@@ -1560,7 +1560,7 @@ footer .newsletter i {
     right: 70px;
   }
 
-  .text {
+  .contact-info .text {
     margin: 1rem 0 1.5rem 0;
   }
 }
@@ -1803,7 +1803,7 @@ footer .newsletter i {
     padding: 1.7rem 1.6rem;
   }
 
-  .text{
+  .contact-info .text{
     font-size: 0.8rem;
   }
 
