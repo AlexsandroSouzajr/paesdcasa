@@ -46,7 +46,7 @@ body{
   --links_nav-color: #000;
   --links_nav-border-color: #000;
   --menu_nav-color: #000;
-  --navigation-bar: linear-gradient(to bottom, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+  --navigation-bar: linear-gradient(rgba(255,0,39,1) 0%, rgba(255,158,0,1) 50%, rgba(255,76,0,1) 100%);
   --navigation-underline: #fff;
   --navigation-bar-links: #fff;
   --navigation-bar-linkshover: #000;
