@@ -148,18 +148,18 @@ header nav.sticky {
   box-shadow: 5px 3px 12px #0002;
 }
 header nav.sticky .logo h1 {
-  color: var(--logo_nav-color);
+  color: var(--logo-color);
   transition: 0.3s ease-in-out;
 }
 header nav.sticky .sup-hiperlink {
-  color: var(--links_nav-color);
+  color: var(--navlinks);
   transition: 0.3s ease-in-out;
 }
 header nav.sticky .sup-hiperlink::after {
   content: "";
   width: 70%;
   height: 1px;
-  background: var(--links_nav-border-color);
+  background: var(--navlinks-border-color);
   position: absolute;
   bottom: 4px;
   left: 10px;
@@ -176,14 +176,14 @@ header nav.sticky .sup-hiperlink:hover {
   color: #ff9f06;
 }
 header nav.sticky .sup-hiperlink-home {
-  color: var(--links_nav-color);
+  color: var(--navlinks);
   transition: 0.3s ease-in-out;
 }
 header nav.sticky .dark-light {
   filter: var(--nav_active-dark);
 }
 header nav.sticky .toggle span {
-  background-color: var(--menu_nav-color);
+  background-color: var(--menu);
 }
 header nav .toggle.active {
   left: 32%;
@@ -207,10 +207,10 @@ header .navigation-bar.show {
   background: var(--navigation-bar);
 }
 header .navigation-bar.show a {
-  color: var(--navigation-bar-links) !important;
+  color: var(--navigation-bar-navlinks) !important;
 }
 header .navigation-bar.show a:hover {
-  color: var(--navigation-bar-linkshover) !important;
+  color: var(--navigation-bar-navlinkshover) !important;
 }
 
 header .navigation-bar .navigation_link .nav_link {
@@ -358,7 +358,7 @@ header nav .toggle span:not(:last-of-type) {
   justify-content: space-around;
 }
 .text__box h1 {
-  color: var(--about__us-txt-box-title);
+  color: var(--about-title);
   font-size: 75px;
   margin-bottom: 20px;
   font-family: "Leckerli One", cursive;
@@ -372,7 +372,7 @@ header nav .toggle span:not(:last-of-type) {
   letter-spacing: 2px;
 }
 .text__box p{
-  color: var(--about__us-txt-box-p);
+  color: var(--about-p);
   font-size: 18px;
   line-height: 28px;
   margin-bottom: 45px;
@@ -1347,7 +1347,7 @@ textarea.input {
 }
 
 footer {
-  background-image: var(--background-footer);
+  background-image: var(--footer-bg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -1358,7 +1358,8 @@ footer .text {
   margin: auto;
 }
 footer .text h2 {
-  font-family: var(--footer-h2-font);
+  --footer-font: 'Source Sans Pro', sans-serif;
+  font-family: var(--footer-font);
   font-size: 19px;
   font-weight: normal;
   letter-spacing: 1.9px;
@@ -1399,13 +1400,12 @@ footer .newsletter i {
 }
 .copyright {
   padding: 15px 40px 30px;
-  background-image: var(--footer-creditos-color);
 }
 .copyright ul {
   justify-content: center;
 }
 .copyright li {
-  color: var(--footer-creditos-li-color);
+  color: var(--footer-copyright);
   font-size: 14px;
 }
 .copyright li:not(:last-of-type):after {
@@ -1416,7 +1416,7 @@ footer .newsletter i {
   margin-top: 25px;
 }
 .copyright .CTA li a {
-  color: var(--footer-creditos-CTA-color);
+  color: var(--footer-copyright);
 }
 /* End Home Page */
 
