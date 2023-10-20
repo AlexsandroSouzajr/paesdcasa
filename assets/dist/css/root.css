@@ -57,6 +57,8 @@ body{
   --card: #000;
   --txt: #555;
 
+  --post-title: #000;
+
   --testimonials-title: #000;
   --testimonials-subtitle: #ea830e;
 
@@ -85,6 +87,8 @@ body.dark {
   --ser: #fff;
   --card: #fff;
   --txt: #fff;
+
+  --post-title: #fff;
 
   --testimonials-title: #fff;
   --testimonials-subtitle: #fff;
