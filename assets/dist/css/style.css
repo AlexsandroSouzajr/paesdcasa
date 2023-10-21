@@ -1879,3 +1879,33 @@ footer .text p {
     font-size: 1.5rem;
   }
 }*/
+
+/* Skeleton Loading Animation css*/
+.loading{
+    position: relative;
+}
+.loading .title:after,
+.loading .sub_title::after,
+.loading .thumbnail::after{
+    content: "";
+    position: absolute;
+    background: #434343;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    background: linear-gradient(130deg, #434343 50%, #4f4c4c 60%, #4f4c4c 61%, #434343 70%);
+    background-size: 200%;
+    background-position: 100% 0;
+    animation: waves 1.8s linear infinite;
+}
+.loading .sub_title:after{
+    width: 90%;
+}
+@keyframes waves {
+    100%{
+        background-position: -100%;
+    }
+    
+}
