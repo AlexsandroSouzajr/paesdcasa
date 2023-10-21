@@ -1,6 +1,6 @@
 p,
 .copyright li {
-  font-family: var(--p-copyright-font-family);
+  font-family: 'Roboto', sans-serif;
 }
 header nav .navigation-bar a:hover {
   color: var(--nav-links-color);
@@ -112,7 +112,6 @@ header nav .logo {
   padding-left: 70px;
 }
 
-/* navigation links */
 .sup-hiperlink {
   position: relative;
   color: #fff;
@@ -155,18 +154,18 @@ header nav.sticky {
   box-shadow: 5px 3px 12px #0006;
 }
 header nav.sticky .logo h1 {
-  color: var(--logo_nav-color);
+  color: var(--logo-color);
   transition: 0.3s ease-in-out;
 }
 header nav.sticky .sup-hiperlink {
-  color: var(--links_nav-color);
+  color: var(--navlinks);
   transition: 0.3s ease-in-out;
 }
 header nav.sticky .sup-hiperlink::after {
   content: "";
   width: 70%;
   height: 1px;
-  background: var(--links_nav-border-color);
+  background: var(--navlinks-border-color);
   position: absolute;
   bottom: 4px;
   left: 10px;
@@ -183,14 +182,14 @@ header nav.sticky .sup-hiperlink:hover {
   color: #ff9f06;
 }
 header nav.sticky .sup-hiperlink-home {
-  color: var(--links_nav-color);
+  color: var(--navlinks);
   transition: 0.3s ease-in-out;
 }
 header nav.sticky .dark-light {
   filter: var(--nav_active-dark);
 }
 header nav.sticky .toggle span {
-  background-color: var(--menu_nav-color);
+  background-color: var(--menu);
 }
 header nav .toggle.active {
   left: 32%;
@@ -212,10 +211,10 @@ header .navigation-bar.show {
   background: var(--navigation-bar);
 }
 header .navigation-bar.show a {
-  color: var(--navigation-bar-links) !important;
+  color: var(--navigation-bar-navlinks) !important;
 }
 header .navigation-bar.show a:hover {
-  color: var(--navigation-bar-linkshover) !important;
+  color: var(--navigation-bar-navlinkshover) !important;
 }
 header .navigation-bar .navigation_link .nav_link {
   flex: 1;
@@ -624,7 +623,7 @@ header nav .toggle span:not(:last-of-type) {
 }
 
 footer {
-  background-image: var(--background-footer);
+  background-image: var(--footer-bg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -635,7 +634,8 @@ footer .text {
   margin: auto;
 }
 footer .text h2 {
-  font-family: var(--footer-h2-font);
+  --footer-font: 'Source Sans Pro', sans-serif;
+  font-family: var(--footer-font);
   font-size: 19px;
   font-weight: normal;
   letter-spacing: 1.9px;
@@ -650,39 +650,14 @@ footer .text .logo {
 footer .text p {
   line-height: 27px;
 }
-footer .contact-container {
-  padding: 40px 0;
-  max-width: 1000px;
-  margin: auto;
-}
-footer .contact-container > div {
-  flex: 1;
-}
-footer .contact-container h3 {
-  font-size: 19px;
-  letter-spacing: 1.9px;
-}
-footer .newsletter input {
-  padding: 10px;
-  width: 270px;
-  background-color: #eee;
-  border: none;
-  margin-left: -15px;
-}
-footer .newsletter i {
-  margin-left: -40px;
-  vertical-align: middle;
-  font-size: 21px;
-}
 .copyright {
   padding: 15px 40px 30px;
-  background-image: var(--footer-creditos-color);
 }
 .copyright ul {
   justify-content: center;
 }
 .copyright li {
-  color: var(--footer-creditos-li-color);
+  color: var(--footer-copyright);
   font-size: 14px;
 }
 .copyright li:not(:last-of-type):after {
@@ -693,7 +668,7 @@ footer .newsletter i {
   margin-top: 25px;
 }
 .copyright .CTA li a {
-  color: var(--footer-creditos-CTA-color);
+  color: var(--footer-copyright);
 }
 
 @media (max-width: 1024px) {
@@ -713,7 +688,6 @@ footer .newsletter i {
   }
 
   header nav .logo {
-    margin-left: -20px;
     max-width: 100%;
     height: auto;
   }
@@ -757,8 +731,7 @@ footer .newsletter i {
     position: fixed;
     top: 0;
     left: -174px;
-    height: 40%;
-    border-radius: 0 0 50px;
+    height: 100%;
     overflow: hidden;
     z-index: 20;
     padding: 40px;
@@ -840,14 +813,6 @@ footer .newsletter i {
     font-size: 22px;
   }
 
-  footer .contact-container {
-    display: block;
-  }
-
-  footer .social-media {
-    margin-bottom: 40px;
-  }
-
   .copyright ul {
     display: block;
     margin-top: -20px;
@@ -866,7 +831,6 @@ footer .newsletter i {
   }
 
   .copyright li {
-    color: var(--footer-creditos-li-color);
     font-size: 14px;
     margin-top: 10px;
   }
@@ -912,10 +876,6 @@ footer .newsletter i {
   header .navigation-bar .navigation_link .nav_link {
     text-align: left;
     padding: 14px 0;
-  }
-
-  footer .contact-container {
-    display: block;
   }
 }
 

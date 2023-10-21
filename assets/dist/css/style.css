@@ -1,6 +1,6 @@
 p,
 .copyright li {
-  font-family: var(--p-copyright-font-family);
+  font-family: 'Roboto', sans-serif;
 }
 header nav .navigation-bar a:hover {
   color: var(--nav-links-color);
@@ -222,7 +222,7 @@ header .navigation-bar a {
   text-decoration: none;
   transition: 0.5s;
   font-size: 16px;
-  font-family: "Comfortaa", cursive;
+  font-family: "Roboto", sans-serif;
 }
 header .navigation-bar .underline {
   height: 2px;
@@ -317,18 +317,6 @@ header nav .toggle span:not(:last-of-type) {
   object-fit: contain;
 }
 
-@media screen and (max-width:992px){
-  .custom-shape-divider-bottom-1695412266{
-    bottom: -13%;
-  }
-}
-
-@media screen and (max-width:630px){
-  .custom-shape-divider-bottom-1695412266{
-    display: none;
-  }
-}
-
 .about__us{
   width: 100%;
   height: 100vh;
@@ -382,6 +370,7 @@ header nav .toggle span:not(:last-of-type) {
   position: relative;
   color: var(--ser);
   font-weight: bold;
+  font-family: 'Comfortaa', sans-serif;
   font-size: 3em;
   text-align: center;
   margin-bottom: 20px;
@@ -1372,30 +1361,6 @@ footer .text .logo {
 footer .text p {
   line-height: 27px;
 }
-footer .contact-container {
-  padding: 40px 0;
-  max-width: 1000px;
-  margin: auto;
-}
-footer .contact-container > div {
-  flex: 1;
-}
-footer .contact-container h3 {
-  font-size: 19px;
-  letter-spacing: 1.9px;
-}
-footer .newsletter input {
-  padding: 10px;
-  width: 270px;
-  background-color: #eee;
-  border: none;
-  margin-left: -15px;
-}
-footer .newsletter i {
-  margin-left: -40px;
-  vertical-align: middle;
-  font-size: 21px;
-}
 .copyright {
   padding: 15px 40px 30px;
 }
@@ -1419,17 +1384,6 @@ footer .newsletter i {
 /* End Home Page */
 
 /* Responsive */
-@media (max-width: 1200px) {
-  .about {
-    padding: 60px 40px;
-  }
-  .about .text {
-    padding: 0 32px 0 0;
-  }
-  .about .image-container {
-    align-items: center;
-  }
-}
 
 @media screen and (min-width: 1600px){
   .grid-cols-2{
@@ -1545,16 +1499,6 @@ footer .newsletter i {
   .team__img_wrapper{
     width: 450px;
     height: 350px;
-  }
-  .about {
-    display: block;
-    padding-top: 50px;
-  }
-  .about .text {
-    padding: 0 0 40px;
-  }
-  .about .image-container .image1 {
-    margin-left: 0;
   }
   .dark-light i {
     position: absolute;
@@ -1700,12 +1644,6 @@ footer .newsletter i {
     line-height: 27px;
     font-size: 22px;
   }
-  footer .contact-container {
-    display: block;
-  }
-  footer .social-media {
-    margin-bottom: 40px;
-  }
   .copyright ul {
     display: block;
     margin-top: -20px;
@@ -1756,9 +1694,6 @@ footer .newsletter i {
     text-align: left;
     padding: 14px 0;
   }
-  footer .contact-container {
-    display: block;
-  }
 }
 
 @media (max-width: 576px) {
@@ -1802,8 +1737,11 @@ footer .newsletter i {
     margin-bottom: 3%;
   }
   .text__box h1{
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 25px;
+  }
+  .text__box p{
+    font-size: 23px;
   }
 }
 
@@ -1826,9 +1764,6 @@ footer .newsletter i {
     width: 530px;
     max-width: 100%;
     height: 440px;
-  }
-  .about {
-    padding: 60px 20px;
   }
   .slideshow .slide .title {
     font: 300 20px/1.2 "Oswald", sans-serif;
@@ -1882,10 +1817,6 @@ footer .newsletter i {
   header .navigation-bar.show {
     padding: 20px;
     width: 60%;
-  }
-  .about,
-  .reservation {
-    padding: 60px 20px;
   }
 }
 /* End Responsive */

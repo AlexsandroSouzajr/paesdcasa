@@ -8,10 +8,10 @@
 :root{
   --height-header: calc(20vh - 22px);
   --logo: "Leckerli One", cursive;
-  --font-family-body:'Wix Madefor Display', sans-serif;
-  --p-copyright-font-family: Roboto, sans-serif;
   --nav-links-color: rgb(250, 247, 63);
   --nav-links-color-active: orange;
+
+  --footer-bg: url("/img/Logo/Footer/bg.jpg");
 }
 
 :root{
@@ -20,41 +20,26 @@
   --social-icon-color: #ffa500;
   --social-icon-color-light: #fff;
   --normal-font-size: 1em;
-  --font-text: 'Quicksand', sans-serif;
+  --font-text: 'Roboto', sans-serif;
 }
 
-:root{
-   --background-footer: url("/img/Logo/Footer/bg.jpg");
-  --footer-h2-font: 'Source Sans Pro', sans-serif;
-  --footer-creditos-color: /*#262526*/;
-  --footer-creditos-li-color: #000;
-  --footer-creditos-CTA-color: #000;
-}
 
 :root {
   --body-color: #fff;
-  --selection: #b4d5ff;
   --nav-color: rgba(255, 255, 255, 0.95);
-  --logo_nav-color: #000;
-  --links_nav-color: #000;
-  --links_nav-border-color: #000;
-  --menu_nav-color: #777;
+  --navlinks: #000;
+  --navlinks-border-color: #000;
+  --menu: #000;
   --navigation-bar: rgba(255, 255, 255, 0.9);
   --navigation-underline: #000;
-  --navigation-bar-links: #000;
-  --navigation-bar-linkshover: #000;
+  --navigation-bar-navlinks: #000;
+  --navigation-bar-navlinkshover: #000;
   --nav_active-dark: invert(0);
 
   --dark_color: invert(0);
   --navigation_color_dark: invert(0);
 
-  --footer-creditos-li-color: #000;
-  --footer-creditos-CTA-color: #000;
-
-  --primarycolor-Termo-uso: #000;
-  --subtilecolor-Termo-uso: #000;
-  --secondarycolor-Termo-uso: #000;
-
+  --termo-uso: #000;
 }
 
 body{
@@ -65,28 +50,25 @@ body{
 
 body.dark {
   --body-color: #18191A;
-  --selection: #006eff;
+
   --nav-color: #222;
-  --logo_nav-color: #fff;
-  --links_nav-color: #fff;
-  --links_nav-border-color: #fff;
-  --menu_nav-color: #fff;
+  --logo-color: #fff;
+  --navlinks: #fff;
+  --navlinks-border-color: #fff;
+  --menu: #fff;
   --navigation-bar: #222;
   --navigation-underline: #fff;
-  --navigation-bar-links: #fff;
-  --navigation-bar-linkshover: #777;
+  --navigation-bar-navlinks: #fff;
+  --navigation-bar-navlinkshover: #777;
   --nav_active-dark: invert(1);
   --nav_dark: invert(1);
 
   --dark_color: invert(0);
   --navigation_color_dark: invert(1);
 
-  --footer-creditos-li-color: #ccc;
-  --footer-creditos-CTA-color: #ccc;
-
-  --primarycolor-Termo-uso: #fff;
-  --subtilecolor-Termo-uso: #fff;
-  --secondarycolor-Termo-uso: #fff;
+  --termo-uso: #fff;
+  
+  --footer-copyright: #fff;
 }
 
 .darkLight {

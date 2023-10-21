@@ -1,14 +1,12 @@
 p,
 .copyright li {
-  font-family: var(--p-copyright-font-family);
+  font-family: 'Roboto', sans-serif;
 }
 header nav .navigation-bar a:hover {
   color: var(--nav-links-color);
 }
 header .navigation-bar a:hover,
-header nav.sticky .navigation-bar a:hover,
-.copyright .info li a,
-.copyright .CTA li a:hover {
+header nav.sticky .navigation-bar a:hover{
   color: var(--nav-links-color-active);
 }
 header .navigation-bar ul li,
@@ -23,9 +21,7 @@ header .navigation-bar ul,
 header nav .toggle,
 header nav .toggle span,
 header .navigation-bar,
-header .navigation-bar ul,
-footer,
-.copyright .CTA li a {
+header .navigation-bar ul{
   transition: 0.3s;
 }
 header,
@@ -86,7 +82,7 @@ header .logo h1 {
   font-family: var(--logo);
   font-weight: 500;
   text-align: center;
-  color: var(--logo_nav-color);
+  color: var(--logo-color);
 }
 .img-logo {
   max-width: 100%;
@@ -100,7 +96,7 @@ header nav .logo {
 
 .sup-hiperlink {
   position: relative;
-  color: var(--links_nav-color);
+  color: var(--navlinks);
   padding: 0 12px;
   transition: 0.3s ease-in-out;
 }
@@ -109,7 +105,7 @@ header nav .logo {
   content: "";
   width: 70%;
   height: 1px;
-  background: var(--links_nav-border-color);
+  background: var(--navlinks-border-color);
   position: absolute;
   bottom: 4px;
   left: 10px;
@@ -142,10 +138,10 @@ header .navigation-bar.show {
   background: var(--navigation-bar);
 }
 header .navigation-bar.show a {
-  color: var(--navigation-bar-links) !important;
+  color: var(--navigation-bar-navlinks) !important;
 }
 header .navigation-bar.show a:hover {
-  color: var(--navigation-bar-linkshover) !important;
+  color: var(--navigation-bar-navlinkshover) !important;
 }
 header .navigation-bar .navigation_link .nav_link {
   flex: 1;
@@ -210,19 +206,19 @@ header nav .toggle span:not(:last-of-type) {
 }
 .Termo_uso .title{
   margin-bottom: 70px;
-  color: var(--primarycolor-Termo-uso);
+  color: var(--termo-uso);
   font-family: 'Open Sans', sans-serif;
   font-size: 25px;
   text-align: center;
 }
 .Termo_uso .subtitle{
   position: relative;
-  color: var(--subtilecolor-Termo-uso);
+  color: var(--termo-uso);
   font-family: 'Open Sans', sans-serif;
 }
 .Termo_uso .artigo{
   position: relative;
-  color: var(--subtilecolor-Termo-uso);
+  color: var(--termo-uso);
   font-family: "Open Sans", sans-serif;
 }
 .paragrafoTermo_uso{
@@ -231,26 +227,26 @@ header nav .toggle span:not(:last-of-type) {
   margin: 0 auto;
   line-height: 35px;
   text-align: justify;
-  color: var(--secondarycolor-Termo-uso);
+  color: var(--termo-uso);
 }
 .GLOSSÁRIO{
   list-style: square;
   line-height: 32px;
   padding: 15px;
-  color: var(--secondarycolor-Termo-uso);
+  color: var(--termo-uso);
 }
 .Glo1ºtitle, .Glo2ºtitle,
 .Glo3ºtitle, .Glo4ºtitle{
   font-weight: 600;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--secondarycolor-Termo-uso);
+  color: var(--termo-uso);
 }
 .OBRIGAÇÕES{
   list-style: square;
   line-height: 32px;
   padding: 15px;
-  color: var(--secondarycolor-Termo-uso);
+  color: var(--termo-uso);
 }
 .txtlist{font-family: "Open Sans", sans-serif;}
 
@@ -404,7 +400,7 @@ header nav .toggle span:not(:last-of-type) {
   left: -1rem;
 }
 footer {
-  background-image: var(--background-footer);
+  background-image: var(--footer-bg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -415,7 +411,8 @@ footer .text {
   margin: auto;
 }
 footer .text h2 {
-  font-family: var(--footer-h2-font);
+  --footer-font: 'Source Sans Pro', sans-serif;
+  font-family: var(--footer-font);
   font-size: 19px;
   font-weight: normal;
   letter-spacing: 1.9px;
@@ -456,25 +453,15 @@ footer .newsletter i {
 }
 .copyright {
   padding: 15px 40px 30px;
-  background-image: var(--footer-creditos-color);
 }
 .copyright ul {
   justify-content: center;
 }
 .copyright li {
-  color: var(--footer-creditos-li-color);
+  color: var(--footer-copyright);
   font-size: 14px;
 }
-.copyright li:not(:last-of-type):after {
-  content: "•";
-  margin: 10px;
-}
-.copyright .CTA {
-  margin-top: 25px;
-}
-.copyright .CTA li a {
-  color: var(--footer-creditos-CTA-color);
-}
+
 
 @media (max-width: 992px) {
   body {
@@ -550,8 +537,7 @@ footer .newsletter i {
   .sup-hiperlink-home {
     display: none;
   }
-  header .navigation-bar .dark-light i,
-  .searchToggle i {
+  header .navigation-bar .dark-light i {
     top: 30px;
   }
   header .navigation-bar .navigation_link {
@@ -568,9 +554,6 @@ footer .newsletter i {
   footer .text p {
     line-height: 27px;
     font-size: 22px;
-  }
-  footer .contact-container {
-    display: block;
   }
   footer .social-media {
     margin-bottom: 40px;
@@ -589,7 +572,6 @@ footer .newsletter i {
     padding: 25px 40px 30px;
   }
   .copyright li {
-    color: var(--footer-creditos-li-color);
     font-size: 14px;
     margin-top: 10px;
   }

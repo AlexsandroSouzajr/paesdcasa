@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 :root{
   --height-header: calc(90vh - 22px);
   --logo: "Leckerli One", cursive;
-  --p-copyright-font-family: 'Roboto', sans-serif;
   --nav-links-color: rgb(250, 247, 63);
   --nav-links-color-active: orange;
   --navigation-bar-underline: #fff;
   --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation-duration: 1s;
+
+  --footer-bg: url("/img/Logo/Footer/bg.jpg");
 }
 :root{
   /* buttons -> + receitas <- */
@@ -38,14 +38,7 @@
   --social-icon-color: #ffa500;
   --social-icon-color-light: #fff;
   --normal-font-size: 1em;
-  --font-text: 'Quicksand', sans-serif;
-}
-:root{
-  --background-footer: url("/img/Logo/Footer/bg.jpg");
-  --footer-h2-font: 'Source Sans Pro', sans-serif;
-  --footer-creditos-color: /*#262526*/;
-  --footer-creditos-li-color: #000;
-  --footer-creditos-CTA-color: #000;
+  --font-text: 'Roboto', sans-serif;
 }
   
 body{
@@ -55,16 +48,14 @@ body{
 }
 :root {
   --body-color: #fff;
-  --selection: #b4d5ff;
   --nav-color: rgb(255, 255, 255);
-  --logo_nav-color: #000;
-  --links_nav-color: #000;
-  --links_nav-border-color: #000;
-  --menu_nav-color: #000;
-  --navigation-bar: linear-gradient(to bottom, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+  --navlinks: #000;
+  --navlinks-border-color: #000;
+  --menu: #000;
+  --navigation-bar: linear-gradient(rgba(255,0,39,1) 0%, rgba(255,158,0,1) 50%, rgba(255,76,0,1) 100%);
   --navigation-underline: #fff;
-  --navigation-bar-links: #fff;
-  --navigation-bar-linkshover: #000;
+  --navigation-bar-navlinks: #fff;
+  --navigation-bar-navlinkshover: #000;
   --navigation_color_dark-moon: invert(1);
   --navigation_color_dark-sun: invert(1);
   --nav_active-dark: invert(1);
@@ -75,22 +66,18 @@ body{
   --LoadingBg1: #eee;
   --LoadingBg2: #f9f9f9;
   --LoadingBg3: #eee;
-
-  --footer-creditos-li-color: #000;
-  --footer-creditos-CTA-color: #000;
 }
 body.dark {
   --body-color: #18191A;
-  --selection: #006eff;
   --nav-color: #222;
-  --logo_nav-color: #ddd;
-  --links_nav-color: #ddd;
-  --links_nav-border-color: #ddd;
-  --menu_nav-color: #ddd;
+  --logo-color: #fff;
+  --navlinks: #fff;
+  --navlinks-border-color: #fff;
+  --menu: #fff;
   --navigation-bar: #222;
   --navigation-underline: #fff;
-  --navigation-bar-links: #fff;
-  --navigation-bar-linkshover: #777;
+  --navigation-bar-navlinks: #fff;
+  --navigation-bar-navlinkshover: #777;
   --navigation_color_dark-moon: invert(1);
   --navigation_color_dark-sun: invert(1);
   --nav_active-dark: invert(1);
@@ -102,8 +89,7 @@ body.dark {
   --LoadingBg2: #3e3f42;
   --LoadingBg3: #333;
 
-  --footer-creditos-li-color: #ccc;
-  --footer-creditos-CTA-color: #ccc;
+  --footer-copyright: #fff;
 }
 
 .darkLight {
