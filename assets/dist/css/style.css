@@ -829,7 +829,7 @@ header nav .toggle span:not(:last-of-type) {
   color: var(--post-title);
   font-size: 3.2em;
   text-align: center;
-  font-family: "Borel", cursive;
+  font-family: 'Comfortaa', sans-serif;
   font-weight: normal;
   margin: 0 auto -15px;
   padding: 20px;
