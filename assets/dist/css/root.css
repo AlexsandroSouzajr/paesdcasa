@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
 
 :root{
   --height-header: calc(90vh - 22px);
   --logo: "Leckerli One", cursive;
-  --nav-links-color: rgb(250, 247, 63);
-  --nav-links-color-active: orange;
   --navigation-bar-underline: #fff;
   --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --animation-duration: 1s;
@@ -35,7 +33,7 @@ body{
   --navlinks: #000;
   --navlinks-border-color: #000;
   --menu: #000;
-  --navigation-bar: linear-gradient(rgba(255,0,39,1) 0%, rgba(255,158,0,1) 50%, rgba(255,76,0,1) 100%);
+  --navigation-bar: #FF711F   ;
   --navigation-underline: #fff;
   --navigation-bar-navlinks: #fff;
   --navigation-bar-navlinkshover: #000;
@@ -46,12 +44,12 @@ body{
   --nav_active-dark-moon: invert(1);
   --dark_color: invert(0);
 
-  --about-title: orange;
+  --about-title: #FFBA00;
   --about-p: #000;
 
   --ser: #000;
   --card: #000;
-  --txt: #555;
+  --txt: #292627;
 
   --post-title: #000;
 
@@ -60,7 +58,7 @@ body{
 
 }
 body.dark {
-  --body-color: #18191A;
+  --body-color: #14171C  ;
   --nav-color: #222;
   --logo-color: #fff;
   --navlinks: #fff;
@@ -80,10 +78,6 @@ body.dark {
   --about-title: #fff;
   --about-p: #fff;
 
-  --ser: #fff;
-  --card: #fff;
-  --txt: #fff;
-
   --post-title: #fff;
 
   --testimonials-title: #fff;
@@ -102,9 +96,10 @@ body.dark {
     width: 47px;
     height: 44px;
     border-radius: 20%;
-    position: absolute;
-    top: 7px;
-    left: 25px;
+    position: relative;
+    top: -12px; /* 7px*/
+    right: 12px;
+    /*left: 25px;*/
     display: flex;
     justify-content: center;
     align-items: center;
