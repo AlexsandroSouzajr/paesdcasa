@@ -6,10 +6,6 @@
 :root{
   --height-header: calc(90vh - 22px);
   --logo: "Leckerli One", cursive;
-  --navigation-bar-underline: #fff;
-  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --animation-duration: 1s;
-
   --footer-bg: linear-gradient(#00000018,#00000061), url("/img/Logo/Footer/bg.jpg");
 }
 :root{
@@ -24,7 +20,7 @@
 body{
     height: 100vh;
     background-color: var(--body-color);
-    transition: 0.2s ease-in-out;
+    transition: 0.10s ease-in-out;
 }
 
 :root {
@@ -33,10 +29,10 @@ body{
   --navlinks: #000;
   --navlinks-border-color: #000;
   --menu: #000;
-  --navigation-bar: #FF711F   ;
+  --navigation-bar: #FF711F;
   --navigation-underline: #fff;
+  --navigation-sticky-underline: #000;
   --navigation-bar-navlinks: #fff;
-  --navigation-bar-navlinkshover: #000;
   --navigation_color_dark-moon: invert(1);
   --navigation_color_dark-sun: invert(1);
   --nav_active-dark: invert(1);
@@ -58,7 +54,7 @@ body{
 
 }
 body.dark {
-  --body-color: #14171C  ;
+  --body-color: #14171C;
   --nav-color: #222;
   --logo-color: #fff;
   --navlinks: #fff;
@@ -66,6 +62,7 @@ body.dark {
   --menu: #fff;
   --navigation-bar: #222;
   --navigation-underline: #fff;
+  --navigation-sticky-underline: #fff;
   --navigation-bar-navlinks: #fff;
   --navigation-bar-navlinkshover: #777;
   --navigation_color_dark-moon: invert(1);
