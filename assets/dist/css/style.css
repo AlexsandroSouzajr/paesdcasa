@@ -1287,7 +1287,7 @@ footer .text p {
   .main__heading{
     font-size: 30px;
     position: relative;
-    top: -30%;
+    top: -10%;
   }
   .main__heading span{
     font-size: 30px;
@@ -1302,7 +1302,7 @@ footer .text p {
   .main__heading{
     font-size: 25px;
     position: relative;
-    top: -30%;
+    top: -10%;
   }
   .main__heading span{
     font-size: 25px;
@@ -1374,7 +1374,7 @@ footer .text p {
   .main__heading{
     font-size: 23px;
     position: relative;
-    top: -30%;
+    top: -15%;
   }
   .main__heading span{
     font-size: 23px;
