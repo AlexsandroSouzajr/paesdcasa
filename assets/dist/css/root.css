@@ -188,7 +188,7 @@ body.dark {
   width: max-content;
   padding: 20px 15px;
   border-radius: 4px;
-  background: #141619;
+  background: #272727;
   color: #f6f5f9;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
   transform: translateY(30px);
@@ -211,7 +211,7 @@ body.dark {
   height: 3px;
   transform: scaleX(0);
   transform-origin: left;
-  background-image: linear-gradient(to right, #539bdb, #3250bf);
+  background-image: linear-gradient(to right, #FDBF50, #FFBA00);
   border-radius: inherit;
   animation: load 3s 0.25s linear forwards;
 }
