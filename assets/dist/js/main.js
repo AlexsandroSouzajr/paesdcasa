@@ -66,6 +66,12 @@ window.addEventListener("scroll", function () {
   nav.classList.toggle("sticky", window.scrollY > 0);
 })
 
+window.addEventListener("load", function () {
+  setTimeout(function open(event) {
+    document.querySelector(".notification").style.display = "block";
+  }, 5000);
+});
+
 const Pãesd_Casa = document.querySelectorAll('.Pãesd_Casa');
 window.addEventListener('load', function () {
   Pãesd_Casa.forEach(item => {
