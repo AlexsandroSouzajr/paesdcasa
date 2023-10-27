@@ -211,7 +211,7 @@ body.dark {
   height: 3px;
   transform: scaleX(0);
   transform-origin: left;
-  background-image: linear-gradient(to right, #FDBF50, #FFBA00);
+  background-image: linear-gradient(to right, #fbd28c, #FFBA00);
   border-radius: inherit;
   animation: load 3s 0.25s linear forwards;
 }
