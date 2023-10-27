@@ -69,7 +69,7 @@ window.addEventListener("scroll", function () {
 window.addEventListener("load", function () {
   setTimeout(function open(event) {
     document.querySelector(".notification").style.display = "block";
-  }, 2500);
+  }, 1500);
 });
 
 const Pãesd_Casa = document.querySelectorAll('.Pãesd_Casa');
