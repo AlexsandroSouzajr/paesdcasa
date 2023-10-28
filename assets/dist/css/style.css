@@ -112,7 +112,7 @@ header nav.sticky .logo h1 {
   transition: 0.3s ease-in-out;
 }
 
-header .navigation-bar a:hover{
+header nav .navigation-bar a:hover{
   color: #222;
 }
 header nav.sticky .navigation-bar a:hover{

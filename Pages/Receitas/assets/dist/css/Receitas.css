@@ -1,12 +1,7 @@
 p,
 .copyright li {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif;
 }
-header nav .navigation-bar a:hover {
-  color: var(--nav-links-color);
-}
-header .navigation-bar a:hover,
-header nav.sticky .navigation-bar a:hover,
 .copyright .info li a,
 .copyright .CTA li a:hover {
   color: var(--nav-links-color-active);
@@ -54,6 +49,9 @@ header nav.sticky,
 header nav .toggle span {
   background-color: #fff;
 }
+header nav.sticky .navigation-bar .underline{
+  background-color: var(--navigation-sticky-underline);
+}
 header .navigation-bar .underline{
   background: var(--navigation-underline);
 }
@@ -86,6 +84,8 @@ header {
 }
 header nav {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
   top: 0;
   padding: 18px 0px 0px;
   z-index: 20;
@@ -99,7 +99,6 @@ header .logo h1 {
   transition: 0.3s ease-in-out;
   font-family: var(--logo);
   font-weight: 500;
-  text-align: center;
   color: #fff;
 }
 .img-logo {
@@ -112,43 +111,6 @@ header nav .logo {
   padding-left: 70px;
 }
 
-.sup-hiperlink {
-  position: relative;
-  color: #fff;
-  padding: 0 12px;
-  transition: 0.3s ease-in-out;
-}
-.sup-hiperlink::after {
-  content: "";
-  width: 70%;
-  height: 1px;
-  background: #fff;
-  position: absolute;
-  bottom: 4px;
-  left: 10px;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 150ms;
-}
-.sup-hiperlink:hover::after {
-  width: 70%;
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-.sup-hiperlink:hover {
-  color: #ddd;
-  transition: 0.5s ease;
-}
-.sup-hiperlink-home {
-  color: #fff;
-  padding: 0 12px;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-.sup-hiperlink-home.active {
-  text-decoration: underline;
-}
-
 header nav.sticky {
   background: var(--nav-color);
   box-shadow: 5px 3px 12px #0006;
@@ -157,33 +119,11 @@ header nav.sticky .logo h1 {
   color: var(--logo-color);
   transition: 0.3s ease-in-out;
 }
-header nav.sticky .sup-hiperlink {
-  color: var(--navlinks);
-  transition: 0.3s ease-in-out;
+header nav .navigation-bar a:hover{
+  color: #a7a1a1;
 }
-header nav.sticky .sup-hiperlink::after {
-  content: "";
-  width: 70%;
-  height: 1px;
-  background: var(--navlinks-border-color);
-  position: absolute;
-  bottom: 4px;
-  left: 10px;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 150ms;
-}
-header nav.sticky .sup-hiperlink:hover::after {
-  width: 70%;
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-header nav.sticky .sup-hiperlink:hover {
-  color: #ff9f06;
-}
-header nav.sticky .sup-hiperlink-home {
-  color: var(--navlinks);
-  transition: 0.3s ease-in-out;
+header nav.sticky .navigation-bar a:hover{
+  color: #f5a201;
 }
 header nav.sticky .dark-light {
   filter: var(--nav_active-dark);
@@ -203,7 +143,7 @@ header nav .toggle.active .last {
   transform: rotate(45deg);
 }
 header nav.sticky .navigation-bar a {
-  color: #000;
+  color: var(--navlinks);
 }
 
 header .navigation-bar.show {
@@ -216,10 +156,11 @@ header .navigation-bar.show a {
 header .navigation-bar.show a:hover {
   color: var(--navigation-bar-navlinkshover) !important;
 }
-header .navigation-bar .navigation_link .nav_link {
+header .navigation-bar .navigation_link .navlinks {
   flex: 1;
-  padding: 0 10px;
-  display: none;
+  padding: 0 5px;
+  margin-right: 1em;
+  display: block;
 }
 header .navigation-bar a {
   text-decoration: none;
@@ -747,7 +688,7 @@ footer .text p {
     padding: 14px 0;
   }
 
-  header .navigation-bar .navigation_link .nav_link {
+  header .navigation-bar .navigation_link .navlinks {
     flex: 1;
     padding: 0 10px;
     display: block;
@@ -799,7 +740,7 @@ footer .text p {
     padding-top: 40px;
   }
 
-  header .navigation-bar .navigation_link .nav_link {
+  header .navigation-bar .navigation_link .navlinks {
     text-align: left;
     padding: 14px 0;
   }
@@ -846,7 +787,7 @@ footer .text p {
     padding-top: 25px;
   }
 
-  header .navigation-bar .navigation_link .nav_link {
+  header .navigation-bar .navigation_link .navlinks {
     flex: 1;
     padding: 0 10px;
     display: block;
@@ -873,7 +814,7 @@ footer .text p {
     padding-top: 40px;
   }
 
-  header .navigation-bar .navigation_link .nav_link {
+  header .navigation-bar .navigation_link .navlinks {
     text-align: left;
     padding: 14px 0;
   }
