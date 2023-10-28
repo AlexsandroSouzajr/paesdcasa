@@ -1,0 +1,172 @@
+
+.slide__loader {
+  position: relative;
+}
+.slide__loader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: linear-gradient(110deg,#ececec 8%, #f5f5f5 18%, #ececec 33%);
+  background-size: 200%;
+  animation: slideloading 1s infinite linear reverse;
+}
+
+@keyframes slideloading {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-moz-keyframes slideloading {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-webkit-keyframes slideloading {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-ms-keyframes slideloading {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-o-keyframes slideloading {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+
+.loading {
+  position: relative;
+}
+.loading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: linear-gradient(110deg,#ececec 8%, #f5f5f5 18%, #ececec 33%);
+  background-size: 200%;
+  animation: loading 1s infinite linear reverse;
+}
+
+@keyframes loading {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-moz-keyframes loading {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-webkit-keyframes loading {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-ms-keyframes loading {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-o-keyframes loading {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+.loader__title {
+  position: relative;
+}
+.loader__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  border-radius: 2px;
+  background: linear-gradient(110deg,#ececec 8%, #f5f5f5 18%, #ececec 33%);
+  background-size: 200%;
+  animation: loader__title 1s infinite linear reverse;
+}
+
+@keyframes loader__title {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-moz-keyframes loader__title {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-webkit-keyframes loader__title {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-ms-keyframes loader__title {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-o-keyframes loader__title {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}

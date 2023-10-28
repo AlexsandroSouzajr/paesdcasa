@@ -66,12 +66,6 @@ window.addEventListener("scroll", function () {
   nav.classList.toggle("sticky", window.scrollY > 0);
 })
 
-const Pãesd_Casa = document.querySelectorAll('.Pãesd_Casa');
-window.addEventListener('load', function () {
-  Pãesd_Casa.forEach(item => {
-    item.classList.remove('Pãesd_Casa')
-  })
-});
 
 const slideloading = document.querySelectorAll('.slide__loader');
 window.addEventListener('load', function () {
@@ -80,24 +74,17 @@ window.addEventListener('load', function () {
   })
 });
 
-const videocardloading = document.querySelectorAll('.videocard__loader');
+const loading = document.querySelectorAll('.loading');
 window.addEventListener('load', function () {
-  videocardloading.forEach(item => {
-    item.classList.remove('videocard__loader')
+  loading.forEach(item => {
+    item.classList.remove('loading')
   })
 });
 
-const titlereceitas = document.querySelectorAll('.title__receitas__loader');
+const loadertitle = document.querySelectorAll('.loader__title');
 window.addEventListener('load', function () {
-  titlereceitas.forEach(item => {
-    item.classList.remove('title__receitas__loader')
-  })
-});
-
-const btntop = document.querySelectorAll('.btntop__loader');
-window.addEventListener('load', function () {
-  btntop.forEach(item => {
-    item.classList.remove('btntop__loader')
+  loadertitle.forEach(item => {
+    item.classList.remove('loader__title')
   })
 });
 
