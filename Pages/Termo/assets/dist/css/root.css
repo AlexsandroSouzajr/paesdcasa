@@ -3,15 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
 
 :root{
   --height-header: calc(20vh - 22px);
   --logo: "Leckerli One", cursive;
-  --nav-links-color: rgb(250, 247, 63);
-  --nav-links-color-active: orange;
-
-  --footer-bg: url("/img/Logo/Footer/bg.jpg");
+  --footer-bg: linear-gradient(#00000018,#00000061), url("/img/Logo/Footer/bg.jpg");
 }
 
 :root{
@@ -82,9 +79,9 @@ body.dark {
       width: 47px;
       height: 44px;
       border-radius: 20%;
-      position: absolute;
-      top: 7px;
-      left: 25px;
+      position: relative;
+      top: -12px;
+      right: 12px;
       display: flex;
       justify-content: center;
       align-items: center;
