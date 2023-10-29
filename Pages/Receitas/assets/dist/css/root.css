@@ -49,7 +49,7 @@ body{
   --navlinks: #000;
   --navlinks-border-color: #000;
   --menu: #000;
-  --navigation-bar: linear-gradient(rgba(255,0,39,1) 0%, rgba(255,158,0,1) 50%, rgba(255,76,0,1) 100%);
+  --navigation-bar: #FF711F;
   --navigation-underline: #fff;
   --navigation-sticky-underline: #000;
   --navigation-bar-navlinks: #fff;
