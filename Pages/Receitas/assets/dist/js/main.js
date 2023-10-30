@@ -88,6 +88,20 @@ window.addEventListener('load', function () {
   })
 });
 
+const loadersocial = document.querySelectorAll('.loader__social');
+window.addEventListener('load', function () {
+  loadersocial.forEach(item => {
+    item.classList.remove('loader__social')
+  })
+});
+
+const loadertop = document.querySelectorAll('.loader__btntop');
+window.addEventListener('load', function () {
+  loadertop.forEach(item => {
+    item.classList.remove('loader__btntop')
+  })
+});
+
 
 
 

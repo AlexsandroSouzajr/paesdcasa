@@ -98,8 +98,6 @@ header nav .logo {
   padding-left: 70px;
 }
 
-
-
 /* // navigation links */
 
 /* header nav Active */
@@ -924,7 +922,7 @@ footer .text h2 {
   font-size: 19px;
   font-weight: normal;
   letter-spacing: 1.9px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 footer .text .logo {
   font-family: var(--logo);
@@ -934,6 +932,7 @@ footer .text .logo {
 }
 footer .text p {
   line-height: 27px;
+  margin-bottom: 10px;
 }
 .copyright {
   padding: 15px 40px 30px;
