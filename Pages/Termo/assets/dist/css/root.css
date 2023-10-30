@@ -25,6 +25,7 @@
   --body-color: #fff;
   --nav-color: rgba(255, 255, 255, 0.95);
   --navlinks: #000;
+  --button-border: transparent;
   --navlinks-border-color: #000;
   --menu: #000;
   --navigation-bar: rgba(255, 255, 255, 0.9);
@@ -51,6 +52,7 @@ body.dark {
   --nav-color: #222;
   --logo-color: #fff;
   --navlinks: #fff;
+  --button-border: #fff;
   --navlinks-border-color: #fff;
   --menu: #fff;
   --navigation-bar: #222;
@@ -81,7 +83,7 @@ body.dark {
       border-radius: 20%;
       position: relative;
       top: -12px;
-      right: 12px;
+      right: 30px;
       display: flex;
       justify-content: center;
       align-items: center;

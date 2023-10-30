@@ -85,7 +85,7 @@ header .logo h1 {
 }
 header nav .logo {
   flex-basis: 100%;
-  padding-left: 70px;
+  padding-left: 50px;
 }
 
 header nav .navigation-bar a {
@@ -120,9 +120,24 @@ header .navigation-bar.show a:hover {
   color: var(--navigation-bar-navlinkshover) !important;
 }
 header .navigation-bar .navigation_link .navlinks {
-  flex: 1;
-  padding: 3px 5px;
+  flex: none;
+  padding: 0 10px;
+  margin-top: 4px;
   margin-right: 1em;
+}
+header .navigation-bar .navigation_link .btn {
+  outline: none;
+  border: none;
+  border-radius: 24px;
+  background: transparent;
+  border: 0.5px solid var(--button-border);
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  margin: 0;
+  padding: 5px 15px;
+  margin-top: -0.3rem;
+}
+header .navigation-bar .navigation_link .btn:hover {
+  background: #F6F9FE;
 }
 header .navigation-bar a {
   text-decoration: none;
@@ -138,8 +153,6 @@ header .navigation-bar .underline {
   transition: all 0.3s;
   display: block;
 }
-
-
 header nav .toggle {
   display: none;
   top: 26px;

@@ -108,7 +108,7 @@ header .logo h1 {
 }
 header nav .logo {
   flex-basis: 100%;
-  padding-left: 70px;
+  padding-left: 50px;
 }
 
 header nav.sticky {
@@ -157,13 +157,35 @@ header .navigation-bar.show a:hover {
   color: var(--navigation-bar-navlinkshover) !important;
 }
 header .navigation-bar .navigation_link .navlinks {
-  flex: 1;
-  padding: 3px 5px;
+  flex: none;
+  padding: 0 10px;
+  margin-top: 4px;
   margin-right: 1em;
+}
+header nav.sticky .navigation-bar .navigation_link .btn{
+  border: 1px solid var(--button-border-sticky);
+}
+header .navigation-bar .navigation_link .btn {
+  outline: none;
+  border: none;
+  border-radius: 24px;
+  background: transparent;
+  border: 1px solid var(--button-border);
+  color: var(--navlinks-btn);
+  margin: 0;
+  padding: 5px 15px;
+  margin-top: -0.3rem;
+}
+header .navigation-bar .navigation_link .btn:hover {
+  background: #F6F9FE;
+}
+header .navigation-bar .navigation_link .btn a:hover {
+  color: #000;
+  border: none;
 }
 header .navigation-bar a {
   text-decoration: none;
-  transition: all 0.5s;
+  transition: 0.5s;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -172,7 +194,7 @@ header .navigation-bar .underline {
   width: 0;
   left: 50%;
   bottom: -4px;
-  transition: all 0.3s;
+  transition: 0.3s;
   display: block;
 }
 
