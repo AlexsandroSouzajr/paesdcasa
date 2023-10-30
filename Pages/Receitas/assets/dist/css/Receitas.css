@@ -158,9 +158,8 @@ header .navigation-bar.show a:hover {
 }
 header .navigation-bar .navigation_link .navlinks {
   flex: 1;
-  padding: 0 5px;
+  padding: 3px 5px;
   margin-right: 1em;
-  display: block;
 }
 header .navigation-bar a {
   text-decoration: none;

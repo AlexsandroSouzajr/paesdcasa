@@ -27,6 +27,9 @@ body{
   --body-color: #fff;
   --nav-color: rgb(255, 255, 255);
   --navlinks: #000;
+  --navlinks-btn: #000;
+  --button-border: #fff;
+  --button-border-sticky: #000;
   --navlinks-border-color: #000;
   --menu: #000;
   --navigation-bar: #FF711F;
@@ -58,6 +61,9 @@ body.dark {
   --nav-color: #222;
   --logo-color: #fff;
   --navlinks: #fff;
+  --navlinks-btn: #fff;
+  --button-border: #fff;
+  --button-border-sticky: #fff;
   --navlinks-border-color: #fff;
   --menu: #fff;
   --navigation-bar: #222;
@@ -95,7 +101,7 @@ body.dark {
     border-radius: 20%;
     position: relative;
     top: -12px; /* 7px*/
-    right: 12px;
+    right: 30px; /* 12px */
     /*left: 25px;*/
     display: flex;
     justify-content: center;
