@@ -516,7 +516,7 @@ footer .newsletter i {
     display: block;
   }
   header .navigation-bar .dark-light i {
-    top: 30px;
+    top: 35px;
   }
   header .navigation-bar .navigation_link {
     display: block;
@@ -525,6 +525,9 @@ footer .newsletter i {
   header .navigation-bar .navigation_link .navlinks {
     text-align: left;
     padding: 14px 0;
+  }
+  header .navigation-bar .navigation_link .btn{
+    border: 1px solid var(--button-border);
   }
   footer .text .logo img{
     width: 30px;

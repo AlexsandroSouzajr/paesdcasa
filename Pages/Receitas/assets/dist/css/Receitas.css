@@ -753,7 +753,7 @@ footer .text p {
   }
 
   header .navigation-bar .dark-light i {
-    top: 30px;
+    top: 35px;
   }
 
   header .navigation-bar .navigation_link {
@@ -764,6 +764,10 @@ footer .text p {
   header .navigation-bar .navigation_link .navlinks {
     text-align: left;
     padding: 14px 0;
+  }
+
+  header nav.sticky .navigation-bar .navigation_link .btn{
+    border: 1px solid var(--button-border);
   }
 
   footer .text .logo img {
