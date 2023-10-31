@@ -42,6 +42,7 @@ body{
   --nav_active-dark-sun: invert(1);
   --nav_active-dark-moon: invert(1);
   --dark_color: invert(0);
+  --caption-color: #595959;
 
 }
 body.dark {
@@ -65,6 +66,7 @@ body.dark {
   --nav_active-dark-sun: invert(0);
   --nav_active-dark-moon: invert(0);
   --dark_color: invert(1);
+  --caption-color: #fff;
 
   --footer-copyright: #fff;
 }

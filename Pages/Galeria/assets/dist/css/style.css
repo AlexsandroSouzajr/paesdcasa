@@ -336,6 +336,12 @@ section p{
   border-radius: 6px;
   transition: transform 400ms ease-out;
 }
+.container .gallery .image, font{
+  color: var(--caption-color);
+  font-family: var(--font-text);
+  display: flex;
+  justify-content: center;
+}
 .container .gallery .image:hover{
   transform: scale(1.15);
 }
