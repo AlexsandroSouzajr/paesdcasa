@@ -57,7 +57,7 @@ body{
 
 }
 body.dark {
-  --body-color: #14171C;
+  --body-color: #252525; /*14171C*/
   --nav-color: #222;
   --logo-color: #fff;
   --navlinks: #fff;
