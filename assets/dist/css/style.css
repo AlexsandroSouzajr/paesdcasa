@@ -99,9 +99,6 @@ header nav .logo {
   padding-left: 50px;
 }
 
-/* // navigation links */
-
-/* header nav Active */
 header nav.sticky {
   background: var(--nav-color);
   box-shadow: 5px 3px 12px #0002;
@@ -137,9 +134,7 @@ header nav .toggle.active .last {
 header nav.sticky .navigation-bar a {
   color: var(--navlinks);
 }
-/* // header nav active */
 
-/* navigation bar */
 header .navigation-bar.show {
   width: 40%;
   background: var(--navigation-bar);
@@ -188,7 +183,6 @@ header .navigation-bar .underline {
   transition: 0.3s;
   display: block;
 }
-/* // navigation bar */
 
 header nav .toggle {
   display: none;
@@ -215,7 +209,6 @@ header nav .toggle span {
 header nav .toggle span:not(:last-of-type) {
   margin-bottom: 6px;
 }
-/* End Header */
 
 .wrapper__section{
   width: 100%;
@@ -329,7 +322,6 @@ header nav .toggle span:not(:last-of-type) {
   width: 100%;
   margin-bottom: 100px;
   min-height: 50vh;
-  background: #fafafa;
 }
 .card-box-container .card-box{
   text-align: center;
@@ -356,10 +348,13 @@ header nav .toggle span:not(:last-of-type) {
   height: auto;
 }
 .card-box .box-txt h2{
-  color: #000;
+  color: var(--card-h2);
   font-family: var(--font-text);
   font-weight: 500;
   margin-bottom: 8px;
+}
+.card-box .box-txt p{
+  color: var(--card-p);
 }
 
 main{
@@ -718,10 +713,6 @@ main .card-content p{
   font-size: 0.9rem;
   color: #4b4b4b;
 }
-/*.testimonial-box:hover{
-  transform: translateY(-10px);
-  transition: ease 0.3s;
-}*/
 
 @media (max-width:1060px){
   .testimonial__box{
@@ -973,9 +964,6 @@ footer .text p {
 .copyright .CTA li a {
   color: var(--footer-copyright);
 }
-/* End Home Page */
-
-/* Responsive */
 
 @media screen and (min-width: 1600px){
   .grid-cols-2{
@@ -1424,7 +1412,6 @@ footer .text p {
     width: 60%;
   }
 }
-/* End Responsive */
 
 
 /*#ff3d3d, #dd00ff, #ffff3d, #ff1499, #ffbb00, #40ffa3, #ffa3f6, #86cf00, #614111*/
