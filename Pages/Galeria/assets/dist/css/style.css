@@ -1,15 +1,7 @@
-p,
-.copyright li {
-  font-family: 'Hanken Grotesk', sans-serif;
-}
-.copyright .info li a,
-.copyright .CTA li a:hover {
+.copyright .info li a {
   color: var(--nav-links-color-active);
 }
-header .navigation-bar ul li,
-.about .text,
-footer,
-.copyright {
+header .navigation-bar ul li {
   text-align: center;
 }
 header nav,
@@ -52,12 +44,6 @@ header nav.sticky .navigation-bar .underline{
 }
 header .navigation-bar .underline{
   background: var(--navigation-underline);
-}
-header .navigation-bar a,
-footer .text h2,
-footer .text p,
-footer {
-  color: #fff;
 }
 header nav,
 header .navigation-bar.show,
@@ -108,6 +94,9 @@ header nav.sticky .logo h1 {
   transition: 0.3s ease-in-out;
 }
 
+header nav .navigation-bar a{
+  color: #fff;
+}
 header nav .navigation-bar a:hover{
   color: #222;
 }
@@ -220,7 +209,7 @@ section{
   font-size: 1.2em;
 }
 section h2{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-primary);
   font-weight: 500;
   text-align: center;
   position: relative;
@@ -349,7 +338,7 @@ section p{
 }
 .container .gallery .image, font{
   color: var(--caption-color);
-  font-family: var(--font-text);
+  font-family: var(--font-secondary);
   display: flex;
   justify-content: center;
 }
@@ -523,10 +512,12 @@ footer {
   background-position: bottom;
   background-size: cover;
   padding: 60px 20px;
+  text-align: center;
 }
 footer .text {
   max-width: 500px;
   margin: auto;
+  color: #fff;
 }
 footer .text h2 {
   --footer-font: 'Source Sans Pro', sans-serif;

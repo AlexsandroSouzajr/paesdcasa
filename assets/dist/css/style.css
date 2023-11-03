@@ -1,15 +1,7 @@
-p,
-.copyright li {
-  font-family: 'Hanken Grotesk', sans-serif;
-}
-.copyright .info li a,
-.copyright .CTA li a:hover {
+.copyright .info li a {
   color: var(--nav-links-color-active);
 }
-header .navigation-bar ul li,
-.about .text,
-footer,
-.copyright {
+header .navigation-bar ul li {
   text-align: center;
 }
 header nav,
@@ -20,8 +12,7 @@ header .navigation-bar ul,
 header nav .toggle,
 header nav .toggle span,
 header .navigation-bar,
-header .navigation-bar ul,
-.copyright .CTA li a {
+header .navigation-bar ul {
   transition: 0.3s;
 }
 header,
@@ -52,12 +43,6 @@ header nav.sticky .navigation-bar .underline{
 }
 header .navigation-bar .underline{
   background: var(--navigation-underline);
-}
-header .navigation-bar a,
-footer .text h2,
-footer .text p,
-footer {
-  color: #fff;
 }
 header nav,
 header .navigation-bar.show,
@@ -108,8 +93,11 @@ header nav.sticky .logo h1 {
   transition: 0.3s ease-in-out;
 }
 
+header nav .navigation-bar a{
+  color: #fff;
+}
 header nav .navigation-bar a:hover{
-  color: #222;
+  color: #000;
 }
 header nav.sticky .navigation-bar a:hover{
   color: #f5a201;
@@ -166,13 +154,13 @@ header .navigation-bar .navigation_link .btn {
   margin-top: -0.1rem;
 }
 header .navigation-bar .navigation_link .btn:hover {
-  background: #F6F9FE;
+  background: #fff;
 }
 header .navigation-bar a {
   text-decoration: none;
   transition: 0.5s;
   font-size: 16px;
-  font-family: var(--font-text);
+  font-family: var(--font-primary);
   font-weight: 400;
 }
 header .navigation-bar .underline {
@@ -237,7 +225,6 @@ header nav .toggle span:not(:last-of-type) {
   font-weight: 300;
   font-size: 30px;
   line-height: 55px;
-  font-family: "Hanken Grotesk", sans-serif;
   color: #fff;
 }
 .main__heading span{
@@ -250,6 +237,7 @@ header nav .toggle span:not(:last-of-type) {
   font-size: 19px;
   line-height: 28px;
   color: #fff;
+  font-family: var(--font-secondary);
 }
 .grid-item-2{
   width: 100%;
@@ -298,7 +286,7 @@ header nav .toggle span:not(:last-of-type) {
   color: var(--about-title);
   font-size: 75px;
   margin-bottom: 20px;
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 500;
 }
 .text__box h5{
@@ -313,6 +301,7 @@ header nav .toggle span:not(:last-of-type) {
   font-size: 18px;
   line-height: 28px;
   margin-bottom: 45px;
+  font-family: var(--font-secondary);
 }
 
 .card-box-container{
@@ -346,10 +335,11 @@ header nav .toggle span:not(:last-of-type) {
   text-align: center;
   width: 180px;
   height: auto;
+  font-family: var(--font-secondary);
 }
 .card-box .box-txt h2{
   color: var(--card-h2);
-  font-family: var(--font-text);
+  font-family: var(--font-primary);
   font-weight: 500;
   margin-bottom: 8px;
 }
@@ -364,7 +354,7 @@ main .box h2{
   position: relative;
   color: var(--ser);
   font-weight: bold;
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: var(--font-secondary);
   font-size: 3em;
   text-align: center;
   margin-bottom: 20px;
@@ -404,6 +394,7 @@ main .card-content h3{
   font-size: 28px;
   margin-bottom: 8px;
   text-align: center;
+  font-family: var(--font-secondary);
   color: var(--card);
 }
 main .card-content p{
@@ -411,6 +402,7 @@ main .card-content p{
   font-size: 15px;
   line-height: 1.3;
   text-align: center;
+  font-family: var(--font-secondary);
 }
 
 .combos{
@@ -500,7 +492,7 @@ main .card-content p{
   background-color: var(--fist-color);
   color: var(--social-icon-color-light);
   font-size: var(--normal-font-size);
-  font-family: var(--font-text);
+  font-family: var(--font-primary);
   white-space: nowrap;
   font-weight: 500;
   border-radius: 0.5rem;
@@ -574,7 +566,7 @@ main .card-content p{
   background: var(--secondary-color);
   color: var(--social-icon-color-light);
   font-size: var(--normal-font-size);
-  font-family: var(--font-text);
+  font-family: var(--font-primary);
   white-space: nowrap;
   font-weight: 500;
   border-radius: 0.5rem;
@@ -693,12 +685,12 @@ main .card-content p{
   color: #3d3d3d;
   font-size: 1.1rem;
   letter-spacing: 0.5px;
-  font-family: 'Wix Madefor Display', sans-serif;
+  font-family: var(--font-secondary);
 }
 .name__user span{
   color: #979797;
   font-size: 0.8rem;
-  font-family: 'Wix Madefor Display', sans-serif;
+  font-family: var(--font-secondary);
 }
 .reviews{
   color: #f9d71c;
@@ -712,6 +704,7 @@ main .card-content p{
 .client__comment p{
   font-size: 0.9rem;
   color: #4b4b4b;
+  font-family: var(--font-primary);
 }
 
 @media (max-width:1060px){
@@ -776,6 +769,7 @@ main .card-content p{
 .contact-info .text {
   color: #333;
   margin: 1.5rem 0 2rem 0;
+  font-family: var(--font-primary);
 }
 
 .contact__form {
@@ -921,18 +915,18 @@ footer {
   background-position: bottom;
   background-size: cover;
   padding: 60px 20px;
+  text-align: center;
 }
 footer .text {
   max-width: 500px;
   margin: auto;
 }
 footer .text h2 {
-  --footer-font: 'Source Sans Pro', sans-serif;
-  font-family: var(--footer-font);
   font-size: 19px;
   font-weight: normal;
   letter-spacing: 1.9px;
   margin-bottom: 15px;
+  color: #fff;
 }
 footer .text .logo {
   font-family: var(--logo);
@@ -943,6 +937,8 @@ footer .text .logo {
 footer .text p {
   line-height: 27px;
   margin-bottom: 10px;
+  color: #fff;
+  font-family: var(--font-secondary);
 }
 .copyright {
   padding: 15px 40px 30px;
@@ -953,6 +949,7 @@ footer .text p {
 .copyright li {
   color: var(--footer-copyright);
   font-size: 14px;
+  font-family: var(--font-secondary);
 }
 .copyright li:not(:last-of-type):after {
   content: "•";

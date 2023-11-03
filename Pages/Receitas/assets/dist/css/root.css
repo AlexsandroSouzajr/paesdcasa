@@ -16,6 +16,8 @@
   --btn-filter-active-text-color: #000;
   --btn-filter-color: rgb(246, 115, 15);
   --btn-filter-color-hover: #f67c47;
+  --font-primary: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-secondary: -apple-system,  'Hanken Grotesk', sans-serif;
 }
 
 /* Card & fixed-image */
@@ -35,13 +37,11 @@
   --social-icon-color: #ffa500;
   --social-icon-color-light: #fff;
   --normal-font-size: 1em;
-  --font-text: 'Roboto', sans-serif;
 }
   
 body{
-    height: 100vh;
     background-color: var(--body-color);
-    transition: 0.2s ease-in-out;
+    transition: 0.10s ease-in-out;
 }
 :root {
   --body-color: #fff;

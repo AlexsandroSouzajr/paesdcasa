@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
 
@@ -14,11 +13,11 @@
   --social-icon-color: #ffa500;
   --social-icon-color-light: #fff;
   --normal-font-size: 1em;
-  --font-text: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-primary: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-secondary: -apple-system,  'Hanken Grotesk', sans-serif;
 }
   
 body{
-    height: 100vh;
     background-color: var(--body-color);
     transition: 0.10s ease-in-out;
 }

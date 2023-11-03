@@ -1,15 +1,9 @@
-p,
-.copyright li {
-  font-family: 'Hanken Grotesk', sans-serif;
-}
-.copyright .info li a,
-.copyright .CTA li a:hover {
+
+.copyright .info li a {
   color: var(--nav-links-color-active);
 }
 header .navigation-bar ul li,
-.fixed-image .text,
-footer,
-.copyright {
+.fixed-image .text {
   text-align: center;
 }
 header nav,
@@ -20,9 +14,7 @@ header .navigation-bar ul,
 header nav .toggle,
 header nav .toggle span,
 header .navigation-bar,
-header .navigation-bar ul,
-footer,
-.copyright .CTA li a {
+header .navigation-bar ul {
   transition: 0.3s;
 }
 header,
@@ -54,12 +46,6 @@ header nav.sticky .navigation-bar .underline{
 }
 header .navigation-bar .underline{
   background: var(--navigation-underline);
-}
-header .navigation-bar a,
-footer .text h2,
-footer .text p,
-footer {
-  color: #fff;
 }
 header nav,
 header .navigation-bar.show,
@@ -118,6 +104,9 @@ header nav.sticky {
 header nav.sticky .logo h1 {
   color: var(--logo-color);
   transition: 0.3s ease-in-out;
+}
+header nav .navigation-bar a{
+  color: #fff;
 }
 header nav .navigation-bar a:hover{
   color: #a7a1a1;
@@ -590,10 +579,12 @@ footer {
   background-position: bottom;
   background-size: cover;
   padding: 60px 20px;
+  text-align: center;
 }
 footer .text {
   max-width: 500px;
   margin: auto;
+  color: #fff;
 }
 footer .text h2 {
   --footer-font: 'Source Sans Pro', sans-serif;
@@ -621,6 +612,7 @@ footer .text p {
 .copyright li {
   color: var(--footer-copyright);
   font-size: 14px;
+  font-family: var(--font-primary);
 }
 .copyright li:not(:last-of-type):after {
   content: "•";
