@@ -215,7 +215,8 @@ header nav .toggle span:not(:last-of-type) {
   margin: 0 auto;
   line-height: 35px;
   text-align: justify;
-  color: var(--termo-uso);
+  color: var(--termo-uso-p);
+  margin-bottom: 10px;
 }
 .GLOSSÁRIO{
   list-style: square;
