@@ -130,32 +130,11 @@ header .navigation-bar.show {
 header .navigation-bar.show a {
   color: var(--navigation-bar-navlinks) !important;
 }
-header .navigation-bar.show a:hover {
-  color: var(--navigation-bar-navlinkshover) !important;
-}
 header .navigation-bar .navigation_link .navlinks {
   flex: none;
   padding: 0 10px;
   margin-top: 4px;
   margin-right: 1em;
-}
-header nav.sticky .navigation-bar .navigation_link .btn{
-  border: 1px solid var(--button-border-sticky);
-}
-header .navigation-bar .navigation_link .btn {
-  outline: none;
-  border: none;
-  border-radius: 24px;
-  line-height: 1;
-  background: transparent;
-  border: 1px solid var(--button-border);
-  color: var(--navlinks-btn);
-  margin: 0;
-  padding: 5px 15px;
-  margin-top: -0.1rem;
-}
-header .navigation-bar .navigation_link .btn:hover {
-  background: #F6F9FE;
 }
 header .navigation-bar a {
   text-decoration: none;

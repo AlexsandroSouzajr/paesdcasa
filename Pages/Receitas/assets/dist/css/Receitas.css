@@ -108,9 +108,6 @@ header nav.sticky .logo h1 {
 header nav .navigation-bar a{
   color: #fff;
 }
-header nav .navigation-bar a:hover{
-  color: #a7a1a1;
-}
 header nav.sticky .navigation-bar a:hover{
   color: #f5a201;
 }
@@ -142,9 +139,6 @@ header .navigation-bar.show {
 header .navigation-bar.show a {
   color: var(--navigation-bar-navlinks) !important;
 }
-header .navigation-bar.show a:hover {
-  color: var(--navigation-bar-navlinkshover) !important;
-}
 header .navigation-bar .navigation_link .navlinks {
   flex: none;
   padding: 0 10px;
@@ -169,9 +163,16 @@ header .navigation-bar .navigation_link .btn:hover {
   background: #F6F9FE;
 }
 header .navigation-bar .navigation_link .btn a:hover {
-  color: #000;
+  color: #f5a201;
   border: none;
 }
+header nav .navigation-bar .navigation_link .btn a:hover {
+  color: var(--navigation-bar-navlinkshover) !important;
+}
+header nav.sticky .navigation-bar .navigation_link .btn a:hover {
+  color: var(--navigation-bar-navlinkshover) !important;
+}
+
 header .navigation-bar a {
   text-decoration: none;
   transition: 0.5s;
@@ -707,6 +708,18 @@ footer .text p {
     display: block;
   }
 
+  header .navigation-bar .navigation_link .btn {
+    outline: none;
+    border: none;
+    border-radius: 24px;
+    background: transparent;
+    border: 1px solid var(--button-border);
+    color: var(--navlinks-btn);
+    margin: 0;
+    padding: 5px 12px;
+    margin-top: -0.3rem;
+  }
+
   header nav.sticky .dark-light {
     filter: none;
   }
@@ -732,16 +745,11 @@ footer .text p {
   }
 
   header nav.sticky .navigation-bar .underline {
-    background-color: var(--navigation-bar-underline);
+    background-color: var(--navigation-sticky-underline);
   }
 
   header nav .toggle {
     display: block;
-  }
-
-  .sup-hiperlink,
-  .sup-hiperlink-home {
-    display: none;
   }
 
   header .navigation-bar .dark-light i {
@@ -808,10 +816,6 @@ footer .text p {
     flex: 1;
     padding: 0 10px;
     display: block;
-  }
-
-  header nav.sticky .navigation-bar .underline {
-    background-color: var(--navigation-bar-underline);
   }
 
   header nav .toggle {
