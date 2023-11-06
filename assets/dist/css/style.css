@@ -259,6 +259,7 @@ header nav .toggle span:not(:last-of-type) {
   font-size: 4em;
   color: #fff;
   line-height: 2;
+  position: relative;
 }
 .content h2 span{
   font-size: 1em;
