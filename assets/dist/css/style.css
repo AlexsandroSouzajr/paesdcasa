@@ -318,6 +318,9 @@ header nav .toggle span:not(:last-of-type) {
   margin-bottom: 45px;
   font-family: var(--font-secondary);
 }
+.content span img{
+  border-radius: 10px 50px;
+}
 
 .card-box-container{
   display: flex;
