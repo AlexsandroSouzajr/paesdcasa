@@ -204,7 +204,7 @@ header nav .toggle span:not(:last-of-type) {
   margin-bottom: 6px;
 }
 .hero{
-  background: linear-gradient(#0002, #002), url(/img/home/image2.jpg) no-repeat center/cover;
+  background: linear-gradient(#0002, #252525de), url(/img/home/image2.jpg) no-repeat center/cover;
   width: 100%;
   height: 100%;
   min-height: 100vh;
@@ -263,7 +263,7 @@ header nav .toggle span:not(:last-of-type) {
 }
 .content h2 span{
   font-size: 1em;
-  color: orange;
+  color: rgb(255, 213, 0);
 }
 .content p{
   color: #fff;
