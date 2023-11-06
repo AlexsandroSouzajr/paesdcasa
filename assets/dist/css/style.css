@@ -366,7 +366,7 @@ header nav .toggle span:not(:last-of-type) {
 }
 
 main{
-  background: #FDBF50;
+  background: linear-gradient(to bottom, #0002, #eceaaca3), url(/img/home/blobscene.svg) no-repeat center/cover;
 }
 main .box h2{
   position: relative;
