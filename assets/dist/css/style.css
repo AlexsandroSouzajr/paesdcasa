@@ -96,9 +96,6 @@ header nav.sticky .logo h1 {
 header nav .navigation-bar a{
   color: #fff;
 }
-header nav.sticky .navigation-bar a:hover{
-  color: #f5a201;
-}
 header nav.sticky .dark-light {
   filter: var(--nav_active-dark);
 }
@@ -133,28 +130,26 @@ header .navigation-bar .navigation_link .navlinks {
   margin-top: 4px;
   margin-right: 1em;
 }
-header nav.sticky .navigation-bar .navigation_link .btn{
-  border: 1px solid var(--button-border-sticky);
+header nav.sticky .navigation-bar .navigation_link .btn a{
+  color: #fff;
 }
 header .navigation-bar .navigation_link .btn {
   outline: none;
   border: none;
   border-radius: 24px;
-  background: transparent;
-  border: 1px solid var(--button-border);
+  background: #f5a201;
   color: var(--navlinks-btn);
   margin: 0;
   padding: 5px 15px;
   margin-top: -0.1rem;
+  transition: .2s;
 }
 header .navigation-bar .navigation_link .btn:hover {
-  background: #fff;
+  background: #FF692A;
+  color: #fff;
 }
-header nav .navigation-bar .navigation_link .btn a:hover {
-  color: #000;
-}
-header nav.sticky .navigation-bar .navigation_link .btn a:hover {
-  color: #f5a201;
+header nav.sticky .navigation-bar .navigation_link .btn:hover {
+  color: #fff;
 }
 header nav .navigation-bar .navigation_link .btn a:hover {
   color: var(--navigation-bar-navlinkshover) !important;
@@ -961,7 +956,7 @@ footer .text .logo {
   font-family: var(--logo);
   font-size: 24px;
   letter-spacing: 1.9px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 footer .text p {
   line-height: 27px;

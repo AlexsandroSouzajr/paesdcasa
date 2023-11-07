@@ -599,7 +599,7 @@ footer .text .logo {
   font-family: var(--logo);
   font-size: 24px;
   letter-spacing: 1.9px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 footer .text p {
   line-height: 27px;
