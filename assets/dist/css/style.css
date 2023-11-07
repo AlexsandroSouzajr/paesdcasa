@@ -1026,9 +1026,9 @@ footer .text p {
     margin-top: 60px;
   }
 }
-@media (max-width: 640px) and (orientation: landscape) {
+@media (max-width: 655px) and (orientation: landscape) {
   .hero{
-    min-height: 140vh;
+    min-height: 150vh;
   }
   .about__us .content{
     margin-top: 60px;
