@@ -148,6 +148,12 @@ header .navigation-bar .navigation_link .btn:hover {
   background: #FF692A;
   color: #fff;
 }
+header nav .navigation-bar .navigation_link .btn {
+  background: #f5a201;
+}
+header nav .navigation-bar .navigation_link .btn:hover {
+  background: #ff4d00;
+}
 header nav.sticky .navigation-bar .navigation_link .btn:hover {
   color: #fff;
 }
