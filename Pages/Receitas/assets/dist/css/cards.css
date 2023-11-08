@@ -19,6 +19,10 @@
   margin-bottom: 5px;
 }
 
+.card .card-img{
+  border-radius: 0.375rem 0.375rem 0rem 0rem;
+}
+
 .card-body .card-title{
   margin-top: 0;
   margin-bottom: var(--card-title-margin-bottom);
@@ -72,9 +76,6 @@
 #filterable-cards .card {
   width: 12em; /*15rem*/
   margin: 0 auto;
-}
-#filterable-cards .card img {
-  border-radius: 0.375rem 0.375rem 0rem 0rem;
 }
 
 #filterable-cards .card.hide {

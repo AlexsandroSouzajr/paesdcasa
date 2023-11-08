@@ -81,6 +81,13 @@ window.addEventListener('load', function () {
   })
 });
 
+const cardloader = document.querySelectorAll('.card-item__loader');
+window.addEventListener('load', function () {
+  cardloader.forEach(item => {
+    item.classList.remove('card-item__loader')
+  })
+});
+
 const loadertitle = document.querySelectorAll('.loader__title');
 window.addEventListener('load', function () {
   loadertitle.forEach(item => {
