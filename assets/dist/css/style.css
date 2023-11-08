@@ -1184,12 +1184,12 @@ footer .text p {
     outline: none;
     border: none;
     border-radius: 24px;
-    background: transparent;
-    border: 1px solid var(--button-border);
+    background: #f5a201;
     color: var(--navlinks-btn);
     margin: 0;
-    padding: 5px 12px;
-    margin-top: -0.3rem;
+    padding: 5px 15px;
+    margin-top: -0.1rem;
+    transition: .2s;
   }
   header nav.sticky .dark-light {
     filter: none;
