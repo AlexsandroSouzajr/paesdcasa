@@ -96,12 +96,6 @@ header nav.sticky .logo h1 {
 header nav .navigation-bar a{
   color: #fff;
 }
-header nav .navigation-bar a:hover{
-  color: #222;
-}
-header nav.sticky .navigation-bar a:hover{
-  color: #f5a201;
-}
 header nav.sticky .dark-light {
   filter: var(--nav_active-dark);
 }

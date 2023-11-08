@@ -26,13 +26,27 @@
   font-size: 15px;
   font-family: var(--card-title-family);
   line-height: var(--card-title-line-height);
+  color: #3c3d42;
 }
 
 .card-body .card-text{
   margin-top: 0;
   margin-bottom: var(--card-title-margin-bottom);
   font-size: 13px;
+  color: #575757;
 }
+
+/* #filterable-cards .card .thumb-video{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 145px;
+  object-fit: cover;
+  border-radius: 0.375rem 0.375rem 0rem 0rem;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+} */
 
 #filter-buttons .btn-filter {
   background: var(--btn-filter-color);
@@ -56,9 +70,11 @@
 }
 
 #filterable-cards .card {
-  width: 15rem;
-  border: 2px solid transparent;
+  width: 12em; /*15rem*/
   margin: 0 auto;
+}
+#filterable-cards .card img {
+  border-radius: 0.375rem 0.375rem 0rem 0rem;
 }
 
 #filterable-cards .card.hide {
@@ -81,7 +97,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100%;
+    width: 100%;
   }
   
   #filterable-cards .card {

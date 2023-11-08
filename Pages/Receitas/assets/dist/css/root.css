@@ -13,14 +13,14 @@
 :root{
   /* buttons -> + receitas <- */
   --btn-filter-active-color: rgb(255, 166, 0);
-  --btn-filter-active-text-color: #000;
+  --btn-filter-active-text-color: #fff;
   --btn-filter-color: rgb(246, 115, 15);
   --btn-filter-color-hover: #f67c47;
   --font-primary: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --font-secondary: -apple-system,  'Hanken Grotesk', sans-serif;
 }
 
-/* Card & fixed-image */
+/* Card & fixed-image  #f5a201*/
 :root{
   --card-title-family: "Roboto", sans-serif;
   --card-title-color: #000;
@@ -47,13 +47,11 @@ body{
   --body-color: #fff;
   --nav-color: rgb(255, 255, 255);
   --navlinks: #000;
-  --button-border: #fff;
-  --button-border-sticky: #000;
   --navlinks-border-color: #000;
   --menu: #000;
   --navigation-bar: #FF711F;
   --navigation-underline: #fff;
-  --navigation-sticky-underline: #fff;
+  --navigation-sticky-underline: #000;
   --navigation-bar-navlinks: #fff;
   --navigation_color_dark-moon: invert(1);
   --navigation_color_dark-sun: invert(1);
@@ -71,8 +69,6 @@ body.dark {
   --nav-color: #111;
   --logo-color: #f5f5f5;
   --navlinks: #f5f5f5;
-  --button-border: #f5f5f5;
-  --button-border-sticky: #f5f5f5;
   --navlinks-border-color: #f5f5f5;
   --menu: #f5f5f5;
   --navigation-bar: #222;
