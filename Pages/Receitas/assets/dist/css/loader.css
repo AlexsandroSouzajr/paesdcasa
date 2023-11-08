@@ -1,3 +1,8 @@
+.navigation {
+  position: relative;
+  z-index: -9999;
+  left: -500%;
+}
 
 .slide__loader {
   position: relative;
@@ -229,7 +234,7 @@
 }
 .loader__social {
   position: relative;
-  overflow: hidden;
+  visibility: hidden;
 }
 .loader__social::before {
   content: "";
@@ -287,7 +292,7 @@
 }
 .loader__btntop {
   position: relative;
-  overflow: hidden;
+  visibility: hidden;
 }
 .loader__btntop::before {
   content: "";

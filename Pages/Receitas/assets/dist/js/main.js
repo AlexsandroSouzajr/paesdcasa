@@ -67,6 +67,13 @@ window.addEventListener("scroll", function () {
 })
 
 
+const navigation = document.querySelectorAll('.navigation');
+window.addEventListener('load', function () {
+  navigation.forEach(item => {
+    item.classList.remove('navigation')
+  })
+});
+
 const slideloading = document.querySelectorAll('.slide__loader');
 window.addEventListener('load', function () {
   slideloading.forEach(item => {
