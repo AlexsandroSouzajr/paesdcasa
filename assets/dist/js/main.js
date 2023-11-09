@@ -70,10 +70,10 @@ window.addEventListener("scroll", function () {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 630) {
+  if (document.body.scrollTop > 0 | document.documentElement.scrollTop > 0) {
     document.querySelector("nav").style.top = "10px";
   } else {
-    document.querySelector("nav").style.top = "-150px";
+    document.querySelector("nav").style.top = "-100px";
   }
 }
 

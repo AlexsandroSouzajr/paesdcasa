@@ -1153,10 +1153,11 @@ footer .text p {
     display: block;
     text-align: center;
     left: 0;
-    top: 0;
+    top: -60px;
     margin: 10px;
     width: 100%;
     padding-top: 25px;
+    transition: top 0.3s;
   }
   header .navigation-bar {
     position: fixed;
@@ -1282,9 +1283,10 @@ footer .text p {
     display: block;
     text-align: center;
     left: 0;
-    top: 0;
+    top: -60px;
     width: 100%;
     padding-top: 25px;
+    transition: top 0.3s;
   }
   header .navigation-bar .navigation_link .navlinks {
     flex: 1;
