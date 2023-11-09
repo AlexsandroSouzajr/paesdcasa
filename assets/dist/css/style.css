@@ -1157,7 +1157,7 @@ footer .text p {
     margin: 10px;
     width: 100%;
     padding-top: 25px;
-    transition: top 0.3s;
+    transition: 0.3s ease-in-out;
   }
   header .navigation-bar {
     position: fixed;
@@ -1286,7 +1286,7 @@ footer .text p {
     top: -60px;
     width: 100%;
     padding-top: 25px;
-    transition: top 0.3s;
+    transition: 0.3s ease-in-out;
   }
   header .navigation-bar .navigation_link .navlinks {
     flex: 1;
