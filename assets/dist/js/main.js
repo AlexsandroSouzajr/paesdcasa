@@ -66,6 +66,17 @@ window.addEventListener("scroll", function () {
   nav.classList.toggle("sticky", window.scrollY > 0);
 })
 
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 630) {
+    document.querySelector("nav").style.top = "10px";
+  } else {
+    document.querySelector("nav").style.top = "-150px";
+  }
+}
+
 window.addEventListener("load", function () {
   setTimeout(function open(event) {
     document.querySelector(".notification").style.display = "block";
