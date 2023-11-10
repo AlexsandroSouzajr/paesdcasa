@@ -1079,6 +1079,16 @@ footer .text p {
     font-size: 1em;
   }
 }
+@media (width <= 330px){
+  .content h2{
+    line-height: 1.5;
+    font-size: 1.5em;
+  }
+  .content h2 span{
+    line-height: 1.5;
+    font-size: 1em;
+  }
+}
 @media (width <= 280px){
   .content h2{
     line-height: 1.5;
@@ -1121,6 +1131,15 @@ footer .text p {
     position: absolute;
     font-size: 27px;
     cursor: pointer;
+  }
+  .about__us{
+    margin-top: 20em;
+  }
+}
+
+@media (max-width: 920px){
+  .about__us{
+    margin-top: 5em;
   }
 }
 
