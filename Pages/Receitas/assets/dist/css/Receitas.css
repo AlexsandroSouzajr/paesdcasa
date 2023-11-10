@@ -783,6 +783,7 @@ footer .text p {
 
   .copyright {
     padding: 25px 40px 30px;
+    text-align: center;
   }
 
   .copyright li {
