@@ -58,7 +58,6 @@ header nav {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 18px 0px 0px;
   z-index: 20;
   left: 1.8%;
@@ -80,7 +79,7 @@ header .logo h1 {
   margin-bottom: -4px;
 }
 header nav .logo {
-  flex-basis: 100%;
+  flex-basis: 80%;
   padding-left: 50px;
 }
 
@@ -126,9 +125,9 @@ header .navigation-bar.show a {
 }
 header .navigation-bar .navigation_link .navlinks {
   flex: none;
-  padding: 0 10px;
-  margin-top: 4px;
-  margin-right: 1em;
+  padding: 0 20px;
+  /* margin-top: 4px;
+  margin-right: 1em; */
 }
 header nav.sticky .navigation-bar .navigation_link .btn a{
   color: #fff;

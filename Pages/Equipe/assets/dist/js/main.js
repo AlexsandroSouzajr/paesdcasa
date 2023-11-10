@@ -65,3 +65,14 @@ window.addEventListener("scroll", function () {
   var nav = document.querySelector("nav");
   nav.classList.toggle("sticky", window.scrollY > 0);
 })
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 0 | document.documentElement.scrollTop > 0) {
+    document.querySelector("nav").style.top = "10px";
+  } else {
+    document.querySelector("nav").style.top = "-100px";
+  }
+}

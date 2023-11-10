@@ -72,13 +72,13 @@ header nav {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  top: 0;
   padding: 18px 0px 0px;
   z-index: 20;
   left: 1.8%;
-  top: 10px;
+  top: -50px;
   max-width: 96.5%;
   border-radius: 12px;
+  transition: 0.3s ease-in-out;
 }
 header .logo h1 {
   font-size: 18px;
@@ -93,7 +93,7 @@ header .logo h1 {
   margin-bottom: -4px;
 }
 header nav .logo {
-  flex-basis: 100%;
+  flex-basis: 80%;
   padding-left: 50px;
 }
 
@@ -138,9 +138,9 @@ header .navigation-bar.show a {
 }
 header .navigation-bar .navigation_link .navlinks {
   flex: none;
-  padding: 0 10px;
-  margin-top: 4px;
-  margin-right: 1em;
+  padding: 0 20px;
+  margin-top: 0px;
+  /* margin-right: 1em; */
 }
 header nav.sticky .navigation-bar .navigation_link .btn a{
   color: #fff;
@@ -315,13 +315,13 @@ header nav .toggle span:not(:last-of-type) {
   font-size: 18px;
   line-height: 1.4;
 }
-.slideshow .slide .btn {
+/* .slideshow .slide .btn {
   margin: 15px 0 0;
   border-color: #fff;
-}
-.slideshow .slide .btn::before {
+} */
+/* .slideshow .slide .btn::before {
   background: #fff;
-}
+} */
 .slideshow .pagination {
   position: absolute;
   bottom: 35px;
@@ -680,10 +680,11 @@ footer .text p {
     display: block;
     text-align: center;
     left: 0;
-    top: 0;
+    top: -60px;
     margin: 10px;
     width: 100%;
     padding-top: 25px;
+    transition: 0.3s ease-in-out;
   }
 
   header .navigation-bar {
@@ -795,9 +796,10 @@ footer .text p {
     display: block;
     text-align: center;
     left: 0;
-    top: 0;
+    top: -60px;
     width: 100%;
     padding-top: 25px;
+    transition: 0.3s ease-in-out;
   }
 
   header .navigation-bar .navigation_link .navlinks {

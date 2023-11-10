@@ -58,14 +58,13 @@ header nav {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  top: 0;
   padding: 18px 0px 0px;
   z-index: 20;
   left: 1.8%;
-  top: 10px;
+  top: -50px;
   max-width: 96.5%;
   border-radius: 12px;
+  transition: top 0.3s;
 }
 header .logo h1 {
   font-size: 18px;
@@ -80,7 +79,7 @@ header .logo h1 {
   margin-bottom: -4px;
 }
 header nav .logo {
-  flex-basis: 100%;
+  flex-basis: 80%;
   padding-left: 50px;
 }
 
@@ -126,9 +125,9 @@ header .navigation-bar.show a {
 }
 header .navigation-bar .navigation_link .navlinks {
   flex: none;
-  padding: 0 10px;
-  margin-top: 4px;
-  margin-right: 1em;
+  padding: 0 15px;
+  /* margin-top: 4px;
+  margin-right: 1em; */
 }
 header .navigation-bar a {
   text-decoration: none;
@@ -590,10 +589,11 @@ footer .text p {
     display: block;
     text-align: center;
     left: 0;
-    top: 0;
+    top: -60px;
     margin: 10px;
     width: 100%;
     padding-top: 25px;
+    transition: top 0.3s ease-in-out;
   }
   header .navigation-bar {
     position: fixed;
@@ -698,9 +698,10 @@ footer .text p {
     display: block;
     text-align: center;
     left: 0;
-    top: 0;
+    top: -60px;
     width: 100%;
     padding-top: 25px;
+    transition: top 0.3s ease-in-out;
   }
   header .navigation-bar .navigation_link .navlinks {
     flex: 1;
