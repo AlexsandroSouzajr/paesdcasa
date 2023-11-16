@@ -15,8 +15,6 @@ function setFlags() {
     }
     const iconFlagElement = document.getElementById("icon-flag_");
     const languageElement = document.getElementById("language_");
-    const Elementtflag = document.getElementById("icon-flag-translate");
-    const Elementtlinguage = document.getElementById("language-translate");
 
     const flagImages = {
         de: "german.png",
