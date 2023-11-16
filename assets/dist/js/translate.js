@@ -37,7 +37,7 @@ function setFlags() {
     const languageText = flagText[flagAltText]
         ? flagText[flagAltText]
         : defaultLanguage;
-    iconFlagElement.innerHTML = `<img src="${baseUri}img/flags/${flagImage}" height="20" width="20" alt="${flagAltText}" />`;
+    iconFlagElement.innerHTML = `<img src="${baseUri}/img/flags/${flagImage}" height="20" width="20" alt="${flagAltText}" />`;
     languageElement.textContent = languageText;
 }
 function googleTranslateElementInit() {
