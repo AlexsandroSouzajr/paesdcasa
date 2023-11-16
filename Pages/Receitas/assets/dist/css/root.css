@@ -47,6 +47,10 @@ body{
   --body-color: #fff;
   --nav-color: rgb(255, 255, 255);
   --navlinks: #000;
+  --language-color: #f5f5f5;
+  --select-color: #f5f5f5;
+  --menu-hover-color: #d5d5d5d5;
+  --select-icon: #000;
   --navlinks-border-color: #000;
   --menu: #000;
   --navigation-bar: #FF711F;
@@ -69,6 +73,11 @@ body.dark {
   --nav-color: #111;
   --logo-color: #f5f5f5;
   --navlinks: #f5f5f5;
+  --language-color: #14171c;
+  --select-color: #14171c;
+  --select-language-color: #f5f5f5;
+  --menu-hover-color: #333;
+  --select-icon: #f5f5f5;
   --navlinks-border-color: #f5f5f5;
   --menu: #f5f5f5;
   --navigation-bar: #222;
