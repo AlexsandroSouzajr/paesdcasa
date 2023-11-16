@@ -1,9 +1,3 @@
-/* informe o baseUri  caso  precise passar o caminho completo do diretório das imagens
- * ex:  http://seusite.com.br/assets      (sem a última barra)
- * neste caso o caminho completo do diretório das imagens ficaria
- *  http://seusite.com.br/assets/flags/
- */
-
 const baseUri = "";
 
 function setFlags() {

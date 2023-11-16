@@ -1451,7 +1451,7 @@ footer .text p {
   min-width: 8em;
   position: relative;
   display: block;
-  right: 35px;
+  right: 50px;
   top: -5px;
 }
 
@@ -1460,7 +1460,7 @@ footer .text p {
 }
 
 .select {
-  background: #fff;
+  background: var(--select-color);
   color: #000;
   display: flex;
   justify-content: center;
@@ -1470,17 +1470,25 @@ footer .text p {
   cursor: pointer;
   transition: background 0.3s;
 }
-
-
-
+.select #language_{
+  position: relative;
+  top: -2px;
+  color: var(--select-language-color);
+}
+.select #icon-flag_{
+  position: relative;
+  top: 2px;
+}
 
 .caret {
-  /* width: 0;
+  position: relative;
+  right: -5px;
+  width: 0;
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 6px solid #000;
-  transition: 0.3s; */
+  border-top: 6px solid var(--select-icon);
+  transition: 0.3s;
 }
 
 
@@ -1491,7 +1499,7 @@ footer .text p {
 .menu {
   list-style: none;
   padding: 0.2em 0.2em;
-  background: #f5f5f5;
+  background: var(--language-color);
   /* border: 1px #363a43 solid; */
   box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
   border-radius: 0.5em;
@@ -1520,7 +1528,7 @@ footer .text p {
 }
 
 .menu li:hover {
-  background: #d5d5d5d5;
+  background: var(--menu-hover-color);
 }
 
 .menu-open {
