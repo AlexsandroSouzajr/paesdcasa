@@ -35,7 +35,7 @@
     -moz-box-shadow: 0 0 8px 1px #999999;
     -webkit-box-shadow: 0 0 8px 1px #999999;
     box-shadow: 0 0 8px 1px #999999;
-    _position: absolute;
+    position: absolute;
 }
 
 #goog-gt-tt {

@@ -60,10 +60,10 @@ header nav {
   justify-content: space-between;
   padding: 18px 0px 0px;
   z-index: 20;
-  left: 1.8%;
+  /* left: 1.8%; */
   top: -50px;
-  max-width: 96.5%;
-  border-radius: 12px;
+  /* max-width: 96.5%;
+  border-radius: 12px; */
   transition: top 0.3s;
 }
 header .logo h1 {
@@ -217,7 +217,6 @@ header nav.sticky .navigation-bar .navigation_link .btn a:hover {
   list-style: none;
   padding: 0.2em 0.2em;
   background: var(--language-color);
-  /* border: 1px #363a43 solid; */
   box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
   border-radius: 0.5em;
   color: #9fa5b5;
