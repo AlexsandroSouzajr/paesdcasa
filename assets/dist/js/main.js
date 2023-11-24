@@ -1,6 +1,6 @@
 const body = document.querySelector("body"),
   pageTitle = document.querySelector("title")
-  document.title = "Pães d'Casa - Início";
+  document.title = "Pães d'Casa - Gente que ama cheirinho de padaria";
   links = document.querySelectorAll('a[href="#"]'),
   nav = document.querySelector("header nav"),
   logoImage = document.querySelector("header nav .logo img"),
@@ -13,10 +13,6 @@ const body = document.querySelector("body"),
   headerSection = document.querySelector("header"),
   aboutSection = document.querySelector(".about"),
   footerSection = document.querySelector("footer");
-
-// function googleTranslateElementInit() {
-//   new google.translate.TranslateElement({ pageLanguage: 'pt' }, 'google_translate_element');
-// }
 
 const dropdowns = document.querySelectorAll('.dropdown');
 
