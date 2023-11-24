@@ -1300,12 +1300,12 @@ footer .text p {
   header .navigation-bar .navigation_link .dropdown{
     display: block;
     position: relative;
-    top: -25px;
+    top: 10px;
     left: 0;
   }
   header .navigation-bar .navigation_link .select, #language_{
     position: relative;
-    top: -3px;
+    top: 10px;
   }
   header .navigation-bar .navigation_link .menu{
     background: #a8a8a8;
@@ -1340,7 +1340,7 @@ footer .text p {
     top: 50%;
   }
   header .navigation-bar .dark-light i {
-    top: -60px; /* 35px */
+    top: -7.3rem; /* 35px */
   }
   header .navigation-bar .navigation_link {
     display: block;
@@ -1424,7 +1424,7 @@ footer .text p {
     top: 45%;
   }
   header .navigation-bar .dark-light i {
-    top: -75px; /* 30px */
+    top: -8.2rem; /* 30px */
   }
   header .navigation-bar .navigation_link {
     display: block;
