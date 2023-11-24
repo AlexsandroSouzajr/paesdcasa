@@ -40,8 +40,8 @@ body{
   --navigation_color_dark-moon: invert(1);
   --navigation_color_dark-sun: invert(1);
   --nav_active-dark: invert(1);
-  --nav_active-dark-sun: invert(1);
-  --nav_active-dark-moon: invert(1);
+  --nav_active-dark-sun: invert(0);
+  --nav_active-dark-moon: invert(0);
   --dark_color: invert(0);
 
   --about-title: #FFBA00;
@@ -82,8 +82,8 @@ body.dark {
   --navigation-sticky-underline: #f5f5f5;
   --navigation-bar-navlinks: #f5f5f5;
   --navigation-bar-navlinkshover: #fff;
-  --navigation_color_dark-moon: invert(1);
-  --navigation_color_dark-sun: invert(1);
+  --navigation_color_dark-moon: invert(0);
+  --navigation_color_dark-sun: invert(0);
   --nav_active-dark: invert(1);
   --nav_active-dark-sun: invert(0);
   --nav_active-dark-moon: invert(0);

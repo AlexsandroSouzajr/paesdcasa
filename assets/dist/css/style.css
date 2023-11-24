@@ -61,7 +61,7 @@ header nav {
   padding: 18px 0px 0px;
   z-index: 20;
   /* left: 1.8%; */
-  top: -50px;
+  top: 0px;
   /* max-width: 96.5%;
   border-radius: 12px; */
   transition: top 0.3s;
@@ -83,11 +83,11 @@ header nav .logo {
   padding-left: 50px;
 }
 
-header nav.sticky {
+header nav {
   background: var(--nav-color);
   box-shadow: 5px 3px 12px #0002;
 }
-header nav.sticky .logo h1 {
+header nav .logo h1 {
   color: var(--logo-color);
   transition: 0.3s ease-in-out;
 }
@@ -95,10 +95,10 @@ header nav.sticky .logo h1 {
 header nav .navigation-bar a{
   color: #fff;
 }
-header nav.sticky .dark-light {
+header nav .dark-light {
   filter: var(--nav_active-dark);
 }
-header nav.sticky .toggle span {
+header nav .toggle span {
   background-color: var(--menu);
 }
 header nav .toggle.active {
@@ -112,7 +112,7 @@ header nav .toggle.active .last {
   top: 0;
   transform: rotate(45deg);
 }
-header nav.sticky .navigation-bar a {
+header nav .navigation-bar a {
   color: var(--navlinks);
 }
 
@@ -129,7 +129,7 @@ header .navigation-bar .navigation_link .navlinks {
   /* margin-top: 4px;
   margin-right: 1em; */
 }
-header nav.sticky .navigation-bar .navigation_link .btn a{
+header nav .navigation-bar .navigation_link .btn a{
   color: #fff;
 }
 header .navigation-bar .navigation_link .btn {
@@ -153,13 +153,13 @@ header nav .navigation-bar .navigation_link .btn {
 header nav .navigation-bar .navigation_link .btn:hover {
   background: #ff4d00;
 }
-header nav.sticky .navigation-bar .navigation_link .btn:hover {
+header nav .navigation-bar .navigation_link .btn:hover {
   color: #fff;
 }
 header nav .navigation-bar .navigation_link .btn a:hover {
   color: var(--navigation-bar-navlinkshover) !important;
 }
-header nav.sticky .navigation-bar .navigation_link .btn a:hover {
+header nav .navigation-bar .navigation_link .btn a:hover {
   color: var(--navigation-bar-navlinkshover) !important;
 }
 
@@ -1259,8 +1259,8 @@ footer .text p {
     display: block;
     text-align: center;
     left: 0;
-    top: -60px;
-    margin: 10px;
+    top: 0px; /* -60px */
+    /* margin: 10px; */
     width: 100%;
     padding-top: 25px;
     transition: 0.3s ease-in-out;
@@ -1337,10 +1337,10 @@ footer .text p {
     display: block;
   }
   header nav .toggle.active {
-    top: 25%;
+    top: 50%;
   }
   header .navigation-bar .dark-light i {
-    top: 35px;
+    top: -60px; /* 35px */
   }
   header .navigation-bar .navigation_link {
     display: block;
@@ -1407,7 +1407,7 @@ footer .text p {
     display: block;
     text-align: center;
     left: 0;
-    top: -60px;
+    top: 0px;
     width: 100%;
     padding-top: 25px;
     transition: 0.3s ease-in-out;
@@ -1421,10 +1421,10 @@ footer .text p {
     display: block;
   }
   header nav .toggle.active {
-    top: 15%;
+    top: 45%;
   }
   header .navigation-bar .dark-light i {
-    top: 30px;
+    top: -75px; /* 30px */
   }
   header .navigation-bar .navigation_link {
     display: block;
@@ -1443,9 +1443,12 @@ footer .text p {
   header nav .logo {
     padding-left: 50px;
   }
+  header .navigation-bar .dark-light i {
+    margin-top: 20px;
+  }
   header nav .toggle.active {
     left: 38%;
-    top: 15%;
+    top: 45%;
   }
   header .navigation-bar.show {
     padding: 20px;
