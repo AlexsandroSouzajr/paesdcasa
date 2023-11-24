@@ -125,7 +125,7 @@ header .navigation-bar.show a {
 }
 header .navigation-bar .navigation_link .navlinks {
   flex: none;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   /* margin-top: 4px;
   margin-right: 1em; */
 }
