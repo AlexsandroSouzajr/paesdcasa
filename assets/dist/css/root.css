@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
 
 :root{
-  --height-header: calc(90vh - 22px);
+  --height-header: max-height;
   --logo: "Leckerli One", cursive;
   --footer-bg: linear-gradient(#00000018,#00000061), url("/img/Logo/Footer/bg.jpg");
 }
