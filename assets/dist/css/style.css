@@ -23,7 +23,7 @@ header .navigation-bar a,
 }
 header nav .toggle,
 header .navigation-bar .underline,
-.copyright .svg-up {
+.copyright {
   position: absolute;
 }
 header nav,
@@ -52,10 +52,11 @@ header .navigation-bar li.active .underline,
   left: 0;
 }
 header {
-  height: var(--height-header);
+  height: max-content;
 }
 header nav {
   position: fixed;
+  background: var(--nav-color);
   display: flex;
   justify-content: space-between;
   padding: 18px 0px 0px;
@@ -70,7 +71,7 @@ header .logo h1 {
   transition: 0.3s ease-in-out;
   font-family: var(--logo);
   font-weight: 500;
-  color: #fff;
+  color: var(--logo-color);
 }
 .img-logo {
   max-width: 100%;
@@ -80,15 +81,6 @@ header .logo h1 {
 header nav .logo {
   flex-basis: 80%;
   padding-left: 50px;
-}
-
-header nav {
-  background: var(--nav-color);
-  box-shadow: 5px 3px 12px #0002;
-}
-header nav .logo h1 {
-  color: var(--logo-color);
-  transition: 0.3s ease-in-out;
 }
 
 header nav .navigation-bar a{
@@ -433,6 +425,7 @@ header nav .toggle span:not(:last-of-type) {
   flex-wrap: wrap;
   width: 100%;
   box-sizing: border-box;
+  transition: .5s ease-in-out;
 }
 .card-box-container .card-box img{
   position: relative;
@@ -1440,6 +1433,3 @@ footer .text span {
     width: 60%;
   }
 }
-
-
-/*#ff3d3d, #dd00ff, #ffff3d, #ff1499, #ffbb00, #40ffa3, #ffa3f6, #86cf00, #614111*/
