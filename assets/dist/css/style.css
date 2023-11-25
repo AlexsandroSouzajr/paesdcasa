@@ -326,7 +326,7 @@ header nav .toggle span:not(:last-of-type) {
   outline: none;
   color: #fff;
   font-size: 20px;
-  margin: 20px 5px;
+  margin-top: 20px;
   font-family: 'Lato', sans-serif;
   cursor: pointer;
   background-position: center;
