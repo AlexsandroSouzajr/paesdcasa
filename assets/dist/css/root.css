@@ -32,6 +32,8 @@
   --about-title: #FFBA00;
   --about-p: #000;
 
+  --title_favoritos: #000;
+
   --card-h2: #000;
   --card-p: #797979;
 
@@ -77,6 +79,8 @@ body.dark {
 
   --about-title: #f5f5f5;
   --about-p: #f5f5f5;
+
+  --title_favoritos: #f5f5f5;
 
   --card-h2: #f5f5f5;
   --card-p: #a2a2a2;

@@ -417,8 +417,8 @@ header nav .toggle span:not(:last-of-type) {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 50px;
-  min-height: 50vh;
+  margin-bottom: 20px;
+  min-height: 0vh;
 }
 .card-box-container .card-box{
   text-align: center;
@@ -454,6 +454,63 @@ header nav .toggle span:not(:last-of-type) {
 }
 .card-box .box-txt p{
   color: var(--card-p);
+}
+
+.title_favoritos{
+  text-align: center;
+  position: relative;
+  top: 0.5em;
+  font-size: 1.8em;
+  font-family: "Leckerli One", cursive;
+  font-weight: 400;
+  color: var(--title_favoritos);
+}
+
+.card-container-column-2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0px;
+  min-height: 50vh;
+}
+.card-container-column-2 .box-card{
+  text-align: center;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  transition: .5s ease-in-out;
+}
+.card-container-column-2 .box-card img{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  padding: 2px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.5);
+}
+.box-card .box-text{
+  position: relative;
+  margin-top: 1.2em;
+  display: inline;
+  vertical-align: top;
+  text-align: center;
+  width: 150px;
+  height: auto;
+  font-family: var(--font-secondary);
+}
+.box-card .box-text h2{
+  color: var(--card-h2);
+  font-family: var(--font-primary);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.box-card .box-text p{
+  color: var(--card-p);
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 
@@ -1288,9 +1345,42 @@ footer .text span {
   .card-box-container{
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
   }
   .card-box-container .card-box{
     margin-bottom: 15px;
+  }
+  .title_favoritos{
+    top: 0;
+  }
+  .card-container-column-2{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-container-column-2 .box-card{
+    margin-bottom: 15px;
+  }
+  .box-card .box-text{
+    display: inline-block;
+  }
+}
+
+@media (min-width: 681px){
+  .card-container-column-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-container-column-2 .box-card{
+    margin-bottom: 15px;
+  }
+  .box-card .box-text{
+    display: inline;
+  }
+}
+
+@media (max-width:540px){
+  .title_favoritos{
+    top: -1rem;
   }
 }
 
