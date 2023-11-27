@@ -287,7 +287,7 @@ header nav .toggle span:not(:last-of-type) {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  margin-bottom: 50px;
+  margin-bottom: 4em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -361,11 +361,11 @@ header nav .toggle span:not(:last-of-type) {
 }
 .about__us{
   width: 100%;
-  height: 100vh;
+  height: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-bottom: 4.5em;
 }
 .about__us .content img{
   width: 600px;
@@ -473,6 +473,17 @@ header nav .toggle span:not(:last-of-type) {
   color: var(--title_favoritos);
   padding: 10px 20px;
   border-radius: 20px 2px 20px;
+  position: relative;
+}
+.title_favoritos h1::after{
+  content: "";
+  background: #ff6831de;
+  width: 150px;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .card-container-column-2{
@@ -1063,17 +1074,9 @@ footer .text span {
     font-size: 1.2em;
   }
 }
-@media (max-width: 992px) and (orientation: landscape) {
-  .hero{
-    min-height: 130vh;
-  }
-  .about__us .content{
-    margin-top: 60px;
-  }
-}
 @media (max-width: 655px) and (orientation: landscape) {
-  .hero{
-    min-height: 150vh;
+  .about__us{
+    height: 20vh;
   }
   .about__us .content{
     margin-top: 60px;
@@ -1147,13 +1150,27 @@ footer .text span {
   .about__us{
     width: 100%;
     height: auto;
-    padding: 100px 0;
+    padding: 50px 0;
+    margin-top: -2em;
+    margin-bottom: 0;
+  }
+  .text__box p{
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 1180px) and (orientation: landscape){
+  .about__us{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    margin-top: -2em;
   }
 }
 
 @media screen and (max-width: 1024px) {
   header {
-    height: calc(90vh - 20px);
+    height: max-content;
   }
 }
 
@@ -1176,7 +1193,8 @@ footer .text span {
     cursor: pointer;
   }
   .about__us{
-    margin-top: 20em;
+    margin-top: 5em;
+    padding: 122px 0;
   }
 }
 
@@ -1312,7 +1330,7 @@ footer .text span {
     margin-bottom: 3%;
   }
   .text__box h1{
-    font-size: 60px;
+    font-size: 4em;
     margin-bottom: 25px;
     text-align: center;
   }
