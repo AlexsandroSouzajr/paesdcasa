@@ -1,13 +1,14 @@
 .copyright .info li a {
   color: var(--nav-links-color-active);
 }
-header .navigation-bar ul li {
+/* header .navigation-bar ul li {
   text-align: center;
-}
+} */
 header nav,
 header .navigation-bar ul,
 .copyright ul {
   display: flex;
+  justify-content: space-around;
 }
 header nav .toggle,
 header nav .toggle span,
@@ -57,8 +58,6 @@ header {
 header nav {
   position: fixed;
   background: var(--nav-color);
-  display: flex;
-  justify-content: space-between;
   padding: 18px 0px 0px;
   z-index: 20;
   /* left: 1.8%; */
@@ -79,7 +78,7 @@ header .logo h1 {
   margin-bottom: -4px;
 }
 header nav .logo {
-  flex-basis: 80%;
+  flex-basis: 50%;
   padding-left: 50px;
 }
 
@@ -172,7 +171,7 @@ header nav .navigation-bar .navigation_link .btn a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0.5em;
+  border-radius: 0.2em;
   padding: 0.2em;
   cursor: pointer;
   transition: background 0.3s;
@@ -209,11 +208,11 @@ header nav .navigation-bar .navigation_link .btn a:hover {
   padding: 0.2em 0.2em;
   background: var(--language-color);
   box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
-  border-radius: 0.5em;
+  border-radius: 0.2em;
   color: #9fa5b5;
   position: absolute;
   flex-direction: column;
-  top: 3em;
+  top: 2.2em;
   left: 50%;
   width: 100%;
   transform: translateX(-50%);

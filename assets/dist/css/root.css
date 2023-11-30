@@ -12,7 +12,7 @@
   --nav-color: rgb(255, 255, 255);
   --navlinks: #000;
   --navlinks-btn: #000;
-  --language-color: #f5f5f5;
+  --language-color: #f1f4f7;
   --select-color: #f5f5f5;
   --menu-language-color: #fff;
   --menu-hover-color: #d5d5d5d5;
@@ -58,8 +58,8 @@ body.dark {
   --logo-color: #f5f5f5;
   --navlinks: #f5f5f5;
   --navlinks-btn: #f5f5f5;
-  --language-color: #14171c;
-  --select-color: #14171c;
+  --language-color: #1a1a1a;
+  --select-color: #222;
   --select-language-color: #f5f5f5;
   --menu-language-color: #14171c;
   --menu-hover-color: #333;
@@ -104,7 +104,6 @@ body.dark {
   .darkLight .dark-light {
     width: 47px;
     height: 44px;
-    border-radius: 20%;
     position: relative;
     top: -12px;
     right: 30px;
@@ -133,19 +132,6 @@ body.dark {
   filter: var(--nav_active-dark-sun);
 }
 
-.dark-light i.sun:hover {
-  animation: animate-sun 2s linear infinite;
-}
-
-@keyframes animate-sun {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 .dark-light.active i.moon{
   opacity: 1;
