@@ -1,6 +1,6 @@
 const body = document.querySelector("body"),
   pageTitle = document.querySelector("title")
-  document.title = "Pães d'Casa - Gente que ama cheirinho de padaria";
+  // document.title = "Pães d'Casa - Gente que ama cheirinho de padaria";
   links = document.querySelectorAll('a[href="#"]'),
   nav = document.querySelector("header nav"),
   logoImage = document.querySelector("header nav .logo img"),
