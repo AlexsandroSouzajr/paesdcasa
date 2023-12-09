@@ -1,6 +1,5 @@
 const body = document.querySelector("body"),
-  pageTitle = document.querySelector("title")
-  // document.title = "Pães d'Casa - Gente que ama cheirinho de padaria";
+  pageTitle = document.querySelector("title"),
   links = document.querySelectorAll('a[href="#"]'),
   nav = document.querySelector("header nav"),
   logoImage = document.querySelector("header nav .logo img"),
@@ -44,38 +43,33 @@ options.forEach(option => {
 });
 });
 
-const modeToggle = document.querySelector(".dark-light");
+(function () {
+  let darkMode = localStorage.getItem("darkMode");
+  const darkSwitch = document.getElementById("switch");
 
-let getMode = localStorage.getItem("mode");
-if (getMode && getMode === "dark-mode") {
-  body.classList.add("dark");
-}
+  const enableDarkMode = () => {
+    document.body.classList.add("darkmode");
+    localStorage.setItem("darkMode", "enabled");
+  };
 
+  const disableDarkMode = () => {
+    document.body.classList.remove("darkmode");
+    localStorage.setItem("darkMode", null);
+  };
 
-modeToggle.addEventListener("click", () => {
-  modeToggle.classList.toggle("active");
-  body.classList.toggle("dark");
-
-
-  if (!body.classList.contains("dark")) {
-    localStorage.setItem("mode", "light-mode");
-  } else {
-    localStorage.setItem("mode", "dark-mode");
+  if (darkMode === "enabled") {
+    enableDarkMode();
   }
-});
 
-function setTheme (themeName) {
-  document.body.className = themeName || ''
-}
-
-function isUsingDarkTheme () {
-  return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-}
-
-if (isUsingDarkTheme()) {
-  setTheme('theme-dark')
-}
-
+  darkSwitch.addEventListener("click", () => {
+    darkMode = localStorage.getItem("darkMode");
+    if (darkMode !== "enabled") {
+      enableDarkMode();
+    } else {
+      disableDarkMode();
+    }
+  });
+})();
 
 links.forEach(link =>
   link.addEventListener("click", function (e) {
