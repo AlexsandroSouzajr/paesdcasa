@@ -13,6 +13,34 @@ const body = document.querySelector("body"),
   aboutSection = document.querySelector(".about"),
   footerSection = document.querySelector("footer");
 
+  (function () {
+    let darkMode = localStorage.getItem("darkMode");
+    const darkSwitch = document.getElementById("switch");
+  
+    const enableDarkMode = () => {
+      document.body.classList.add("darkmode");
+      localStorage.setItem("darkMode", "enabled");
+    };
+  
+    const disableDarkMode = () => {
+      document.body.classList.remove("darkmode");
+      localStorage.setItem("darkMode", null);
+    };
+  
+    if (darkMode === "enabled") {
+      enableDarkMode();
+    }
+  
+    darkSwitch.addEventListener("click", () => {
+      darkMode = localStorage.getItem("darkMode");
+      if (darkMode !== "enabled") {
+        enableDarkMode();
+      } else {
+        disableDarkMode();
+      }
+    });
+  })();
+
 const dropdowns = document.querySelectorAll('.dropdown');
 
 dropdowns.forEach(dropdown => {
@@ -42,34 +70,6 @@ options.forEach(option => {
   });
 });
 });
-
-(function () {
-  let darkMode = localStorage.getItem("darkMode");
-  const darkSwitch = document.getElementById("switch");
-
-  const enableDarkMode = () => {
-    document.body.classList.add("darkmode");
-    localStorage.setItem("darkMode", "enabled");
-  };
-
-  const disableDarkMode = () => {
-    document.body.classList.remove("darkmode");
-    localStorage.setItem("darkMode", null);
-  };
-
-  if (darkMode === "enabled") {
-    enableDarkMode();
-  }
-
-  darkSwitch.addEventListener("click", () => {
-    darkMode = localStorage.getItem("darkMode");
-    if (darkMode !== "enabled") {
-      enableDarkMode();
-    } else {
-      disableDarkMode();
-    }
-  });
-})();
 
 links.forEach(link =>
   link.addEventListener("click", function (e) {
