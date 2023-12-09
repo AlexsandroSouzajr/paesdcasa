@@ -77,6 +77,12 @@ links.forEach(link =>
   })
 );
 
+var $info = $('.tooltip');
+$info.each( function () {
+  var dataInfo = $(this).data("tooltip");
+  $( this ).append('<span class="inner" >' + dataInfo + '</span>');
+});
+
 // toggle hamburger menu button
 navToggle.addEventListener("click", () => {
   navToggle.classList.toggle("active");

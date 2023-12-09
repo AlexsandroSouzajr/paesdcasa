@@ -1156,6 +1156,42 @@ footer .text span {
   }
 }
 @media screen and (max-width: 1180px) and (orientation: landscape){
+  .hero{
+    height: 52vw;
+  }
+  .about__us{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    margin-top: -2em;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape){
+  .hero{
+    height: 69vw;
+  }
+  .about__us{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    margin-top: -2em;
+  }
+}
+@media screen and (max-width: 576px) and (orientation: landscape){
+  .hero{
+    height: 150vw;
+  }
+  .about__us{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    margin-top: -2em;
+  }
+}
+@media screen and (max-width: 576px) and (orientation: portrait){
+  .hero{
+    height: 150vw;
+  }
   .about__us{
     width: 100%;
     height: auto;
@@ -1285,7 +1321,8 @@ footer .text span {
     top: 50%;
   }
   header .navigation-bar .switch {
-    top: -6.8rem;
+    top: -7.95rem; /* -6.8rem */
+    right: 20px;
   }
   header .navigation-bar .navigation_link {
     display: block;
@@ -1409,8 +1446,8 @@ footer .text span {
     top: 45%;
   }
   header .navigation-bar .switch {
-    top: -7.55rem;
-    right: 0px;
+    top: -8.74rem; /* 7.55rem */
+    right: 20px;
   }
   header .navigation-bar .navigation_link {
     display: block;
@@ -1430,8 +1467,8 @@ footer .text span {
     padding-left: 50px;
   }
   header .navigation-bar .switch {
-    top: -6.45rem;
-    right: -20px;
+    top: -7.60rem; /* 6.45rem */
+    right: 0px;
   }
   header nav .toggle.active {
     left: 38%;
