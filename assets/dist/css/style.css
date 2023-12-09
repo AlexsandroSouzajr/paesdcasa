@@ -1071,6 +1071,9 @@ footer .text span {
   }
 }
 @media (max-width: 655px) and (orientation: landscape) {
+  .hero{
+    height: 50vw;
+  }
   .about__us{
     height: 20vh;
   }
