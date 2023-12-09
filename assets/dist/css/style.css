@@ -1182,7 +1182,7 @@ footer .text span {
 }
 @media screen and (max-width: 576px) and (orientation: landscape){
   .hero{
-    height: 60vw;
+    height: 80vw;
   }
   .about__us{
     width: 100%;
