@@ -1160,7 +1160,7 @@ footer .text span {
 }
 @media screen and (max-width: 1180px) and (orientation: landscape){
   .hero{
-    height: 20vw;
+    height: 52vw;
   }
   .about__us{
     width: 100%;
@@ -1170,7 +1170,9 @@ footer .text span {
   }
 }
 @media screen and (max-width: 768px) and (orientation: landscape){
-  
+  .hero{
+    height: 69vw;
+  }
   .about__us{
     width: 100%;
     height: auto;
@@ -1191,7 +1193,7 @@ footer .text span {
 }
 @media screen and (max-width: 576px) and (orientation: portrait){
   .hero{
-    height: 150vw;
+    height: 60vw;
   }
   .about__us{
     width: 100%;
