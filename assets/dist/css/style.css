@@ -522,7 +522,44 @@ header nav .toggle span:not(:last-of-type) {
   margin: 0 auto;
 }
 
+.hero__container{
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  margin: 0 0px 50px;
+  background: linear-gradient(to right, rgb(0 0 0 / 0.4), rgb(0 0 0 / 0)), url(https://americapadaria.com.br/wp-content/uploads/2022/08/SALGADOS-1024x683.jpg) no-repeat center/cover;
+}
+.hero__container h2{
+  font-size: 4em;
+  color: #fff;
+}
 
+.container__card{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+.container__card .card{
+  padding: 20px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.card img{
+  position: relative;
+  width: 500px;
+}
+.card .content{
+  text-align: center;
+  display: block;
+}
+.card .content h3{
+  font-size: 1.52em;
+  color: #1a1a1a;
+}
+.card .content span{
+  font-size: 1.22em;
+  color: #353535;
+}
 
 .social,
 .social__container,
