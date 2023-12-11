@@ -38,6 +38,9 @@
   --card-h2: #000;
   --card-p: #797979;
 
+  --card__content-h3: #1a1a1a;
+  --card__content-p: #353535;
+
   --testimonials-box: #fff;
   --testimonials-name-primary: #3d3d3d;
   --testimonials-name-secondary: #979797;
@@ -86,6 +89,9 @@ body.darkmode {
 
   --card-h2: #f5f5f5;
   --card-p: #a2a2a2;
+
+  --card__content-h3: #f5f5f5;
+  --card__content-p: #f5f5f5;
   
   --testimonials-box: rgba(25, 25, 25, 0.9);
   --testimonials-name-primary: #f5f5f5;
@@ -178,6 +184,58 @@ body.darkmode {
 @keyframes load{
   to{
     transform: scaleX(1);
+  }
+}
+
+
+@keyframes svgAnimate{
+  from{
+    opacity: 0;
+    transform: translate3d(0 -20%, 0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0, 250%, 0);
+  }
+}
+@-webkit-keyframes svgAnimate{
+  from{
+    opacity: 0;
+    transform: translate3d(0 -20%, 0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0, 250%, 0);
+  }
+}
+@-moz-keyframes svgAnimate{
+  from{
+    opacity: 0;
+    transform: translate3d(0 -20%, 0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0, 250%, 0);
+  }
+}
+@-o-keyframes svgAnimate{
+  from{
+    opacity: 0;
+    transform: translate3d(0 -20%, 0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0, 250%, 0);
+  }
+}
+@-ms-keyframes svgAnimate{
+  from{
+    opacity: 0;
+    transform: translate3d(0 -20%, 0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0, 250%, 0);
   }
 }
 
