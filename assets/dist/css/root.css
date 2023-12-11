@@ -301,6 +301,7 @@ svg{
   top: 0;
   left: 0;
   transform: translate(-37%);
+  z-index: -1;
 }
 @media (width < 768px){
   svg{
