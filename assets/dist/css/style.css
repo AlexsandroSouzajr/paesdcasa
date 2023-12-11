@@ -591,13 +591,29 @@ header nav .toggle span:not(:last-of-type) {
 }
 
 .card .content button{
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
   display: block;
   margin: 0 auto;
   margin-top: 10px;
   padding: 10px 20px;
   border-radius: 3%;
-  background-color: #eee;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  background: #ff6a00;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  transition: 0.5s background;
+}
+.card .content button a{
+  color: #fff;
+}
+
+.card .content button:hover {
+  background: #ffa900;
+}
+
+.card.content button:active {
+  opacity: .7;
 }
 
 .social,
