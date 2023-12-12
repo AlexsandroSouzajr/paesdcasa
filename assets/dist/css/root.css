@@ -367,7 +367,7 @@ button {
   transform: translate(-37%);
   z-index: -1;
 }
-@media (width < 768px){
+@media (width < 769px){
   .mainSVG{
     transform: translate(0%);
   }
