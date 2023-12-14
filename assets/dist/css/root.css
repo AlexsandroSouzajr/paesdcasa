@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 
 :root{
   --logo: "Leckerli One", cursive;
@@ -41,11 +42,11 @@
   --card__content-h3: #1a1a1a;
   --card__content-p: #353535;
 
-  --banner-bg-color: rgb(251, 180, 0);
+    --wrapper-title:#111;
+    --wrapper-border: rgb(255, 149, 0);
+  --banner-bg-color: rgb(255, 149, 0);
   --banner-bg-color2: rgb(213, 28, 36);
-  --banner-two-bg-color: rgb(255, 138, 28);
-  --banner-two-bg-color2: rgb(255, 120, 17);
-  --subtitle-banner: #2f2f2f;
+  --subtitle-banner: #ffffff;
 
   --testimonials-box: #fff;
   --testimonials-name-primary: #3d3d3d;
@@ -75,7 +76,7 @@ body.darkmode {
   --menu-hover-color: #333;
   --select-icon: #f5f5f5;
   --menu: #f5f5f5;
-  --navigation-bar: #222;
+  --navigation-bar: #111;
   --navigation-underline: #f5f5f5;
   --navigation-sticky-underline: #f5f5f5;
   --navigation-bar-navlinks: #f5f5f5;
@@ -99,11 +100,7 @@ body.darkmode {
   --card__content-h3: #f5f5f5;
   --card__content-p: #f5f5f5;
 
-  --banner-bg-color: #252525;
-  --banner-bg-color2: rgba(25, 25, 25, 0.9);
-  --banner-two-bg-color: #252525;
-  --banner-two-bg-color2: rgba(25, 25, 25, 0.9);
-  --subtitle-banner: #f2f2f2;
+  --wrapper-title: #f5f5f5;
   
   --testimonials-box: rgba(25, 25, 25, 0.9);
   --testimonials-name-primary: #f5f5f5;
