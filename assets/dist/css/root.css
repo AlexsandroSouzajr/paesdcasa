@@ -101,6 +101,8 @@ body.darkmode {
 
   --banner-bg-color: #252525;
   --banner-bg-color2: rgba(25, 25, 25, 0.9);
+  --banner-two-bg-color: #252525;
+  --banner-two-bg-color2: rgba(25, 25, 25, 0.9);
   --subtitle-banner: #f2f2f2;
   
   --testimonials-box: rgba(25, 25, 25, 0.9);
