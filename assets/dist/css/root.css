@@ -709,7 +709,7 @@ button {
 
 @media screen and (max-width: 800px){
     .cookies__container{
-      bottom: -40%;
+      bottom: -100%;
     }
     .cookies__text{
         display: flex;
@@ -717,6 +717,7 @@ button {
     }
     .cookies__text p{
         margin-bottom: 20px;
+        font-size: 0.8em;
     }
     .cookies__container .buttons{
         margin-left: 0;
