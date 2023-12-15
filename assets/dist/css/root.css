@@ -708,6 +708,9 @@ button {
 }
 
 @media screen and (max-width: 800px){
+    .cookies__container{
+      bottom: -40%;
+    }
     .cookies__text{
         display: flex;
         flex-direction: column;
