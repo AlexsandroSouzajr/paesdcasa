@@ -77,12 +77,6 @@ links.forEach(link =>
   })
 );
 
-var $info = $('.tooltip');
-$info.each( function () {
-  var dataInfo = $(this).data("tooltip");
-  $( this ).append('<span class="inner" >' + dataInfo + '</span>');
-});
-
 // toggle hamburger menu button
 navToggle.addEventListener("click", () => {
   navToggle.classList.toggle("active");
@@ -121,138 +115,6 @@ window.addEventListener("load", function () {
   }, 1500);
 });
 
-const Pãesd_Casa = document.querySelectorAll('.Pãesd_Casa');
-window.addEventListener('load', function () {
-  Pãesd_Casa.forEach(item => {
-    item.classList.remove('Pãesd_Casa')
-  })
-});
-
-const wrapperloading = document.querySelectorAll('.wrapper__loader');
-window.addEventListener('load', function () {
-  wrapperloading.forEach(item => {
-    item.classList.remove('wrapper__loader')
-  })
-});
-
-const wrappertextboxloading = document.querySelectorAll('.wrapper__text-box_loader');
-window.addEventListener('load', function () {
-  wrappertextboxloading.forEach(item => {
-    item.classList.remove('wrapper__text-box_loader')
-  })
-});
-
-const wrapperimgloading = document.querySelectorAll('.wrapper__img_loader');
-window.addEventListener('load', function () {
-  wrapperimgloading.forEach(item => {
-    item.classList.remove('wrapper__img_loader')
-  })
-});
-
-const aboutloading = document.querySelectorAll('.about__loader');
-window.addEventListener('load', function () {
-  aboutloading.forEach(item => {
-    item.classList.remove('about__loader')
-  })
-});
-
-const aboutimgloading = document.querySelectorAll('.about__img_loader');
-window.addEventListener('load', function () {
-  aboutimgloading.forEach(item => {
-    item.classList.remove('about__img_loader')
-  })
-});
-
-const slideloading = document.querySelectorAll('.slide__loader');
-window.addEventListener('load', function () {
-  slideloading.forEach(item => {
-    item.classList.remove('slide__loader')
-  })
-});
-
-const ccloading = document.querySelectorAll('.container__combos_loader');
-window.addEventListener('load', function () {
-  ccloading.forEach(item => {
-    item.classList.remove('container__combos_loader')
-  })
-});
-
-const cardloading = document.querySelectorAll('.card__loader');
-window.addEventListener('load', function () {
-  cardloading.forEach(item => {
-    item.classList.remove('card__loader')
-  })
-});
-
-const featuresloading = document.querySelectorAll('.features__loader');
-window.addEventListener('load', function () {
-  featuresloading.forEach(item => {
-    item.classList.remove('features__loader')
-  })
-});
-
-const featureItemloading = document.querySelectorAll('.feature__item_loader');
-window.addEventListener('load', function () {
-  featureItemloading.forEach(item => {
-    item.classList.remove('feature__item_loader')
-  })
-});
-
-
-const thloading = document.querySelectorAll('.th__loader');
-window.addEventListener('load', function () {
-  thloading.forEach(item => {
-    item.classList.remove('th__loader')
-  })
-});
-
-const testimonialsloading = document.querySelectorAll('.testimonials__loader');
-window.addEventListener('load', function () {
-  testimonialsloading.forEach(item => {
-    item.classList.remove('testimonials__loader')
-  })
-});
-
-const profileimgloading = document.querySelectorAll('.profile__img_loader');
-window.addEventListener('load', function () {
-  profileimgloading.forEach(item => {
-    item.classList.remove('profile__img_loader')
-  })
-});
-
-const socialLoading = document.querySelectorAll('.social__loader');
-window.addEventListener('load', function () {
-  socialLoading.forEach(item => {
-    item.classList.remove('social__loader')
-  })
-});
-
-const btntop = document.querySelectorAll('.btntop__loader');
-window.addEventListener('load', function () {
-  btntop.forEach(item => {
-    item.classList.remove('btntop__loader')
-  })
-});
-
-const inputs = document.querySelectorAll(".input");
-
-function focusFunc() {
-  let parent = this.parentNode;
-  parent.classList.add("focus");
-}
-
-function blurFunc() {
-  let parent = this.parentNode;
-  if (this.value == "") {
-    parent.classList.remove("focus");
-  }
-}
-
-inputs.forEach((input) => {
-  input.addEventListener("focus", focusFunc);
-  input.addEventListener("blur", blurFunc);
-});
-
 
 window.addEventListener('load', function() {
 	setTimeout(lazyLoad, 1000);
@@ -274,8 +136,6 @@ function lazyLoad() {
     
 	});
 }
-
-// Cookies
 
 const cookieBox = document.querySelector(".cookies__container"),
   buttons = document.querySelectorAll(".button");
