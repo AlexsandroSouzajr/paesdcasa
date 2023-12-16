@@ -662,18 +662,19 @@ button {
   z-index: 1;
 }
 .cookies__container.show {
-  bottom: 20px;
+  bottom: 5px;
 }
 
 .cookies__container .cookies__text {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 1em;
   font-size: 1.1em;
 }
 
 .cookies__container .buttons {
-    margin-left: 30px;
+  position: relative;
+  left: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
