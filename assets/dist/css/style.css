@@ -78,6 +78,12 @@ header nav .logo {
   flex-basis: 50%;
   padding-left: 50px;
 }
+header nav .logo .gorro--natal{
+  width: 30px;
+  position: absolute;
+  transform: translate(-50%, -45%) rotate(10deg);
+  z-index: -1;
+}
 
 header nav .navigation-bar a{
   color: #fff;
