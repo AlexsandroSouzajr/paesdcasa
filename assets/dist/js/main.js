@@ -1,5 +1,4 @@
 const body = document.querySelector("body"),
-  pageTitle = document.querySelector("title"),
   links = document.querySelectorAll('a[href="#"]'),
   nav = document.querySelector("header nav"),
   logoImage = document.querySelector("header nav .logo img"),
@@ -10,36 +9,7 @@ const body = document.querySelector("body"),
     "header nav .navigation-bar li"
   ),
   headerSection = document.querySelector("header"),
-  aboutSection = document.querySelector(".about"),
   footerSection = document.querySelector("footer");
-
-  (function () {
-    let darkMode = localStorage.getItem("darkMode");
-    const darkSwitch = document.getElementById("switch");
-  
-    const enableDarkMode = () => {
-      document.body.classList.add("darkmode");
-      localStorage.setItem("darkMode", "enabled");
-    };
-  
-    const disableDarkMode = () => {
-      document.body.classList.remove("darkmode");
-      localStorage.setItem("darkMode", null);
-    };
-  
-    if (darkMode === "enabled") {
-      enableDarkMode();
-    }
-  
-    darkSwitch.addEventListener("click", () => {
-      darkMode = localStorage.getItem("darkMode");
-      if (darkMode !== "enabled") {
-        enableDarkMode();
-      } else {
-        disableDarkMode();
-      }
-    });
-  })();
 
 links.forEach(link =>
   link.addEventListener("click", function (e) {
@@ -63,49 +33,39 @@ navNavigationBarLi.forEach(li =>
   })
 );
 
-// window.addEventListener("scroll", function () {
-//   var nav = document.querySelector("nav");
-//   nav.classList.toggle("sticky", window.scrollY > 0);
-// })
-
-
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 0 | document.documentElement.scrollTop > 0) {
-//     document.querySelector("nav").style.top = "0px"; // 10px
-//   } else {
-//     document.querySelector("nav").style.top = "-100px";
-//   }
-// }
-
 window.addEventListener("load", function () {
   setTimeout(function open(event) {
     document.querySelector(".notification").style.display = "block";
   }, 1500);
 });
 
+(function () {
+  let darkMode = localStorage.getItem("darkMode");
+  const darkSwitch = document.getElementById("switch");
 
-window.addEventListener('load', function() {
-	setTimeout(lazyLoad, 1000);
-});
+  const enableDarkMode = () => {
+    document.body.classList.add("darkmode");
+    localStorage.setItem("darkMode", "enabled");
+  };
 
-function lazyLoad() {
-	var card_images = document.querySelectorAll('.card-image');
-	
-	card_images.forEach(function(card_image) {
-		var image_url = card_image.getAttribute('data-image-full');
-		var content_image = card_image.querySelector('img');
-		
-		content_image.src = image_url;
-		content_image.addEventListener('load', function() {
+  const disableDarkMode = () => {
+    document.body.classList.remove("darkmode");
+    localStorage.setItem("darkMode", null);
+  };
 
-			card_image.style.backgroundImage = 'url(' + image_url + ')';
-			card_image.className = card_image.className + ' is-loaded';
-		});
-    
-	});
-}
+  if (darkMode === "enabled") {
+    enableDarkMode();
+  }
+
+  darkSwitch.addEventListener("click", () => {
+    darkMode = localStorage.getItem("darkMode");
+    if (darkMode !== "enabled") {
+      enableDarkMode();
+    } else {
+      disableDarkMode();
+    }
+  });
+})();
 
 const cookieBox = document.querySelector(".cookies__container"),
   buttons = document.querySelectorAll(".button");
