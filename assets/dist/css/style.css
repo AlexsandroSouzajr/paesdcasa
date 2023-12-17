@@ -900,6 +900,7 @@ footer {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+  border-image: fill 0 linear-gradient(#00000018,#00000061);
   padding: 60px 20px;
   text-align: center;
 }
