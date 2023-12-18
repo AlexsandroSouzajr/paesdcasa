@@ -3,113 +3,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 
-:root{
-  --logo: "Leckerli One", cursive;
-  --footer-bg: url("/img/Logo/Footer/background-christmas-red-698423.jpg");
-}
-
 :root {
-  --theme-background: #fff;
-  --nav-color: rgb(255, 255, 255);
-  --navlinks: #000;
-  --navlinks-btn: #000;
-  --language-color: #f1f4f7;
-  --select-color: #f5f5f5;
-  --menu-language-color: #fff;
-  --menu-hover-color: #d5d5d5d5;
-  --select-icon: #000;
-  --menu: #2f3134;
+  --color-background: #fff;                     --font-primary: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --nav-color: rgb(255, 255, 255);              --font-secondary: -apple-system,  'Hanken Grotesk', sans-serif;
+  --navlinks: #000;                             --logo: "Leckerli One", cursive;
+  --menu: #2f3134;                              --footer-bg: url("/img/Logo/Footer/background-christmas-red-698423.jpg");
   --navigation-bar: #ffff;
   --navigation-underline: #fff;
-  --navigation-sticky-underline: #000;
   --navigation-bar-navlinks: #000;
   --switch-color: #000;
-  --navigation_color_dark-moon: invert(1);
-  --navigation_color_dark-sun: invert(1);
-  --nav_active-dark: invert(1);
-  --nav_active-dark-sun: invert(0);
-  --nav_active-dark-moon: invert(0);
-  --dark_color: invert(0);
-
   --about-title: #FFBA00;
-  --about-p: #000;
-
-  --title_favoritos: #000;
-
-  --card-h2: #000;
-  --card-p: #797979;
-
-  --card__content-h3: #1a1a1a;
-  --card__content-p: #353535;
-
-    --wrapper-title:#111;
-    --wrapper-border: rgb(255, 149, 0);
+  --about-paragraph: #000;
+  --card-title: #000;
+  --card-description: #797979;
+  --favorites-title: #000;
+  --card-content-title: #1a1a1a;
+  --card-content-price: #353535;
+    --banner-top-title:#111;
+    --banner-top-title-border: rgb(255, 149, 0);
   --banner-bg-color: rgb(255, 149, 0);
   --banner-bg-color2: rgb(213, 28, 36);
-  --subtitle-banner: #ffffff;
-
   --testimonials-box: #fff;
   --testimonials-name-primary: #3d3d3d;
   --testimonials-name-secondary: #979797;
   --testimonials-text-client: #4b4b4b;
   --testimonials-title: #000;
-  --testimonials-subtitle: #ea830e;
-
-  --fist-color: #34af23;
-  --secondary-color: #ffa500;
-  --social-icon-color: #ffa500;
-  --social-icon-color-light: #fff;
-  --normal-font-size: 1em;
-  --font-primary: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --font-secondary: -apple-system,  'Hanken Grotesk', sans-serif;
 }
 body.darkmode {
-  --theme-background: #000; /*14171C, 252525, 18191A*/
+  --color-background: #000;
   --nav-color: #111;
   --logo-color: #f5f5f5;
   --navlinks: #f5f5f5;
-  --navlinks-btn: #f5f5f5;
-  --language-color: #1a1a1a;
-  --select-color: #222;
-  --select-language-color: #f5f5f5;
-  --menu-language-color: #14171c;
-  --menu-hover-color: #333;
-  --select-icon: #f5f5f5;
   --menu: #f5f5f5;
   --navigation-bar: #111;
   --navigation-underline: #f5f5f5;
-  --navigation-sticky-underline: #f5f5f5;
   --navigation-bar-navlinks: #f5f5f5;
-  --navigation-bar-navlinkshover: #fff;
   --switch-color: #f5f5f5;
-  --navigation_color_dark-moon: invert(0);
-  --navigation_color_dark-sun: invert(0);
-  --nav_active-dark: invert(1);
-  --nav_active-dark-sun: invert(0);
-  --nav_active-dark-moon: invert(0);
-  --dark_color: invert(1);
-
   --about-title: #f5f5f5;
-  --about-p: #f5f5f5;
-
-  --title_favoritos: #f5f5f5;
-
-  --card-h2: #f5f5f5;
-  --card-p: #a2a2a2;
-
-  --card__content-h3: #f5f5f5;
-  --card__content-p: #f5f5f5;
-
-  --wrapper-title: #f5f5f5;
-  
+  --about-paragraph: #f5f5f5;
+  --card-title: #f5f5f5;
+  --card-description: #a2a2a2;
+  --favorites-title: #f5f5f5;
+  --card-content-title: #f5f5f5;
+  --card-content-price: #f5f5f5;
+  --banner-top-title: #f5f5f5;
   --testimonials-box: rgba(25, 25, 25, 0.9);
   --testimonials-name-primary: #f5f5f5;
   --testimonials-name-secondary: #f5f5f5;
   --testimonials-text-client: #f5f5f5;
   --testimonials-title: #f5f5f5;
-  --testimonials-subtitle: #f5f5f5;
-
-  --footer-copyright: #f5f5f5;
 }
 
 
