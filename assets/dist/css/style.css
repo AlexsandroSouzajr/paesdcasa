@@ -254,7 +254,9 @@ header nav .toggle span:not(:last-of-type) {
   justify-content: space-around;
 }
 .text__box h1 {
-  color: var(--about-title);
+  background: linear-gradient(var(--about--color-one),var(--about--color-two));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 75px;
   margin-bottom: 20px;
   font-family: var(--font-secondary);

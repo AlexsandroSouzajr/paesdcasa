@@ -12,6 +12,8 @@
   --navigation-underline: #fff;
   --navigation-bar-navlinks: #000;
   --switch-color: #000;
+  --about--color-one: rgb(202, 38, 38);
+  --about--color-two: #FFBA00;
   --about-title: #FFBA00;
   --about-paragraph: #000;
   --card-title: #000;
@@ -39,7 +41,8 @@ body.darkmode {
   --navigation-underline: #f5f5f5;
   --navigation-bar-navlinks: #f5f5f5;
   --switch-color: #f5f5f5;
-  --about-title: #f5f5f5;
+  --about--color-one: #a22;
+  --about--color-two: #FFBA00;
   --about-paragraph: #f5f5f5;
   --card-title: #f5f5f5;
   --card-description: #a2a2a2;

@@ -39,6 +39,9 @@ window.addEventListener("load", function () {
   }, 1500);
 });
 
+  var audio = document.querySelector('audio');
+  audio.volume = 0.5;
+
 (function () {
   let darkMode = localStorage.getItem("darkMode");
   const darkSwitch = document.getElementById("switch");
