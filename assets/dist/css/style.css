@@ -179,7 +179,7 @@ header nav .toggle span:not(:last-of-type) {
   max-width: 70%;
   text-align: center;
   line-height: 3;
-  font-family: var(--font-primary);
+  font-family: var(--font-system);
 }
 .hero a{
   margin: 0 auto;
@@ -312,11 +312,10 @@ header nav .toggle span:not(:last-of-type) {
   text-align: center;
   width: 180px;
   height: auto;
-  font-family: var(--font-secondary);
 }
 .card-box .box-txt h2{
   color: var(--card-title);
-  font-family: var(--font-primary);
+  font-family: var(--font-system);
   font-weight: 500;
   margin-bottom: 8px;
 }
@@ -386,11 +385,10 @@ header nav .toggle span:not(:last-of-type) {
   text-align: center;
   width: 150px;
   height: auto;
-  font-family: var(--font-secondary);
 }
 .card-body .card-txt h2{
   color: var(--card-title);
-  font-family: var(--font-primary);
+  font-family: var(--font-system);
   font-weight: 500;
   margin-bottom: 8px;
   max-width: 300px;
@@ -479,7 +477,7 @@ header nav .toggle span:not(:last-of-type) {
   touch-action: manipulation;
   display: block;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 10px 20px;
   border-radius: 3%;
   background: #ff6a00;
@@ -668,7 +666,7 @@ header nav .toggle span:not(:last-of-type) {
 .client__comment p{
   font-size: 0.9rem;
   color: var(--testimonials-text-client);
-  font-family: var(--font-primary);
+  font-family: var(--font-system);
 }
 
 @media screen and (max-width:1060px){
@@ -725,12 +723,12 @@ footer .text p {
   line-height: 27px;
   margin-bottom: 20px;
   color: #fff;
-  font-family: var(--font-secondary);
+  font-family: var(--font-system);
 }
 footer .text span {
   line-height: 27px;
   color: #fff;
-  font-family: var(--font-secondary);
+  font-family: var(--font-system);
 }
 
 @media screen and (width <= 1256px){

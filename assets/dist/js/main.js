@@ -7,15 +7,7 @@ const body = document.querySelector("body"),
   navNavigationBar = document.querySelector("header nav .navigation-bar"),
   navNavigationBarLi = document.querySelectorAll(
     "header nav .navigation-bar li"
-  ),
-  headerSection = document.querySelector("header"),
-  footerSection = document.querySelector("footer");
-
-links.forEach(link =>
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-  })
-);
+  );
 
 // toggle hamburger menu button
 navToggle.addEventListener("click", () => {

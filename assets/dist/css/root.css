@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 
 :root {
-  --color-background: #fff;                     --font-primary: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --nav-color: rgb(255, 255, 255);              --font-secondary: -apple-system,  'Hanken Grotesk', sans-serif;
+  --color-background: #fff;                     --font-system: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', sans-serif;
+  --nav-color: rgb(255, 255, 255);              --font-secondary: -apple-system,  Rethink Sans, 'Hanken Grotesk', sans-serif;
   --navlinks: #000;                             --logo: "Leckerli One", cursive;
   --menu: #2f3134;                              --footer-bg: url("/img/Logo/Footer/background-christmas-red-698423.jpg");
   --navigation-bar: #ffff;
