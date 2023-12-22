@@ -453,7 +453,7 @@ button {
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 769px){
   .star{
     left: -13px;
   }
@@ -570,7 +570,7 @@ button {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  left: -40px;
+  left: -50px;
   top: -10px;
   box-shadow: 100px 10px #f34653, 25px -80px #f34653, 60px -120px #f34653;
 }
@@ -583,8 +583,14 @@ button {
   height: 10px;
   border-radius: 50%;
   top: -40px;
-  left: 40px;
+  left: 30px;
   box-shadow: -35px -35px #94d2bd, -35px -105px #94d2bd, -60px 45px #94d2bd;
+}
+
+@media (max-width: 768px){
+  .lights{
+    left: -10px;
+  }
 }
 
 .star{
@@ -645,21 +651,4 @@ button {
   65%{transform: translateY(-15px) scaleY(0.9) rotate(-35deg); opacity: 1;}
   75%{transform: translateY(-18px) scaleY(0.9) rotate(-35deg); opacity: 1;}
   100%{transform: translateY(0) scaleY(1) rotate(-35deg); opacity: 1;}
-}
-
-.shadow{
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.7);
-  width: 50px;
-  height: 20px;
-  z-index: -1;
-  top: 50px;
-  left: -10px;
-  animation: scale .5s linear forwards;
-}
-
-@keyframes scale{
-  0%{transform: scaleX(1);}
-  100%{transform: scaleX(3);}
 }
