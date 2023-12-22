@@ -339,6 +339,8 @@ header nav .toggle span:not(:last-of-type) {
   text-align: center;
   color: var(--favorites-title);
   padding: 10px 20px;
+  margin-top: -20px;
+  margin-bottom: 20px;
   border-radius: 20px 2px 20px;
   position: relative;
 }
@@ -734,14 +736,16 @@ footer .text span {
 @media screen and (width <= 1256px){
   .content h2{
     line-height: 1.5;
-    font-size: 6em;
+    font-size: 5em;
+    margin-bottom: 10px;
   }
   .content h2 span{
     line-height: 1.5;
-    font-size: 6rem;
+    font-size: 5rem;
   }
   .content p{
-    font-size: 1.4em;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
   }
 }
 @media screen and (width <= 992px){
@@ -749,15 +753,15 @@ footer .text span {
     background-attachment: local;
   }
   .content h2{
-    line-height: 1.5;
-    font-size: 4em;
+    font-size: 4rem;
+    letter-spacing: 0.055em;
   }
   .content h2 span{
     line-height: 1.5;
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .content p{
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 655px) and (orientation: landscape) {
@@ -788,13 +792,13 @@ footer .text span {
   }
   .content h2 span{
     line-height: 1.5;
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
-@media screen and (width <= 500px){
+@media screen and (width <= 527px){
   .content h2{
     line-height: 1.5;
-    font-size: 2.2em;
+    font-size: 2.5em;
   }
   .content h2 span{
     line-height: 1.5;
@@ -804,7 +808,7 @@ footer .text span {
     font-size: 1em;
   }
 }
-@media screen and (width <= 363px){
+@media screen and (width <= 443px){
   .content h2{
     line-height: 1.5;
     font-size: 2em;
@@ -814,10 +818,10 @@ footer .text span {
     font-size: 1em;
   }
 }
-@media screen and (width <= 330px){
+@media screen and (width <= 361px){
   .content h2{
     line-height: 1.5;
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
   .content h2 span{
     line-height: 1.5;
@@ -848,15 +852,9 @@ footer .text span {
     line-height: 40px;
   }
 }
-@media screen and (max-width: 1180px) and (orientation: landscape){
+@media screen and (max-width: 992px) and (orientation: landscape){
   .hero{
-    height: 58vw;
-  }
-  .about__us{
-    width: 100%;
-    height: auto;
-    padding: 50px 0;
-    margin-top: -2em;
+    height: 60vw;
   }
 }
 @media screen and (max-width: 768px) and (orientation: landscape){
@@ -893,6 +891,19 @@ footer .text span {
   }
 }
 
+@media screen and (max-width: 640px) and (orientation: landscape){
+  .about__us{
+    margin-top: -5em;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .text__box p{
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
 @media (max-width: 1190px){
   .banner-text{
     margin: 0 1rem;
@@ -910,18 +921,10 @@ footer .text span {
   body {
     padding: 0;
   }
-  header {
-    height: calc(90vh - 20px);
-    padding: 0.1px;
-  }
   header nav .logo {
     margin-left: -20px;
     max-width: 100%;
     height: auto;
-  }
-  .about__us{
-    margin-top: 5em;
-    padding: 122px 0;
   }
   .banner .banner-img img{
     left: 0em;
@@ -935,18 +938,6 @@ footer .text span {
   }
 }
 
-@media screen and (max-width: 920px){
-  .about__us{
-    margin-top: 5em;
-  }
-}
-
-@media screen and (max-width: 992px){
-  .text__box p{
-    font-size: 30px;
-    line-height: 40px;
-  }
-}
 
 @media screen and (max-width: 768px) {
   header nav {
@@ -1049,7 +1040,7 @@ footer .text span {
   .card-box-container{
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    gap: 1em;
   }
   .card-box-container .card-box{
     margin-bottom: 15px;
@@ -1060,6 +1051,7 @@ footer .text span {
   .card--container{
     display: flex;
     flex-direction: column;
+    gap: 1em;
   }
   .card--container .box-card{
     margin-bottom: 15px;
@@ -1070,7 +1062,7 @@ footer .text span {
   .container__card{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 15rem));
-    gap: 15px;
+    gap: 1em;
   }
 }
 
@@ -1078,7 +1070,7 @@ footer .text span {
   .card--container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
+    gap: 1em;
   }
   .card--container .card-body{
     margin-bottom: 15px;
@@ -1089,7 +1081,7 @@ footer .text span {
   .container__card{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 15rem));
-    gap: 15px;
+    gap: 1em;
   }
 }
 
@@ -1167,11 +1159,11 @@ footer .text span {
     margin-bottom: 3%;
   }
   .text__box h1{
-    font-size: 50px;
+    font-size: 4rem;
     margin-bottom: 25px;
   }
   .text__box p{
-    font-size: 23px;
+    font-size: 1.8rem;
   }
 }
 
