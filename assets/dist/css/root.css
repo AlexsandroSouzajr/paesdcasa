@@ -428,36 +428,6 @@ button {
   right: 55%;
   z-index: 1;
 }
-@media screen and (max-width: 768px){
-  .christmas-tree{
-    top: 120px;
-    right: 0px;
-    display: flex;
-    justify-content: center;
-    z-index: -1;
-  }
-  .star{
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    border-right: 25px solid transparent;
-    border-bottom: 17.5px solid #f9c819;
-    border-left: 25px solid transparent;
-    transform: rotate(-35deg);
-    top: -190px;
-    left: -23px;
-  }
-  .tree::after{
-    filter: blur(3px);
-  }
-}
-
-@media (min-width: 769px){
-  .star{
-    left: -13px;
-  }
-}
 
 .tree{
   position: absolute;
@@ -548,7 +518,7 @@ button {
   left: -42px;
   box-shadow: 10px 10px #e9d8a6, 25px 17px #e9d8a6, 40px 24px #e9d8a6,
   55px 28px #e9d8a6, 70px 30px #e9d8a6, 85px 29px #e9d8a6,
-  100px 25px #e9d8a6, 112px 20px #e9d8a6;
+  100px 25px #e9d8a6;
 }
 
 .balls{
@@ -585,12 +555,6 @@ button {
   top: -40px;
   left: 30px;
   box-shadow: -35px -35px #94d2bd, -35px -105px #94d2bd, -60px 45px #94d2bd;
-}
-
-@media (max-width: 768px){
-  .lights{
-    left: -10px;
-  }
 }
 
 .star{
@@ -651,4 +615,46 @@ button {
   65%{transform: translateY(-15px) scaleY(0.9) rotate(-35deg); opacity: 1;}
   75%{transform: translateY(-18px) scaleY(0.9) rotate(-35deg); opacity: 1;}
   100%{transform: translateY(0) scaleY(1) rotate(-35deg); opacity: 1;}
+}
+
+@media screen and (max-width: 768px){
+  .christmas-tree{
+    top: 120px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+  }
+  .star{
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 25px solid transparent;
+    border-bottom: 17.5px solid #f9c819;
+    border-left: 25px solid transparent;
+    transform: rotate(-35deg);
+    top: -190px;
+    left: -23px;
+  }
+  .tree::after{
+    filter: blur(3px);
+  }
+}
+
+@media (min-width: 769px){
+  .star{
+    left: -13px;
+  }
+}
+
+@media (max-width: 768px){
+  .lights{
+    left: -10px;
+  }
+  .row-one{
+    left: -8px;
+    box-shadow: 10px 10px #e9d8a6, 25px 15px #e9d8a6, 
+    40px 18px #e9d8a6;
+  }
 }
