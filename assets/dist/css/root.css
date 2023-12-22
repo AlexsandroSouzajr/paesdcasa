@@ -416,11 +416,16 @@ button {
     }
 }
 
+.center{
+  display: flex;
+  justify-content: center;
+}
+
 .christmas-tree{
   position: relative;
   zoom: 20%;
   top: 120px;
-  right: 100px;
+  right: 55%;
   z-index: 1;
 }
 @media screen and (max-width: 768px){
@@ -432,7 +437,25 @@ button {
     z-index: -1;
   }
   .star{
-    margin-left: 49.1%;
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 25px solid transparent;
+    border-bottom: 17.5px solid #f9c819;
+    border-left: 25px solid transparent;
+    transform: rotate(-35deg);
+    top: -190px;
+    left: -23px;
+  }
+  .tree::after{
+    filter: blur(3px);
+  }
+}
+
+@media (min-width: 768px){
+  .star{
+    left: -13px;
   }
 }
 
@@ -461,7 +484,7 @@ button {
   position: absolute;
   border-right: 75px solid transparent;
   border-left: 75px solid transparent;
-  border-bottom: 200px solid #107261;
+  border-bottom: 200px solid #107262;
   width: 0;
   height: 0;
   top: -180px;
@@ -574,7 +597,6 @@ button {
   border-left: 25px solid transparent;
   transform: rotate(-35deg);
   top: -190px;
-  left: -13px;
   opacity: 0;
   animation: dropStar 1s linear 1.5s forwards;
 }
