@@ -526,7 +526,7 @@ header nav .toggle span:not(:last-of-type) {
   left: 50%;
   transform: translate(-50%);
 }
-.banner{
+.banner--combo{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -534,11 +534,11 @@ header nav .toggle span:not(:last-of-type) {
   background: linear-gradient(-60deg, var(--banner-bg-color) 50%, var(--banner-bg-color2) 10%);
   transition: 0.5s;
 }
-.banner .banner-img{
+.banner--combo .banner-img{
   max-width: 100%;
   height: auto;
 }
-.banner .banner-img img{
+.banner--combo .banner-img img{
   width: 100%;
   display: block;
   margin: 0 auto;
@@ -926,7 +926,7 @@ footer .text span {
     max-width: 100%;
     height: auto;
   }
-  .banner .banner-img img{
+  .banner--combo .banner-img img{
     left: 0em;
   }
   .banner-text .title-banner{
@@ -1002,16 +1002,16 @@ footer .text span {
     font-size: 30px;
     line-height: 40px;
   }
-  .banner{
+  .banner--combo{
     flex-direction: column;
     margin: 1rem 0;
     padding: 0 0 3rem;
     background: linear-gradient(-20deg, var(--banner-bg-color) 50%, var(--banner-bg-color2) 10%);
   }
-  .banner .banner-img{
+  .banner--combo .banner-img{
     margin-top: -3em;
   }
-  .banner .banner-text{
+  .banner--combo .banner-text{
     position: relative;
     font-size: 1.25em;
     display: inline;
