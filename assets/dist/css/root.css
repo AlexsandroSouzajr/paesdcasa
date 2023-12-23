@@ -14,10 +14,13 @@
   --navigation-underline: #fff;
   --navigation-bar-navlinks: #000;
   --switch-color: #000;
-  --about--color-one: rgb(202, 38, 38);
-  --about--color-two: #FFBA00;
+  --about--color-one: #ff6613;
+  --about--color-two: #ffbb00;
   --about-title: #FFBA00;
   --about-paragraph: #000;
+  --btn-border-section: #101419;
+  --btn-bg-section: #101419;
+  --btn-color-section: #101419;
   --card-title: #000;
   --card-description: #797979;
   --favorites-title: #000;
@@ -43,9 +46,11 @@ body.darkmode {
   --navigation-underline: #f5f5f5;
   --navigation-bar-navlinks: #f5f5f5;
   --switch-color: #f5f5f5;
-  --about--color-one: #a22;
-  --about--color-two: #FFBA00;
   --about-paragraph: #f5f5f5;
+  --heading-xl-section: #f5f5f5;
+  --btn-border-section: #4d5055;
+  --btn-bg-section: #4d5055;
+  --btn-color-section: #e4e6e7;
   --card-title: #f5f5f5;
   --card-description: #a2a2a2;
   --favorites-title: #f5f5f5;
@@ -57,16 +62,17 @@ body.darkmode {
   --testimonials-name-secondary: #f5f5f5;
   --testimonials-text-client: #f5f5f5;
   --testimonials-title: #f5f5f5;
+  
 }
 
 :root {
   --color-white-100: hsl(206, 5%, 100%);
-  --color-white-200: hsl(206, 5%, 90%);
+  --color-white-200: hsl(200, 6%, 90%);
   --color-white-300: hsl(206, 5%, 80%);
-  --color-white-400: hsl(206, 5%, 65%);
-  --color-white-500: hsl(206, 5%, 50%);
-  --color-black-100: hsl(213, 20%, 10%);
-  --color-black-200: hsl(213, 23%, 8%);
+  --color-white-400: hsl(207, 5%, 65%);
+  --color-white-500: hsl(208, 5%, 50%);
+  --color-black-100: hsl(213, 22%, 10%);
+  --color-black-200: hsl(213, 22%, 8%);
   --color-black-300: hsl(214, 21%, 6%);
   --color-black-400: hsl(210, 21%, 6%);
   --color-black-500: hsl(216, 22%, 4%);
@@ -460,11 +466,13 @@ button {
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -1px;
+  color: var(--heading-xl-section);
 }
 
 .paragraph {
   font-family: inherit;
   font-size: clamp(1rem, 2vw, 1.125rem);
+  color: var(--heading-xl-section);
 }
 
 .btn {
@@ -481,16 +489,21 @@ button {
   border: none;
   border-radius: 0.25rem;
   text-transform: unset;
-  transition: all 0.3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 .btn i{
   display: inline-block;
-  transform: translate(50%, 10%);
+  transform: translate(50%, 14%);
 }
 .btn-darken {
   padding: 0.75rem 2rem;
+  color: var(--btn-color-section);
+  border: 1px solid var(--btn-border-section);
+  background-color: none;
+}
+.btn-darken:hover{
+  background: var(--btn-bg-section);
   color: var(--color-white-100);
-  background-color: var(--color-black-200);
 }
 
 .banner-column {
@@ -532,6 +545,13 @@ button {
     max-width: 25rem;
     height: auto;
     margin-right: 5rem;
+  }
+}
+
+@media only screen and (min-width: 25rem) {
+  .banner-image {
+    max-width: 25rem;
+    height: auto;
   }
 }
 .banner-inner {
