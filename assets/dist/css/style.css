@@ -744,7 +744,8 @@ footer .text span {
     font-size: 5rem;
   }
   .content p{
-    font-size: 1.4rem;
+    font-size: 1.60rem;
+    line-height: 1.5;
     margin-bottom: 10px;
   }
 }
@@ -839,7 +840,7 @@ footer .text span {
   }
 }
 
-@media screen and (max-width: 1180px){
+/* @media screen and (max-width: 1180px){
   .about__us{
     width: 100%;
     height: auto;
@@ -851,7 +852,7 @@ footer .text span {
     font-size: 30px;
     line-height: 40px;
   }
-}
+} */
 @media screen and (max-width: 992px) and (orientation: landscape){
   .hero{
     height: 60vw;
@@ -899,8 +900,8 @@ footer .text span {
 
 @media screen and (max-width: 992px){
   .text__box p{
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 1.75em;
+    line-height: 1.5;
   }
 }
 
@@ -994,12 +995,12 @@ footer .text span {
     margin-bottom: 3%;
   }
   .text__box h1{
-    font-size: 4em;
+    font-size: 4.50em;
     margin-bottom: 25px;
     text-align: center;
   }
   .text__box p{
-    font-size: 30px;
+    font-size: 1.75em;
     line-height: 40px;
   }
   .banner--combo{
@@ -1159,11 +1160,11 @@ footer .text span {
     margin-bottom: 3%;
   }
   .text__box h1{
-    font-size: 4rem;
+    font-size: 3.7rem;
     margin-bottom: 25px;
   }
   .text__box p{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
