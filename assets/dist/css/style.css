@@ -1,4 +1,3 @@
-
 header nav,
 header .navigation-bar ul {
   display: flex;
@@ -149,7 +148,7 @@ header nav .toggle span:not(:last-of-type) {
   margin-bottom: 6px;
 }
 .hero{
-  background: linear-gradient(#0002, #252525de), url(/img/home/ai-generated-8444178_1280.jpg) no-repeat center/cover fixed;
+  background: linear-gradient(#0002, #252525de), url(/img/home/arranjo-de-croissants-doces-de-vista-superior-com-espaco-de-copia.jpg) no-repeat center/cover fixed;
   width: 100%;
   height: 100%;
   min-height: 100vh;
@@ -278,6 +277,127 @@ header nav .toggle span:not(:last-of-type) {
 }
 .content span img{
   border-radius: 10px 50px;
+}
+
+.hero____product{
+  padding: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background: url(https://sagradoboulangerie.com/wp-content/uploads/2019/12/bk-internas.jpg) no-repeat center/cover;
+  --mask:
+    radial-gradient(59.03px at 50% 81.60px,#000 99%,#0000 101%) calc(50% - 64px) 0/128px 51% repeat-x,
+    radial-gradient(59.03px at 50% -49.6px,#0000 99%,#000 101%) 50% 32px/128px calc(51% - 32px) repeat-x,
+    radial-gradient(59.03px at 50% calc(100% - 81.60px),#000 99%,#0000 101%) calc(50% - 64px) 100%/128px 51% repeat-x,
+    radial-gradient(59.03px at 50% calc(100% + 49.60px),#0000 99%,#000 101%) 50% calc(100% - 32px)/128px calc(51% - 32px) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+.hero____product h2{
+  color: #000;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+section .product-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+section .product-content .text_content{
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+section .product{
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  padding: 0rem 0 7rem;
+}
+.product .product-container{
+  columns: 3;
+  gap: 1em;
+}
+.product-container .product-item{
+  position: relative;
+}
+.product-container .product-item img{
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+.product-item .product-content{
+  display: flex;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  width: 100%;
+  padding: 5px 10px;
+  background: linear-gradient(
+    to bottom,
+    rgb(33 44 55 / 0),
+    rgb(29 29 29 / 0.732),
+    rgb(0 0 0 / 0.75)
+  );
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s ease-in-out;
+}
+.product-item:hover .product-content{
+  opacity: 1;
+  pointer-events: auto;
+}
+.product-item .product-content .btn{
+  position: relative;
+  right: 0;
+}
+.product-item .product-content .btn button{
+  background: #fff;
+  border: 1px solid #fff;
+  padding: 0.6em 0.6em;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  transition: .25s ease-in-out;
+}
+.product-item .product-content .btn button a{
+  color: #000;
+}
+.product-item .product-content .btn button:hover{
+  background: transparent;
+  color: #fff;
+}
+section .product .product-content .text_content{
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .product-item .product-content{
+    opacity: 1;
+  }
+}
+@media (max-width: 1002px) {
+  .product .product-container{
+    columns: 2;
+  }
+  .product-item .product-content .btn{
+    left: 0;
+  }
+  
+}
+@media (max-width: 602px) {
+  .product .product-container{
+    columns: 1;
+  }
 }
 
 .card-box-container{

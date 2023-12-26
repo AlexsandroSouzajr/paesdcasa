@@ -9,7 +9,7 @@
   --color-background: #fff;                     --font-system: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', sans-serif;
   --nav-color: rgb(255, 255, 255);              --font-secondary: -apple-system,  Rethink Sans, 'Hanken Grotesk', sans-serif;
   --navlinks: #000;                             --logo: "Leckerli One", cursive;
-  --menu: #2f3134;                              --footer-bg: url("/img/Logo/Footer/background-christmas-red-698423.jpg");
+  --menu: #2f3134;                              --footer-bg: url("/img/home/vista-superior-fatiado-de-pao-na-tabua-na-mesa-de-madeira-e-superficie-cinza.jpg");
   --navigation-bar: #ffff;
   --navigation-underline: #fff;
   --navigation-bar-navlinks: #000;
@@ -571,6 +571,19 @@ button {
   .banner-image {
     max-width: 25rem;
     height: auto;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .heading-xl{
+    font-size: clamp(2.248rem, 2vw, 4.241rem);
+  }
+  .paragraph{
+    font-size: clamp(1rem, 6vw, 11.125rem);
+  }
+}
+@media only screen and (max-width: 280px) {
+  .banner-image{
+    max-width: 15rem;
   }
 }
 .banner-inner {
