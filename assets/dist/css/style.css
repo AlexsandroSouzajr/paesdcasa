@@ -7,7 +7,7 @@ header nav .toggle,
 header nav .toggle span,
 header .navigation-bar,
 header .navigation-bar ul {
-  transition: 0.3s;
+  transition: .3s;
 }
 header,
 header nav .toggle span,
@@ -50,7 +50,7 @@ header nav {
 }
 header .logo h1 {
   font-size: 18px;
-  transition: 0.3s ease-in-out;
+  transition: .3s ease-in-out;
   font-family: var(--logo);
   font-weight: 500;
   color: var(--logo-color);
@@ -108,7 +108,7 @@ header .navigation-bar .navigation_link .navlinks {
 
 header .navigation-bar a {
   text-decoration: none;
-  transition: 0.5s;
+  transition: .5s;
   font-size: 16px;
   font-family: var(--font-primary);
   font-weight: 400;
@@ -118,7 +118,7 @@ header .navigation-bar .underline {
   width: 0;
   left: 50%;
   bottom: -4px;
-  transition: 0.3s;
+  transition: .3s;
   display: block;
 }
 
@@ -195,12 +195,12 @@ header nav .toggle span:not(:last-of-type) {
   font-family: 'Lato', sans-serif;
   cursor: pointer;
   background-position: center;
-  transition: background 0.8s;
+  transition: background .8s;
 }
 
 .button {
   background-position: center;
-  transition: background 0.8s;
+  transition: background .8s;
 }
 .button:hover {
   background: #FF692A radial-gradient(circle, transparent 1%, #FF692A 1%) center/15000%;
@@ -279,134 +279,12 @@ header nav .toggle span:not(:last-of-type) {
   border-radius: 10px 50px;
 }
 
-.hero____product{
-  padding: 110px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  background: url(https://sagradoboulangerie.com/wp-content/uploads/2019/12/bk-internas.jpg) no-repeat center/cover;
-  --mask:
-    radial-gradient(59.03px at 50% 81.60px,#000 99%,#0000 101%) calc(50% - 64px) 0/128px 51% repeat-x,
-    radial-gradient(59.03px at 50% -49.6px,#0000 99%,#000 101%) 50% 32px/128px calc(51% - 32px) repeat-x,
-    radial-gradient(59.03px at 50% calc(100% - 81.60px),#000 99%,#0000 101%) calc(50% - 64px) 100%/128px 51% repeat-x,
-    radial-gradient(59.03px at 50% calc(100% + 49.60px),#0000 99%,#000 101%) 50% calc(100% - 32px)/128px calc(51% - 32px) repeat-x;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-}
-
-.hero____product h2{
-  color: #000;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 2em;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-
-section .product-content{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 20px;
-}
-section .product-content .text_content{
-  display: flex;
-  flex-direction: column;
-  color: #333;
-  font-size: 16px;
-  font-weight: 500;
-}
-section .product{
-  max-width: 1100px;
-  width: 100%;
-  margin: auto;
-  padding: 0rem 0 7rem;
-}
-.product .product-container{
-  columns: 3;
-  gap: 1em;
-}
-.product-container .product-item{
-  position: relative;
-}
-.product-container .product-item img{
-  width: 100%;
-  object-fit: cover;
-  aspect-ratio: 16/9;
-}
-.product-item .product-content{
-  display: flex;
-  position: absolute;
-  bottom: 3px;
-  left: 0;
-  width: 100%;
-  padding: 5px 10px;
-  background: linear-gradient(
-    to bottom,
-    rgb(33 44 55 / 0),
-    rgb(29 29 29 / 0.732),
-    rgb(0 0 0 / 0.75)
-  );
-  opacity: 0;
-  pointer-events: none;
-  transition: .3s ease-in-out;
-}
-.product-item:hover .product-content{
-  opacity: 1;
-  pointer-events: auto;
-}
-.product-item .product-content .btn{
-  position: relative;
-  right: 0;
-}
-.product-item .product-content .btn button{
-  background: #fff;
-  border: 1px solid #fff;
-  padding: 0.6em 0.6em;
-  border-radius: 4px;
-  margin-bottom: 5px;
-  transition: .25s ease-in-out;
-}
-.product-item .product-content .btn button a{
-  color: #000;
-}
-.product-item .product-content .btn button:hover{
-  background: transparent;
-  color: #fff;
-}
-section .product .product-content .text_content{
-  color: #fff;
-  font-size: 1em;
-  text-transform: uppercase;
-}
-@media (max-width: 1024px) {
-  .product-item .product-content{
-    opacity: 1;
-  }
-}
-@media (max-width: 1002px) {
-  .product .product-container{
-    columns: 2;
-  }
-  .product-item .product-content .btn{
-    left: 0;
-  }
-  
-}
-@media (max-width: 602px) {
-  .product .product-container{
-    columns: 1;
-  }
-}
-
 .card-box-container{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   margin-bottom: 70px;
-  min-height: 0vh;
 }
 .card-box-container .card-box{
   text-align: center;
@@ -481,7 +359,6 @@ section .product .product-content .text_content{
   align-items: center;
   width: 100%;
   margin-bottom: 50px;
-  min-height: 0vh;
 }
 .card--container .card-body{
   text-align: center;
@@ -533,7 +410,6 @@ section .product .product-content .text_content{
   justify-content: center;
   align-items: center;
   position: relative;
-  bottom: 0px;
   color: #fff;
   animation: svgAnimate 1.8s ease-in-out infinite;
 }
@@ -604,7 +480,7 @@ section .product .product-content .text_content{
   border-radius: 3%;
   background: #ff6a00;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  transition: 0.5s background;
+  transition: .5s background;
 }
 .card .content button a{
   color: #fff;
@@ -652,7 +528,7 @@ section .product .product-content .text_content{
   align-items: center;
   margin: 1rem 5rem;
   background: linear-gradient(-60deg, var(--banner-bg-color) 50%, var(--banner-bg-color2) 10%);
-  transition: 0.5s;
+  transition: .5s;
 }
 .banner--combo .banner-img{
   max-width: 100%;
@@ -773,7 +649,7 @@ section .product .product-content .text_content{
 }
 .name__user span{
   color: var(--testimonials-name-secondary);
-  font-size: 0.8rem;
+  font-size: .8rem;
   font-family: var(--font-secondary);
 }
 .reviews{
@@ -786,7 +662,7 @@ section .product .product-content .text_content{
   margin-bottom: 20px;
 }
 .client__comment p{
-  font-size: 0.9rem;
+  font-size: .9rem;
   color: var(--testimonials-text-client);
   font-family: var(--font-system);
 }
@@ -1032,12 +908,6 @@ footer .text span {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  header {
-    height: max-content;
-  }
-}
-
 @media screen and (max-width: 992px) {
   body {
     padding: 0;
@@ -1081,12 +951,12 @@ footer .text span {
     padding: 40px;
   }
   header .navigation-bar ul {
-      display: block;
-      padding-top: 40px;
+    display: block;
+    padding-top: 40px;
   }
   header .navigation-bar ul li {
-      text-align: center;
-      padding: 14px 0;
+    text-align: center;
+    padding: 14px 0;
   }
   header .navigation-bar .navigation_link .navlinks {
     flex: 1;
@@ -1101,7 +971,7 @@ footer .text span {
   }
   header .navigation-bar .switch {
     top: -3.20rem; /* -6.8rem | (Com o tradutor) -7.95rem */
-    right: 0px;
+    right: 0;
   }
   header .navigation-bar .navigation_link {
     display: block;
@@ -1223,7 +1093,7 @@ footer .text span {
     display: block;
     text-align: center;
     left: 0;
-    top: 0px;
+    top: 0;
     width: 100%;
     padding-top: 25px;
     transition: 0.3s ease-in-out;
@@ -1294,7 +1164,6 @@ footer .text span {
   }
   header .navigation-bar{
     height: 100%;
-    border-radius: 0%;
   }
   header nav .toggle.active {
     left: 40%;/*36%*/
@@ -1307,10 +1176,10 @@ footer .text span {
     font-size: 2em;
   }
   .banner-text :is(.title-banner, .caption-banner){
-    font-size: 0.9em;
+    font-size: .9em;
   }
   .banner-text .banner-link{
-    font-size: 0.9em;
+    font-size: .9em;
   }
 }
 
@@ -1329,6 +1198,6 @@ footer .text span {
     padding: 50px;
   }
   .banner-text :is(.title-banner, .caption-banner){
-    font-size: 0.9em;
+    font-size: .9em;
   }
 }

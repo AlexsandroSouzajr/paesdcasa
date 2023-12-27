@@ -9,7 +9,7 @@
   --color-background: #fff;                     --font-system: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', sans-serif;
   --nav-color: rgb(255, 255, 255);              --font-secondary: -apple-system,  Rethink Sans, 'Hanken Grotesk', sans-serif;
   --navlinks: #000;                             --logo: "Leckerli One", cursive;
-  --menu: #2f3134;                              --footer-bg: url("/img/home/vista-superior-fatiado-de-pao-na-tabua-na-mesa-de-madeira-e-superficie-cinza.jpg");
+  --menu: #2f3134;                              --footer-bg: url("/img/Logo/Footer/vista-superior-fatiado-de-pao-na-tabua-na-mesa-de-madeira-e-superficie-cinza.jpg");
   --navigation-bar: #ffff;
   --navigation-underline: #fff;
   --navigation-bar-navlinks: #000;
@@ -100,9 +100,9 @@ body.darkmode {
   right: 10px;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
   cursor: pointer;
   z-index: 99;
 }
@@ -120,7 +120,7 @@ body.darkmode {
   padding: 5px 16px;
   font-size: 15px;
   border-radius: 4px;
-  transition: 0.3s;
+  transition: .3s;
 }
 .back-to-top:hover::before {
   opacity: 1;
@@ -176,7 +176,7 @@ body.darkmode {
   transform-origin: left;
   background-image: linear-gradient(to right, #fbd28c, #FFBA00);
   border-radius: inherit;
-  animation: load 3s 0.25s linear forwards;
+  animation: load 3s .25s linear forwards;
 }
 @keyframes fade-in{
   5%{
@@ -325,8 +325,8 @@ button {
   display: block;
   cursor: pointer;
   user-select: none;
-  margin-top: 0.5rem;
-  margin-right: 0.5rem;
+  margin-top: .5rem;
+  margin-right: .5rem;
 }
 .switch-light, .switch-dark {
   position: absolute;
@@ -334,7 +334,7 @@ button {
   left: 50%;
   transform-origin: center;
   transform: translate(-50%, -50%);
-  transition: all 0.3s ease-in;
+  transition: all .3s ease-in;
 }
 .switch-light {
   font-size: 1.4rem;
@@ -342,11 +342,11 @@ button {
   color: var(--switch-color);
 }
 .darkmode .switch-light {
-  font-size: 0rem;
+  font-size: 0;
   visibility: hidden;
 }
 .switch-dark {
-  font-size: 0rem;
+  font-size: 0;
   visibility: hidden;
   color: var(--switch-color);
 }
@@ -359,25 +359,9 @@ button {
   .switch {
     width: 47px;
     position: relative;
-    top: 0.25rem;
+    top: .25rem;
     right: 30px;
     z-index: 1;
-  }
-}
-
-.mainSVG{
-  width:100%;
-  height:100%;
-  visibility:visible;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-37%);
-  z-index: -1;
-}
-@media (width < 769px){
-  .mainSVG{
-    transform: translate(0%);
   }
 }
 
@@ -420,13 +404,13 @@ button {
   padding: 8px 16px;
   width: 100%;
   height: 40px;
-  margin: 0 0.5em;
+  margin: 0 .5em;
   font-size: 1rem;
   font-weight: 600;
   border-radius: 4px;
   background: #0cb1a1;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 .buttons #aceitarBtn:hover {
   background-color: #09796d;
@@ -452,7 +436,7 @@ button {
     }
     .cookies__text p{
         margin-bottom: 20px;
-        font-size: 0.8em;
+        font-size: .8em;
     }
     .cookies__container .buttons{
         margin-left: 0;
@@ -507,7 +491,7 @@ button {
   user-select: none;
   outline: none;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: .25rem;
   text-transform: unset;
   transition: .3s ease-in-out;
 }
