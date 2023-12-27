@@ -315,6 +315,7 @@ header nav .toggle span:not(:last-of-type) {
   color: var(--card-title);
   font-family: var(--font-system);
   font-weight: 500;
+  font-size: 1.3em;
   margin-bottom: 8px;
 }
 .card-box .box-txt p{
@@ -389,6 +390,7 @@ header nav .toggle span:not(:last-of-type) {
   color: var(--card-title);
   font-family: var(--font-system);
   font-weight: 500;
+  font-size: 1.25em;
   margin-bottom: 8px;
   max-width: 300px;
   margin: 0 auto;
