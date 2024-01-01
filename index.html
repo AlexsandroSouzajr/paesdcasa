@@ -8,9 +8,12 @@
   <meta name="description" content="Website" />
   <meta name="description" content="PãesdiCasa. Gente que ama cheirinho de padaria" />
   <meta http-equiv="content-language" content="pt-br" />
-  <meta name="theme-color" content="#ffbb00">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#319197" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#872e4e" media="(prefers-color-scheme: dark)">
   <title>Pães d'casa - Gente que ama cheirinho de padaria</title>
   <link rel="website icon" type="png" href="/img/Logo/Icones da logo/Logo.png" />
+  <link rel="manifest" href="/fonts/manifest.json" />
   <link rel="stylesheet" href="/assets/dist/css/style.css" />
   <link rel="stylesheet" href="/assets/dist/css/root.css" />
   <link rel="stylesheet" href="/assets/dist/css/reset.css" />
@@ -42,7 +45,7 @@
         </ul>
       </div>
     </nav>
-    <div class="hero">
+    <!-- <div class="hero">
       <div class="overlay">
         <div class="content">
           <h2>Seja bem vindo a <span>Pães d'Casa</span></h2>
@@ -51,6 +54,15 @@
               Qualidade e sabor que você merece!</p>
               <a href="#one"><button class="button">Saber mais</button></a>
           </div>
+        </div>
+      </div> -->
+      <div class="hero-video">
+        <video autoplay loop muted poster="/img/home/thumbmail.jpg" class="background-clip">
+          <source src="/img/home/video.mp4" type="video/mp4">
+        </video>
+        <div class="content-video">
+          <h2>Seja bem vindo a <span>Pães d'Casa</span></h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
   </header>
@@ -315,6 +327,12 @@
       </div>
     </div>
   </section>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js");
+    }
+  </script>
   
   <footer>
     <div class="text">
