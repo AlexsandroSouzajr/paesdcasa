@@ -270,9 +270,13 @@ header nav .toggle span:not(:last-of-type) {
   transform: translate(-50%);
 }
 
-.content-video h2 span{
-  color: #fe8b05;
+.content-video .line-one{
+  text-decoration: underline wavy #ffb884;
 }
+.content-video .line-two{
+  text-decoration: underline wavy #ffb884;
+}
+
 .content-video p{
   max-width: 600px;
   margin: auto;

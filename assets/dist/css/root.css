@@ -603,6 +603,10 @@ button {
   .paragraph-two{
     font-size: clamp(1rem, 0.15em, 11.125rem);
   }
+  .container-two {
+    max-width: 75rem;
+    padding: 0 0.25rem;
+  }
 }
 
 @media only screen and (min-width: 64rem) {
