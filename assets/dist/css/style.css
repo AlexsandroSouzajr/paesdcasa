@@ -282,6 +282,12 @@ header nav .toggle span:not(:last-of-type) {
   margin: auto;
 }
 
+.content-video .bottom{
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
 .hero-video a{
   margin: 0 auto;
 }

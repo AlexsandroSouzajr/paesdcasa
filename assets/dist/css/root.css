@@ -477,8 +477,8 @@ button {
 
 .heading-xl {
   font-family: inherit;
-  font-size: clamp(2.648rem, 4.5vw, 4.241rem);
-  font-weight: 700;
+  font-size: clamp(2.648rem, 4vw, 4.241rem);
+  font-weight: 600;
   line-height: 1.15;
   letter-spacing: -1px;
   color: var(--heading-xl-section);
@@ -486,14 +486,14 @@ button {
 
 .paragraph {
   font-family: inherit;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(0.5rem, 2vw, 1.125rem);
   color: var(--heading-xl-section);
 }
 
 .heading-xl-two {
   font-family: inherit;
   font-size: clamp(2.948rem, 3vw, 4.241rem);
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.15;
   letter-spacing: -1px;
   color: var(--heading-xl-section);
