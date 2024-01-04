@@ -233,7 +233,7 @@ header nav .toggle span:not(:last-of-type) {
   height: 100vh;
   position: relative;
   margin-bottom: 3em;
-  background: rgba(25, 25, 25, 0.5);
+  background:  rgba(84, 77, 30, 0.5);
 }
 
 .background-clip{
