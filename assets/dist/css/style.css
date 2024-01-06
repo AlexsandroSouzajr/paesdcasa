@@ -211,7 +211,7 @@ header nav .toggle span:not(:last-of-type) {
 
 .hero-image .button {
   padding: 10px 30px;
-  background: #0856cf;
+  background: #f87f29;
   border-radius: 50px;
   border: none;
   outline: none;
@@ -230,12 +230,12 @@ header nav .toggle span:not(:last-of-type) {
 }
 
 .button:hover {
-  background: #142d55 radial-gradient(circle, transparent 1%, #142d55 1%)
+  background: #e94444 radial-gradient(circle, transparent 1%, #e94444 1%)
     center/15000%;
 }
 
 .button:active {
-  background-color: #ffea00;
+  background-color: #ffab10;
   background-size: 100%;
   transition: background 0s;
 }
