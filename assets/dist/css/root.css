@@ -14,14 +14,15 @@
   --navigation-underline: #fff;
   --navigation-bar-navlinks: #000;
   --switch-color: #000;
-  --about--color-one: #ff6613;
-  --about--color-two: #ffbb00;
-  --about-title: #FFBA00;
+  --about-title: #ff8e15;
   --about-paragraph: #000;
+  --heading-xl-section: #ed460fe2;
+  --heading-xl-two-section: #f74336;
+  --paragraph-section: #000;
   --btn-border-section: #101419;
   --btn-bg-section: #101419;
   --btn-color-section: #101419;
-  --card-title: #000;
+  --card-title: #e03f05;
   --card-description: #797979;
   --favorites-title: #000;
   --card-content-title: #1a1a1a;
@@ -46,8 +47,11 @@ body.darkmode {
   --navigation-underline: #f5f5f5;
   --navigation-bar-navlinks: #f5f5f5;
   --switch-color: #f5f5f5;
+  --about-title: #f5f5f5;
   --about-paragraph: #f5f5f5;
   --heading-xl-section: #f5f5f5;
+  --heading-xl-two-section: #f5f5f5;
+  --paragraph-section: #f5f5f5;
   --btn-border-section: #4d5055;
   --btn-bg-section: #4d5055;
   --btn-color-section: #e4e6e7;
@@ -398,7 +402,7 @@ button {
 }
 .buttons .button {
   border: none;
-  background: #0cb1a1;
+  background: #319197;
   color: #fff;
   padding: 8px 16px;
   width: 100%;
@@ -416,12 +420,12 @@ button {
 }
 .buttons #declineBtn {
   background-color: transparent;
-  border:2px solid #0cb1a1;
+  border:2px solid #319197;
   color: #000;
 }
 .buttons #declineBtn:hover {
-  background-color: #0cb1a1;
-  border:2px solid #0cb1a1;
+  background-color: #319197;
+  border:2px solid #319197;
   color: #fff;
 }
 
@@ -487,22 +491,24 @@ button {
 .paragraph {
   font-family: inherit;
   font-size: clamp(0.5rem, 2vw, 1.125rem);
-  color: var(--heading-xl-section);
+  color: var(--paragraph-section);
+  max-width: 600px;
 }
 
 .heading-xl-two {
   font-family: inherit;
-  font-size: clamp(2.948rem, 3vw, 4.241rem);
+  font-size: clamp(2.648rem, 3vw, 3.341rem);
   font-weight: 600;
   line-height: 1.15;
   letter-spacing: -1px;
-  color: var(--heading-xl-section);
+  color: var(--heading-xl-two-section);
 }
 
 .paragraph-two {
   font-family: inherit;
   font-size: clamp(1rem, 2vw, 1.125rem);
-  color: var(--heading-xl-section);
+  color: var(--paragraph-section);
+  max-width: 480px;
 }
 
 .btn {
@@ -585,6 +591,7 @@ button {
   padding: 1em;
 }
 
+
 @media only screen and (min-width: 48rem) {
   .banner-column {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -619,6 +626,12 @@ button {
     grid-template-columns: 1fr max-content;
     column-gap: 2rem;
     margin-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .heading-xl-two{
+    font-size: clamp(2.20rem, 3vw, 4.241rem);
   }
 }
 
