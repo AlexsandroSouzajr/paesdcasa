@@ -670,16 +670,24 @@ button {
   }
 }
 
+@media only screen and (max-width: 535px){
+  .paragraph{
+    font-size: clamp(1.2rem, 5vw, 11.125rem);
+  }
+  .paragraph-two{
+    font-size: clamp(1.2rem, 5vw, 11.125rem);
+  }
+}
+
 @media only screen and (max-width: 380px) {
   .heading-xl{
     font-size: clamp(2.248rem, 2vw, 4.241rem);
   }
-  .paragraph{
-    font-size: clamp(1rem, 6vw, 11.125rem);
-  }
-
   .heading-xl-two{
     font-size: clamp(2.248rem, 2vw, 4.241rem);
+  }
+  .paragraph{
+    font-size: clamp(1.2rem, 5vw, 11.125rem);
   }
   .paragraph-two{
     font-size: clamp(1rem, 6vw, 11.125rem);

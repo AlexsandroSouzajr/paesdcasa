@@ -993,7 +993,7 @@ footer .text span {
     margin-bottom: 25px;
   }
   .text__box p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -1013,6 +1013,9 @@ footer .text span {
   }
   .hero__container h2 {
     font-size: 2em;
+  }
+  .text__box p {
+    font-size: 1.35rem;
   }
   .banner-text :is(.title-banner, .caption-banner) {
     font-size: 0.9em;
