@@ -55,6 +55,13 @@ header .logo h1 {
   font-weight: 500;
   color: var(--logo-color);
 }
+
+header .logo img{
+  width: 60px;
+  position: absolute;
+  top: 0;
+  transform: translate(-90%, -5%);
+}
 .img-logo {
   max-width: 100%;
   height: auto;
@@ -813,6 +820,9 @@ footer .text span {
     width: 100%;
     padding-top: 25px;
     transition: 0.3s ease-in-out;
+  }
+  header .logo img{
+    transform: translate(-90%, 6%);
   }
   header .navigation-bar {
     position: fixed;
