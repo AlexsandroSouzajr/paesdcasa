@@ -263,58 +263,6 @@ body.darkmode {
   }
 }
 
-
-@keyframes svgAnimate{
-  from{
-    opacity: 0;
-    transform: translate3d(0 -20%, 0);
-  }
-  to{
-    opacity: 1;
-    transform: translate3d(0, 250%, 0);
-  }
-}
-@-webkit-keyframes svgAnimate{
-  from{
-    opacity: 0;
-    transform: translate3d(0 -20%, 0);
-  }
-  to{
-    opacity: 1;
-    transform: translate3d(0, 250%, 0);
-  }
-}
-@-moz-keyframes svgAnimate{
-  from{
-    opacity: 0;
-    transform: translate3d(0 -20%, 0);
-  }
-  to{
-    opacity: 1;
-    transform: translate3d(0, 250%, 0);
-  }
-}
-@-o-keyframes svgAnimate{
-  from{
-    opacity: 0;
-    transform: translate3d(0 -20%, 0);
-  }
-  to{
-    opacity: 1;
-    transform: translate3d(0, 250%, 0);
-  }
-}
-@-ms-keyframes svgAnimate{
-  from{
-    opacity: 0;
-    transform: translate3d(0 -20%, 0);
-  }
-  to{
-    opacity: 1;
-    transform: translate3d(0, 250%, 0);
-  }
-}
-
 a,
 button {
   cursor: pointer;
