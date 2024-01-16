@@ -811,11 +811,7 @@ footer .text span {
 } */
 
 @media only screen and (max-width: 992px) {
-  body {
-    padding: 0;
-  }
   header nav .logo {
-    margin-left: -20px;
     max-width: 100%;
     height: auto;
   }
@@ -842,10 +838,14 @@ footer .text span {
     width: 100%;
     padding-top: 25px;
     margin-top: -0.6px;
-    transition: 0.3s ease-in-out;
+    transition: .3s ease-in-out;
   }
   header .logo img {
     transform: translate(-90%, 6%);
+  }
+  header nav .logo{
+    display: flex;
+    justify-content: center;
   }
   header .navigation-bar {
     position: fixed;
@@ -968,7 +968,8 @@ footer .text span {
     padding: 0.5px;
   }
   header nav .logo {
-    padding-left: 50px;
+    display: flex;
+    justify-content: center;
   }
   header .navigation-bar .switch {
     top: -15.3em; /* -2.75rem */ /* 6.45rem | (Com o tradutor) -7.60rem */
