@@ -17,13 +17,13 @@ navToggle.addEventListener("click", () => {
 });
 
 // show active navigationbar li
-navNavigationBarLi.forEach(li =>
-  li.addEventListener("click", () => {
-    const arr = Array.from(li.parentElement.children);
-    arr.forEach(li => li.classList.remove("active"));
-    li.classList.add("active");
-  })
-);
+// navNavigationBarLi.forEach(li =>
+//   li.addEventListener("click", () => {
+//     const arr = Array.from(li.parentElement.children);
+//     arr.forEach(li => li.classList.remove("active"));
+//     li.classList.add("active");
+//   })
+// );
 
 window.addEventListener("load", function () {
   setTimeout(function open(event) {
