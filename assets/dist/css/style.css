@@ -570,13 +570,14 @@ header nav .toggle span:not(:last-of-type) {
 }
 
 .service{
-  background: #fff;
+  background: var(--service);
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0 0 0 0.1);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   width: 100%;
   height: 100%;
   max-width: 400px;
   text-align: center;
+  border-radius: 6px;
 }
 
 .service svg{
@@ -593,10 +594,11 @@ header nav .toggle span:not(:last-of-type) {
 .service h2{
   margin: 15px 0;
   font-size: 24px;
+  color: var(--service-heading);
 }
 .service p{
-  font-size: 18px;
-  color: #555;
+  font-size: 16px;
+  color: var(--service-paragraph);
 }
 
 .testimonials__client {
@@ -691,9 +693,10 @@ header nav .toggle span:not(:last-of-type) {
   margin-bottom: 20px;
 }
 .client__comment p {
+  --font-text: "Montserrat", sans-serif;
   font-size: 0.9rem;
   color: var(--testimonials-text-client);
-  font-family: var(--font-system);
+  font-family: var(--font-text);
 }
 
 @media only screen and (max-width: 1060px) {
