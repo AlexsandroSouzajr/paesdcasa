@@ -55,6 +55,12 @@ header .logo h1 {
   color: var(--logo-color);
 }
 
+header .logo h1 span {
+  font-size: 7px;
+  display: flex;
+  color: var(--logo-color);
+}
+
 header .logo img {
   width: 60px;
   position: absolute;
@@ -118,6 +124,7 @@ header .navigation-bar.show .underline {
 header .navigation-bar .navigation_link .navlinks {
   flex: none;
   padding-inline: 0 20px;
+  margin-top: 2px;
 }
 
 header .navigation-bar .navigation_link .border {
@@ -342,7 +349,7 @@ header nav .toggle span:not(:last-of-type) {
   color: var(--about-title);
   font-size: 75px;
   margin-bottom: 20px;
-  font-family: var(--font-secondary);
+  font-family: "Rethink Sans", sans-serif;
   font-weight: 500;
 }
 
@@ -359,7 +366,7 @@ header nav .toggle span:not(:last-of-type) {
   font-size: 18px;
   line-height: 28px;
   margin-bottom: 40px;
-  font-family: var(--font-secondary);
+  font-family: "Rethink Sans", sans-serif;
 }
 
 .content span img {
@@ -676,12 +683,12 @@ header nav .toggle span:not(:last-of-type) {
   color: var(--testimonials-name-primary);
   font-size: 1.1rem;
   letter-spacing: 0.5px;
-  font-family: var(--font-secondary);
+  font-family: 'Hanken Grotesk', sans-serif;
 }
 .name__user span {
   color: var(--testimonials-name-secondary);
   font-size: 0.8rem;
-  font-family: var(--font-secondary);
+  font-family: 'Hanken Grotesk', sans-serif;
 }
 .reviews {
   color: #f9d71c;
@@ -887,6 +894,9 @@ footer .text span {
   header nav .logo{
     display: flex;
     justify-content: center;
+  }
+  header nav .logo h1 span{
+    margin-left: 20px;
   }
   header .navigation-bar {
     position: fixed;
