@@ -56,7 +56,7 @@ header .logo h1 {
 }
 
 header .logo h1 span {
-  font-size: 7px;
+  font-size: 8px;
   display: flex;
   color: var(--logo-color);
 }
@@ -752,7 +752,7 @@ footer .text span {
     justify-content: center;
   }
   header nav .logo h1 span{
-    margin-left: 20px;
+    margin-left: 36px;
   }
   header .navigation-bar {
     position: fixed;
