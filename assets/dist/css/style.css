@@ -114,15 +114,15 @@ header .navigation-bar.show a {
 }
 
 header .navigation-bar.show ul li {
-  animation: left 0.6s backwards;
+  animation: show .6s backwards;
 }
 
 header .navigation-bar.show ul li.active{
-  animation-delay: .5s;
+  animation-delay: .2s;
 }
 
 header .navigation-bar.show ul li:nth-child(n + 3){
-  animation-delay: .8s;
+  animation-delay: .4s;
 }
 
 header .navigation-bar.show .underline {

@@ -231,7 +231,7 @@ body.darkmode {
   }
 }
 
-@keyframes left {
+@keyframes show {
   0% {
     opacity: 0;
     translate: -50px 0;
@@ -241,7 +241,7 @@ body.darkmode {
   }
 }
 
-@-webkit-keyframes left {
+@-webkit-keyframes show {
   0% {
     opacity: 0;
     translate: -50px 0;
@@ -251,7 +251,7 @@ body.darkmode {
   }
 }
 
-@-o-keyframes left {
+@-o-keyframes show {
   0% {
     opacity: 0;
     translate: -50px 0;
@@ -261,7 +261,7 @@ body.darkmode {
   }
 }
 
-@-moz-keyframes left {
+@-moz-keyframes show {
   0% {
     opacity: 0;
     translate: -50px 0;
@@ -271,7 +271,7 @@ body.darkmode {
   }
 }
 
-@-ms-keyframes left {
+@-ms-keyframes show {
   0% {
     opacity: 0;
     translate: -50px 0;
