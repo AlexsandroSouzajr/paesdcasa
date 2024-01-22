@@ -62,10 +62,10 @@ header .logo h1 span {
 }
 
 header .logo img {
-  width: 60px;
+  width: 80px;
   position: absolute;
   top: 0;
-  transform: translate(-90%, -5%);
+  transform: translate(-90%, -10%);
 }
 
 .img-logo {
@@ -114,7 +114,15 @@ header .navigation-bar.show a {
 }
 
 header .navigation-bar.show ul li {
-  animation: left 0.6s linear both;
+  animation: left 0.6s backwards;
+}
+
+header .navigation-bar.show ul li.active{
+  animation-delay: .5s;
+}
+
+header .navigation-bar.show ul li:nth-child(n + 3){
+  animation-delay: .8s;
 }
 
 header .navigation-bar.show .underline {
@@ -889,7 +897,7 @@ footer .text span {
     transition: .3s ease-in-out;
   }
   header .logo img {
-    transform: translate(-90%, 6%);
+    transform: translate(-90%, 0);
   }
   header nav .logo{
     display: flex;
