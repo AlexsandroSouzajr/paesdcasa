@@ -1,0 +1,179 @@
+    <!-- <h2 class="text-product">Salgados disponiveis</h2>
+
+    <section class="flex">
+      <div class="product">
+        <div class="product-container">
+          <div class="product-item">
+            <img src="/img/home/produtos/Coxinha.webp" alt="Coxinha de frango" title="Coxinha de frango">
+            <div class="product-content">
+              <div class="text-content">
+                <h2>Coxinha de frango</h2>
+              </div>
+              <div class="btn-primary">
+                <a href="https://api.whatsapp.com/send?phone=5598991001830&#038;text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20saber%20qual%20e%20o%20valor%20da%20Coxinha%20de%20Frango?" target="_blank"><button>Solicitar encomenda</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="product-item">
+            <img src="/img/home/produtos/Salgado Joelho.png" alt="Salgado Joelho" title="Salgado Joelho">
+            <div class="product-content">
+              <div class="text-content">
+                <h2>Salgado Joelho</h2>
+              </div>
+              <div class="btn-primary">
+                <a href="https://api.whatsapp.com/send?phone=5598991001830&#038;text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20saber%20qual%20e%20o%20valor%20do%20Salgado%20Joelho%20Presunto%20e%20Queijo?" target="_blank"><button>Solicitar encomenda</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+
+    .text-product {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-product);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-content .text-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+  padding: 0 0 5em;
+}
+
+.product .product-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.product-container .product-item {
+  position: relative;
+}
+
+.product-container .product-item img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  border-radius: 30px 30px 0 0;
+}
+
+.product-item .product-content {
+  display: flex;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  width: 100%;
+  padding: 5px 10px;
+  background: linear-gradient(
+    to bottom,
+    rgb(33 44 55 / 0),
+    rgb(29 29 29 / 0.732),
+    rgb(0 0 0 / 0.75)
+  );
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+}
+
+.product-item:hover .product-content {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.product-item .product-content .btn-primary button {
+  background: #fff;
+  border: 1px solid #fff;
+  padding: 0.5em 0.4em;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  transition: 0.25s ease-in-out;
+}
+
+.product-item .product-content .btn-primary button a {
+  color: #000;
+}
+
+.product-item .product-content .btn-primary button:hover {
+  background: transparent;
+  color: #fff;
+}
+
+.product .product-content .text-content {
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1024px) {
+  .product-item .product-content {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1002px) {
+  .product {
+    margin: 1rem;
+  }
+  .product .product-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .product {
+    margin: 1rem;
+  }
+  .product .product-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .product-content h2 {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .product-content h2 {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .product-item .product-content {
+    position: relative;
+    display: block;
+  }
+  .product-item .product-content {
+    position: absolute;
+    bottom: 3px;
+  }
+  .product-content h2 {
+    margin-bottom: 10px;
+    background: rgba(94, 93, 93, 0.241);
+    max-width: max-content;
+  }
+}

@@ -7,8 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 
 :root {
-  --color-background: #fff;                      --font-system: system-ui;
-  --nav-color: #ffffff;                         --logo: "Tilt Neon", sans-serif;
+  --background: #fff;                           --font-system: system-ui;
+  --nav-color: #FEFCF3;                         --logo: "Tilt Neon", sans-serif;
   --navlinks: #000;                             --footer-bg: url("/img/Logo/Footer/vista-superior-fatiado-de-pao-na-tabua-na-mesa-de-madeira-e-superficie-cinza.jpg");
   --menu: #2f3134;
   --navigation-bar: #ffff;
@@ -35,7 +35,7 @@
   --testimonials-title: #000;
 }
 body.darkmode {
-  --color-background: #000;
+  --background: #000;
   --nav-color: #0c0c0c;
   --logo-color: #f5f5f5;
   --navlinks: #f5f5f5;
@@ -316,7 +316,7 @@ body.darkmode {
 }
 .buttons .button {
   border: none;
-  background: #319197;
+  background: #FD5D5D;
   color: #fff;
   padding: 8px 16px;
   width: 100%;
@@ -330,18 +330,19 @@ body.darkmode {
   transition: .2s ease-in-out;
 }
 .buttons #aceitarBtn:hover {
-  background-color: #09796d;
+  background-color: #ff3535;
 }
 .buttons #declineBtn {
   background-color: transparent;
-  border:2px solid #319197;
+  border:2px solid #FD5D5D;
   color: #000;
 }
 .buttons #declineBtn:hover {
-  background-color: #319197;
-  border:2px solid #319197;
+  background-color: #FD5D5D;
+  border:2px solid #FD5D5D;
   color: #fff;
 }
+/*#319197 cor antiga dos buttons*/
 
 @media screen and (max-width: 800px){
     .cookies__container{

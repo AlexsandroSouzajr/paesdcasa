@@ -229,7 +229,7 @@ header nav .toggle span:not(:last-of-type) {
   margin-bottom: 6px;
 }
 
-.hero-image {
+.hero {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -240,7 +240,7 @@ header nav .toggle span:not(:last-of-type) {
   background: rgba(84, 77, 30, 0.5);
 }
 
-.background-image {
+.background {
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -249,20 +249,20 @@ header nav .toggle span:not(:last-of-type) {
   object-fit: cover;
 }
 
-.content-image {
+.content__image {
   text-align: center;
   color: #fff;
   line-height: 1.6;
 }
 
-.content-image h2 {
+.content__image h2 {
   font-size: 3.5em;
   text-shadow: 2px 2px 0 #191919;
   position: relative;
   margin-bottom: 15px;
 }
 
-.content-image h2::after {
+.content__image h2::after {
   content: "";
   background: #ffb884;
   width: 200px;
@@ -275,23 +275,23 @@ header nav .toggle span:not(:last-of-type) {
   transform: translate(-50%);
 }
 
-.content-image .line-one {
+.content__image .line-one {
   text-decoration: underline wavy #ffb884;
 }
-.content-image .line-two {
+.content__image .line-two {
   text-decoration: underline wavy #ffb884;
 }
 
-.content-image p {
+.content__image p {
   max-width: 600px;
   margin: auto;
 }
 
-.hero-image a {
+.content__image a {
   margin: 0 auto;
 }
 
-.hero-image .button {
+.content__image .button {
   padding: 10px 30px;
   background: #f87f29;
   border-radius: 50px;
@@ -306,17 +306,12 @@ header nav .toggle span:not(:last-of-type) {
   transition: background 0.8s;
 }
 
-.button {
-  background-position: center;
-  transition: background 0.8s;
-}
-
-.button:hover {
+.content__image .button:hover {
   background: #e94444 radial-gradient(circle, transparent 1%, #e94444 1%)
     center/15000%;
 }
 
-.button:active {
+.content__image .button:active {
   background-color: #ffab10;
   background-size: 100%;
   transition: background 0s;
@@ -381,7 +376,7 @@ header nav .toggle span:not(:last-of-type) {
   border-radius: 10px 50px;
 }
 
-.card-box-container {
+.card__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -389,7 +384,7 @@ header nav .toggle span:not(:last-of-type) {
   margin-bottom: 5rem;
 }
 
-.card-box-container .card-box {
+.card__container .card__item {
   text-align: center;
   flex-wrap: wrap;
   width: 100%;
@@ -397,7 +392,7 @@ header nav .toggle span:not(:last-of-type) {
   transition: 0.5s ease-in-out;
 }
 
-.card-box-container .card-box img {
+.card__container .card__item img {
   position: relative;
   width: 150px;
   height: 150px;
@@ -407,7 +402,7 @@ header nav .toggle span:not(:last-of-type) {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.card-box .box-txt {
+.card__item .content__card {
   position: relative;
   margin-top: 1.2em;
   display: inline-block;
@@ -417,7 +412,7 @@ header nav .toggle span:not(:last-of-type) {
   height: auto;
 }
 
-.card-box .box-txt h2 {
+.card__item .content__card h2 {
   color: var(--card-title);
   font-family: var(--font-system);
   font-weight: 500;
@@ -425,158 +420,11 @@ header nav .toggle span:not(:last-of-type) {
   margin-bottom: 8px;
 }
 
-.card-box .box-txt p {
+.card__item .content__card p {
   color: var(--card-description);
 }
 
-.text-product {
-  text-align: center;
-  margin-bottom: 1em;
-  font-size: 2em;
-  font-family: "Montserrat", sans-serif;
-  color: var(--text-product);
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.product-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.product-content .text-content {
-  display: flex;
-  flex-direction: column;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.product {
-  max-width: 900px;
-  width: 100%;
-  margin: auto;
-  padding: 0 0 5em;
-}
-
-.product .product-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1em;
-}
-
-.product-container .product-item {
-  position: relative;
-}
-
-.product-container .product-item img {
-  width: 100%;
-  object-fit: cover;
-  aspect-ratio: 16/9;
-  border-radius: 30px 30px 0 0;
-}
-
-.product-item .product-content {
-  display: flex;
-  position: absolute;
-  bottom: 3px;
-  left: 0;
-  width: 100%;
-  padding: 5px 10px;
-  background: linear-gradient(
-    to bottom,
-    rgb(33 44 55 / 0),
-    rgb(29 29 29 / 0.732),
-    rgb(0 0 0 / 0.75)
-  );
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.3s ease-in-out;
-}
-
-.product-item:hover .product-content {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.product-item .product-content .btn-primary button {
-  background: #fff;
-  border: 1px solid #fff;
-  padding: 0.5em 0.4em;
-  border-radius: 4px;
-  margin-bottom: 5px;
-  transition: 0.25s ease-in-out;
-}
-
-.product-item .product-content .btn-primary button a {
-  color: #000;
-}
-
-.product-item .product-content .btn-primary button:hover {
-  background: transparent;
-  color: #fff;
-}
-
-.product .product-content .text-content {
-  color: #fff;
-  font-size: 1em;
-  text-transform: uppercase;
-}
-
-@media only screen and (max-width: 1024px) {
-  .product-item .product-content {
-    opacity: 1;
-  }
-}
-
-@media only screen and (max-width: 1002px) {
-  .product {
-    margin: 1rem;
-  }
-  .product .product-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .product {
-    margin: 1rem;
-  }
-  .product .product-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .product-content h2 {
-    font-size: 1.3em;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  .product-content h2 {
-    font-size: 1em;
-  }
-}
-
-@media only screen and (max-width: 385px) {
-  .product-item .product-content {
-    position: relative;
-    display: block;
-  }
-  .product-item .product-content {
-    position: absolute;
-    bottom: 3px;
-  }
-  .product-content h2 {
-    margin-bottom: 10px;
-    background: rgba(94, 93, 93, 0.241);
-    max-width: max-content;
-  }
-}
-
-.services-container{
+.services__container{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -584,7 +432,7 @@ header nav .toggle span:not(:last-of-type) {
   padding: 20px;
 }
 
-.service{
+.service__item{
   background: var(--service);
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -595,7 +443,7 @@ header nav .toggle span:not(:last-of-type) {
   border-radius: 6px;
 }
 
-.service svg{
+.service__item svg{
   background: #f26f11;
   fill: #fff;
   width: 100%;
@@ -606,12 +454,12 @@ header nav .toggle span:not(:last-of-type) {
   padding: 10px;
 }
 
-.service h2{
+.service__item h2{
   margin: 15px 0;
   font-size: 24px;
   color: var(--service-heading);
 }
-.service p{
+.service__item p{
   font-size: 16px;
   color: var(--service-paragraph);
 }
@@ -777,35 +625,35 @@ footer .text span {
 }
 
 @media only screen and (min-aspect-radio: 16/9) {
-  .background-image {
+  .background {
     width: 100%;
     height: auto;
   }
 }
 
 @media only screen and (max-aspect-radio: 16/9) {
-  .background-image {
+  .background {
     width: auto;
     height: 100%;
   }
 }
 
 @media only screen and (max-width: 720px) {
-  .content-image h2 {
+  .content__image h2 {
     max-width: 500px;
     margin: auto;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .content-image h2 {
+  .content__image h2 {
     font-size: 3em;
     max-width: 400px;
   }
-  .content-image h2 {
+  .content__image h2 {
     margin-bottom: 10px;
   }
-  .content-image h2::after {
+  .content__image h2::after {
     width: 150px;
     bottom: -25px;
   }
@@ -818,20 +666,20 @@ footer .text span {
 }
 
 @media only screen and (max-width: 992px) and (orientation: landscape) {
-  .hero-image {
+  .hero {
     height: 60vw;
   }
 }
 
 @media only screen and (max-width: 640px) and (orientation: landscape) {
-  .hero-image {
+  .hero {
     height: 69vw;
     margin-bottom: 35em;
   }
 }
 
 @media only screen and (max-width: 576px) and (orientation: landscape) {
-  .hero-image {
+  .hero {
     height: 90vw;
   }
 }
@@ -977,12 +825,12 @@ footer .text span {
 }
 
 @media only screen and (max-width: 680px) {
-  .card-box-container {
+  .card__container {
     display: flex;
     flex-direction: column;
     gap: 1em;
   }
-  .card-box-container .card-box {
+  .card__container .card__item {
     margin-bottom: 15px;
   }
 }
