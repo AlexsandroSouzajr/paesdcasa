@@ -257,7 +257,7 @@ header nav .toggle span:not(:last-of-type) {
 
 .content__image h2 {
   position: relative;
-  font-size: 3.5em;
+  font-size: 3.2em;
   text-shadow: 2px 2px 0 #191919;
   margin-bottom: 15px;
 }
@@ -480,20 +480,20 @@ header nav .toggle span:not(:last-of-type) {
   padding: 10px 20px;
 }
 .testimonial__heading h1 {
-  font-size: 2.2em;
-  font-weight: 500;
-  font-family: "Leckerli One", cursive;
-  background: #f8853e;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 20px 2px 20px;
-}
-.testimonial__heading span {
   font-size: 1.3rem;
   color: var(--testimonials-title);
   margin-bottom: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+.testimonial__heading span {
+  font-size: 2.2em;
+  font-weight: 500;
+  font-family: "Leckerli One", cursive;
+  background: var(--testimonials-subtitle);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px 2px 20px;
 }
 .testimonial__box_container {
   display: flex;
