@@ -29,7 +29,6 @@
   --service-heading: #333;
   --service-paragraph: #666;
   --testimonials-title: #000;
-  --testimonials-subtitle: #f8853e;
   --testimonials-box: #fff;
   --testimonials-name-primary: #3d3d3d;
   --testimonials-name-secondary: #979797;
@@ -59,7 +58,6 @@ body.darkmode {
   --service-heading: #f5f5f5;
   --service-paragraph: #f5f5f5;
   --testimonials-title: #f5f5f5;
-  --testimonials-subtitle: #0c0c0c;
   --testimonials-box: rgba(25, 25, 25, 0.9);
   --testimonials-name-primary: #f5f5f5;
   --testimonials-name-secondary: #f5f5f5;

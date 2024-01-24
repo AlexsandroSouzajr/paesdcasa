@@ -490,7 +490,7 @@ header nav .toggle span:not(:last-of-type) {
   font-size: 2.2em;
   font-weight: 500;
   font-family: "Leckerli One", cursive;
-  background: var(--testimonials-subtitle);
+  background: #f8853e;
   color: #fff;
   padding: 10px 20px;
   border-radius: 20px 2px 20px;
