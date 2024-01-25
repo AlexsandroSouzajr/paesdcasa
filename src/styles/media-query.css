@@ -1,0 +1,482 @@
+@media only screen and (min-aspect-radio: 16/9) {
+    .background {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media only screen and (max-aspect-radio: 16/9) {
+    .background {
+      width: auto;
+      height: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 720px) {
+    .content__image h2 {
+      max-width: 500px;
+      margin: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .content__image h2 {
+      font-size: 3em;
+      max-width: 400px;
+    }
+    .content__image h2 {
+      margin-bottom: 10px;
+    }
+    .content__image h2::after {
+      width: 150px;
+      bottom: -25px;
+    }
+  }
+  
+  @media only screen and (max-width: 340px) {
+    .content-image h2 {
+      font-size: 2.5em;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) and (orientation: landscape) {
+    .hero {
+      height: 60vw;
+    }
+  }
+  
+  @media only screen and (max-width: 640px) and (orientation: landscape) {
+    .hero {
+      height: 69vw;
+      margin-bottom: 35em;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) and (orientation: landscape) {
+    .hero {
+      height: 90vw;
+    }
+  }
+  
+  @media only screen and (max-width: 655px) and (orientation: landscape) {
+    .about__us {
+      height: 20vh;
+    }
+    .about__us .content {
+      margin-top: 60px;
+    }
+  }
+  
+  @media only screen and (max-width: 640px) and (orientation: landscape) {
+    .about__us {
+      margin-bottom: 30em;
+      margin-top: -5em;
+    }
+  }
+  
+  /* @media screen and (max-width: 1180px){
+    .about__us{
+      width: 100%;
+      height: auto;
+      padding: 50px 0;
+      margin-top: -2em;
+      margin-bottom: 0;
+    }
+    .text__box p{
+      font-size: 30px;
+      line-height: 40px;
+    }
+  } */
+  
+  @media only screen and (max-width: 992px) {
+    header nav .logo {
+      max-width: 100%;
+      height: auto;
+    }
+    .text__box p {
+      font-size: 1.75em;
+      line-height: 1.5;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .switch {
+      position: relative;
+      top: .25rem;
+      right: 30px;
+      width: 47px;
+      z-index: 1;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    header nav {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding-top: 25px;
+      margin-top: -0.6px;
+      transition: .3s ease-in-out;
+    }
+    header .logo img {
+      transform: translate(-90%, 0);
+    }
+    header nav .logo{
+      display: flex;
+      justify-content: center;
+    }
+    header nav .logo h1 span{
+      margin-left: 36px;
+    }
+    header .navigation-bar {
+      position: fixed;
+      top: 0;
+      left: -174px;
+      height: 100%;
+      overflow: hidden;
+      z-index: 20;
+      padding: 40px;
+    }
+    header .navigation-bar ul {
+      display: block;
+      padding-top: 40px;
+    }
+    header .navigation-bar ul li {
+      text-align: center;
+      padding: 14px 0;
+    }
+    header .navigation-bar .navigation_link .navlinks {
+      flex: 1;
+      padding: 0 10px;
+      display: block;
+    }
+    header .navigation-bar .navigation_link .border {
+      border-right: none;
+    }
+    header nav .toggle {
+      display: block;
+    }
+    header nav .toggle.active {
+      top: 50%;
+    }
+    header .navigation-bar .switch {
+      top: -15.7em; /* -3.2rem */ /* -6.8rem | (Com o tradutor) -7.95rem */
+      right: 0;
+    }
+    /* header .navigation-bar .switch-light, .switch-dark {
+      top: -8.9em;
+    }
+    header .navigation-bar .switch-dark {
+      top: -8.9em;
+    } */
+    header .navigation-bar .navigation_link {
+      display: block;
+      padding-top: 40px;
+    }
+    header .navigation-bar .navigation_link .navlinks {
+      text-align: left;
+      padding: 14px 0;
+    }
+    .about__us .content img {
+      margin-bottom: 3%;
+    }
+    .text__box h1 {
+      font-size: 4.5em;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    .text__box p {
+      font-size: 1.75em;
+      line-height: 40px;
+    }
+    footer .text .logo img {
+      width: 30px;
+    }
+    footer .text p {
+      line-height: 27px;
+      font-size: 17px;
+    }
+  }
+  
+  @media only screen and (max-width: 680px) {
+    .card__container {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+    .card__container .card__item {
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    header nav {
+      display: block;
+      width: 100%;
+      top: 0;
+      left: 0;
+      text-align: center;
+      padding-top: 25px;
+      transition: 0.3s ease-in-out;
+    }
+    header .navigation-bar .navigation_link .navlinks {
+      flex: 1;
+      padding: 0 10px;
+      display: block;
+    }
+    header nav .toggle {
+      display: block;
+    }
+    header nav .toggle.active {
+      top: 45%;
+    }
+    header .navigation-bar .switch {
+      top: -16.55em; /* -4.1rem */ /* 7.55rem | (Com o tradutor) -8.74rem */
+      right: 10px;
+    }
+    header .navigation-bar .navigation_link {
+      display: block;
+      padding-top: 50px;
+    }
+    header .navigation-bar .navigation_link .navlinks {
+      text-align: left;
+      padding: 14px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    header {
+      padding: 0.5px;
+    }
+    header nav .logo {
+      display: flex;
+      justify-content: center;
+    }
+    header .navigation-bar .switch {
+      top: -15.3em; /* -2.75rem */ /* 6.45rem | (Com o tradutor) -7.60rem */
+      right: -10px;
+    }
+    header nav .toggle.active {
+      top: 45%;
+      left: 38%;
+    }
+    header .navigation-bar.show {
+      width: 48%;
+      padding: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 535px) {
+    .about__us .content img {
+      margin-bottom: 3%;
+    }
+    .text__box h1 {
+      font-size: 3.7rem;
+      margin-bottom: 25px;
+    }
+    .text__box p {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media only screen and (max-width: 380px) {
+    header nav .logo {
+      font-size: 12px;
+    }
+    header .navigation-bar {
+      height: 100%;
+    }
+    header nav .toggle.active {
+      left: 40%; /*36%*/
+    }
+    header .navigation-bar.show {
+      width: 55%; /*48%*/
+      padding: 20px;
+    }
+    .text__box p {
+      font-size: 1.35rem;
+    }
+  }
+  
+  @media only screen and (max-width: 280px) {
+    header nav .logo {
+      font-size: 12px;
+    }
+    header nav .toggle.active {
+      left: 40%;
+    }
+    header .navigation-bar.show {
+      width: 60%;
+      padding: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 48rem) {
+    .banner-column {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      justify-content: center;
+    }
+  }
+  
+  @media only screen and (max-width:768px) {
+    .banner-column-two {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .paragraph{
+      font-size: clamp(1rem, 0.15em, 11.125rem);
+    }
+    .paragraph-two{
+      font-size: clamp(1rem, 0.15em, 11.125rem);
+    }
+    .container-two {
+      max-width: 75rem;
+      padding: 0 0.25rem;
+    }
+  }
+  
+  @media only screen and (min-width: 64rem) {
+    .banner-column {
+      grid-template-columns: 1fr max-content;
+      column-gap: 4rem;
+      margin-top: 3rem;
+    }
+    .banner-column-two {
+      grid-template-columns: 1fr max-content;
+      column-gap: 2rem;
+      margin-top: 3rem;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px){
+    .heading-xl-two{
+      font-size: clamp(2.20rem, 3vw, 4.241rem);
+    }
+  }
+  
+  @media only screen and (min-width: 48rem) {
+    .banner-image {
+      order: 1;
+      max-width: 20rem;
+      height: auto;
+    }
+    .banner-image-two {
+      order: 0;
+      max-width: 22rem;
+      height: auto;
+    }
+  }
+  
+  @media only screen and (min-width: 64rem) {
+    .banner-image {
+      max-width: 25rem;
+      height: auto;
+    }
+    .banner-image-two {
+      max-width: 25rem;
+      height: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .banner-image {
+      max-width: 22rem;
+      height: auto;
+    }
+    .banner-image-two {
+      max-width: 22rem;
+      height: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 535px){
+    .paragraph{
+      font-size: clamp(1.2rem, 5vw, 11.125rem);
+    }
+    .paragraph-two{
+      font-size: clamp(1.2rem, 5vw, 11.125rem);
+    }
+  }
+  
+  @media only screen and (max-width: 380px) {
+    .heading-xl{
+      font-size: clamp(2.248rem, 2vw, 4.241rem);
+    }
+    .heading-xl-two{
+      font-size: clamp(2.248rem, 2vw, 4.241rem);
+    }
+    .paragraph{
+      font-size: clamp(1.2rem, 5vw, 11.125rem);
+    }
+    .paragraph-two{
+      font-size: clamp(1rem, 6vw, 11.125rem);
+    }
+    .banner-image{
+      max-width: 15em;
+    }
+    .banner-image-two{
+      max-width: 15em;
+    }
+  }
+  
+  @media only screen and (max-width: 280px) {
+    .banner-image{
+      max-width: 15rem;
+    }
+    .banner-image-two{
+      max-width: 15rem;
+    }
+  }
+
+  @media only screen and (max-width: 1060px) {
+    .testimonial__box {
+      width: 45%;
+      padding: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 790px) {
+    .testimonial__box {
+      width: 100%;
+    }
+    .testimonial__heading h1 {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media only screen and (max-width: 340px) {
+    .box-top {
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .reviews {
+      margin-top: 10px;
+    }
+  }
+
+  @media screen and (max-width: 800px){
+    .cookies__container{
+      bottom: -200%;
+    }
+    .cookies__text{
+        display: flex;
+        flex-direction: column;
+    }
+    .cookies__text p{
+        margin-bottom: 20px;
+        font-size: .8em;
+    }
+    .cookies__container .buttons{
+        margin-left: 0;
+        width: 100%;
+    }
+    .cookies__container .buttons .button{
+        width: 100%;
+    }
+}
+
+@media screen and (orientation: landscape){
+    .cookies__container{
+      bottom: -115%;
+    }
+}

@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+:root {
+  --font-system: system-ui;
+  --logo: "Tilt Neon", sans-serif;
+  --bg-footer: url("/src/assets/Logo/Footer/bg-footer.jpg");
+  
+  --background: #fff;
+  --nav-color: #FEFCF3;
+  --navlinks: #000;                             
+  --menu: #2f3134;
+  --navigation-bar: #ffff;
+  --navigation-underline: #000;
+  --navigation-bar-underline: #f7291a;
+  --navigation-border: #333;
+  --navigation-bar-navlinks: #f7291a;
+  --switch-color: #000;
+  --about-title: #ff8e15;
+  --about-paragraph: #333;
+  --heading-xl-section: #ed460fe2;
+  --heading-xl-two-section: #f74336;
+  --paragraph-section: #333;
+  --card-title: #e03f05;
+  --card-description: #797979;
+  --text-product: #e03f05;
+  --service: #fff;
+  --service-heading: #333;
+  --service-paragraph: #666;
+  --testimonials-title: #000;
+  --testimonials-box: #fff;
+  --testimonials-name-primary: #3d3d3d;
+  --testimonials-name-secondary: #979797;
+  --testimonials-text-client: #4b4b4b;
+}
+body.darkmode {
+  --background: #000;
+  --nav-color: #0c0c0c;
+  --logo-color: #f5f5f5;
+  --navlinks: #f5f5f5;
+  --menu: #f5f5f5;
+  --navigation-bar: #111;
+  --navigation-underline: #f5f5f5;
+  --navigation-bar-underline: #f5f5f5;
+  --navigation-border: #f5f5f5;
+  --navigation-bar-navlinks: #f5f5f5;
+  --switch-color: #f5f5f5;
+  --about-title: #f5f5f5;
+  --about-paragraph: #f5f5f5;
+  --heading-xl-section: #f5f5f5;
+  --heading-xl-two-section: #f5f5f5;
+  --paragraph-section: #f5f5f5;
+  --card-title: #f5f5f5;
+  --card-description: #a2a2a2;
+  --text-product: #f5f5f5;
+  --service: #191919e6;
+  --service-heading: #f5f5f5;
+  --service-paragraph: #f5f5f5;
+  --testimonials-title: #f5f5f5;
+  --testimonials-box: rgba(25, 25, 25, 0.9);
+  --testimonials-name-primary: #f5f5f5;
+  --testimonials-name-secondary: #f5f5f5;
+  --testimonials-text-client: #f5f5f5;
+}
+
+@keyframes fade-in{
+  5%{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  90%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes load{
+  to{
+    transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes fade-in{
+  5%{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  90%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes load{
+  to{
+    transform: scaleX(1);
+  }
+}
+
+@-moz-keyframes fade-in{
+  5%{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  90%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-moz-keyframes load{
+  to{
+    transform: scaleX(1);
+  }
+}
+
+@-o-keyframes fade-in{
+  5%{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  90%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-o-keyframes load{
+  to{
+    transform: scaleX(1);
+  }
+}
+
+@-ms-keyframes fade-in{
+  5%{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  90%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-ms-keyframes load{
+  to{
+    transform: scaleX(1);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    translate: -50px 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+    translate: -50px 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes show {
+  0% {
+    opacity: 0;
+    translate: -50px 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes show {
+  0% {
+    opacity: 0;
+    translate: -50px 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes show {
+  0% {
+    opacity: 0;
+    translate: -50px 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
