@@ -20,12 +20,12 @@
   --switch-color: #000;
   --about-title: #ff8e15;
   --about-paragraph: #333;
+  --about-description-img: #333;
   --heading-xl-section: #ed460fe2;
   --heading-xl-two-section: #f74336;
   --paragraph-section: #333;
   --card-title: #e03f05;
   --card-description: #797979;
-  --text-product: #e03f05;
   --service: #fff;
   --service-heading: #333;
   --service-paragraph: #666;
@@ -47,22 +47,22 @@ body.darkmode {
   --navigation-border: #f5f5f5;
   --navigation-bar-navlinks: #f5f5f5;
   --switch-color: #f5f5f5;
-  --about-title: #f5f5f5;
-  --about-paragraph: #f5f5f5;
-  --heading-xl-section: #f5f5f5;
-  --heading-xl-two-section: #f5f5f5;
-  --paragraph-section: #f5f5f5;
-  --card-title: #f5f5f5;
-  --card-description: #a2a2a2;
-  --text-product: #f5f5f5;
+  --about-title: #e1e1e1;
+  --about-paragraph: #e1e1e1;
+  --about-description-img: #b3b3b3;
+  --heading-xl-section: #e1e1e1;
+  --heading-xl-two-section: #e1e1e1;
+  --paragraph-section: #e1e1e1;
+  --card-title: #e1e1e1;
+  --card-description: #b3b3b3;
   --service: #191919e6;
-  --service-heading: #f5f5f5;
-  --service-paragraph: #f5f5f5;
-  --testimonials-title: #f5f5f5;
+  --service-heading: #e1e1e1;
+  --service-paragraph: #b3b3b3;
+  --testimonials-title: #d2d2d2;
   --testimonials-box: rgba(25, 25, 25, 0.9);
-  --testimonials-name-primary: #f5f5f5;
-  --testimonials-name-secondary: #f5f5f5;
-  --testimonials-text-client: #f5f5f5;
+  --testimonials-name-primary: #d2d2d2;
+  --testimonials-name-secondary: #d2d2d2;
+  --testimonials-text-client: #d2d2d2;
 }
 
 @keyframes fade-in{

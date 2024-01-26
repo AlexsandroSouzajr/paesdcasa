@@ -252,7 +252,8 @@ footer .text {
 }
 
 footer .text img{
-  max-width: 8vw;
+  width: 120px;
+  height: auto;
   position: absolute;
   transform: translate(-50%, -75%);
 }

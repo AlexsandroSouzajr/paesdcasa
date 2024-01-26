@@ -121,7 +121,7 @@
   
   .text__box h1 {
     color: var(--about-title);
-    font-size: 75px;
+    font-size: 30px;
     margin-bottom: 20px;
     font-family: "Rethink Sans", sans-serif;
     font-weight: 500;
@@ -143,8 +143,14 @@
     font-family: "Rethink Sans", sans-serif;
   }
   
-  .content span img {
-    border-radius: 10px 50px;
+  .content div img {
+    border-radius: 50px 10px 50px;
+  }
+  .content div span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--about-description-img);
   }
 
   .section {
@@ -174,7 +180,7 @@
   .heading-xl {
     color: var(--heading-xl-section);
     font-family: inherit;
-    font-size: clamp(2.648rem, 4vw, 4.241rem);
+    font-size: clamp(2.948rem, 2vw, 4.241rem);
     font-weight: 600;
     line-height: 1.15;
     letter-spacing: -1px;
