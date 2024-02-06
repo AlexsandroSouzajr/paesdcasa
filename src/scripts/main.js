@@ -187,3 +187,8 @@ $(window).on('load', function() {
   }
 
 });
+
+$('#order, #order-2, #order-3').on('click', function (event) {
+  event.preventDefault();
+  alert('Combo não disponível!');
+});

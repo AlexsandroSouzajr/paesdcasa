@@ -564,7 +564,9 @@
   @media screen and (max-width: 992px){
     .gallery__combos{
       grid-template-columns: 1fr 1fr;
-      width: 80%;
+    }
+    .gallery__combos-item .image{
+      width: 250px;
     }
   }
 
@@ -575,6 +577,9 @@
     .gallery__combos{
       grid-template-columns: 1fr;
       width: 90%;
+    }
+    .gallery__combos .gallery__combos-item{
+      margin-bottom: 1.5em;
     }
     .gallery__combos .content__combo{
       bottom: 1.1em;
