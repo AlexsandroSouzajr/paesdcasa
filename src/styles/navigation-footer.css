@@ -2,6 +2,7 @@ header nav,
 header .navigation-bar ul {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 header nav .toggle,
@@ -50,7 +51,7 @@ header {
 header nav {
   position: fixed;
   background: var(--nav-color);
-  padding: 18px 0 15px;
+  padding: 15px 0 15px;
   z-index: 20;
 }
 
@@ -66,12 +67,13 @@ header .logo h1 span {
   display: flex;
   color: var(--logo-color);
   font-size: 8px;
+  line-height: 1.2;
 }
 
 header .logo img {
   position: absolute;
   top: 0;
-  transform: translate(-90%, -10%);
+  transform: translate(-90%, -14%);
   width: 80px;
 }
 
@@ -137,14 +139,11 @@ header .navigation-bar.show .underline {
 }
 
 header .navigation-bar .navigation_link .navlinks {
-  flex: none;
+  flex: 0 0 auto;
   padding-inline: 0 20px;
-  margin-top: 2px;
 }
 
 header .navigation-bar .navigation_link .border {
-  position: relative;
-  top: -1px;
   height: 24px;
   border-right: 1px solid var(--navigation-border);
 }
@@ -162,7 +161,7 @@ header .navigation-bar a {
   display: block;
   cursor: pointer;
   user-select: none;
-  margin-top: .5rem;
+  margin-bottom: .3rem;
   margin-right: .5rem;
 }
 
