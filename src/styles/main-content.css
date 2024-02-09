@@ -6,11 +6,11 @@
     height: 100vh;
     position: relative;
     /* background: rgba(84, 77, 30, 0.5); */
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     margin-bottom: 3em;
   }
-  
-  .background {
+
+  .hero video{
     position: absolute;
     inset: 0;
     width: 100%;
@@ -39,19 +39,11 @@
     bottom: -25px;
     left: 50%;
     transform: translate(-50%);
-    background: #ffb884;
+    background: #f87f29;
     width: 200px;
     height: 5px;
     margin-bottom: 20px;
     border-radius: 50px;
-  }
-  
-  .content__image .line-one {
-    text-decoration: underline wavy #ffb884;
-  }
-  
-  .content__image .line-two {
-    text-decoration: underline wavy #ffb884;
   }
   
   .content__image p {
@@ -187,90 +179,6 @@
     font-weight: 300;
     color: var(--about-textImg-paragraph);
   }
-
-  @media only screen and (max-width: 495px){
-    .content .container__content{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-    .content .container__content .text{
-      position: relative;
-      bottom: 3em;
-    }
-  }
-
-  .offset__container{
-    max-width: var(--max-width);
-    width: var(--width);
-    margin: 0 auto;
-  }
-
-  .offset__container .pre-title{
-    font-size: 30px;
-    text-align: center;
-    margin: 0 0 5vw;
-  }
-
-  .offset__container .offset__card{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: var(--grid-gap);
-    gap: var(--gap);
-  }
-
-  .offset__card .offset__item{
-    background: var(--offset-card-item-bg);
-    height: max-content;
-    padding: 0 0 10px;
-    margin-bottom: 20px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    border-radius: 0 20px;
-  }
-
-  .offset__item .offset__image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 1;
-    transition: .5s ease-in-out;
-    border-radius: 0 20px 0 0;
-  }
-
-  .offset__item:hover .offset__image img{
-    opacity: 1;
-  }
-
-  .offset__item .offset__content{
-    padding: 0 10px;
-    color: var(--offset-card-item-color);
-  }
-  .offset__content .heading{
-    font-size: 20px;
-    margin-bottom: 3px;
-  }
-
-  .offset__content .text{
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-
-  .offset__content .order{
-    display: flex;
-    max-width: max-content;
-    height: 30px;
-    padding: 10px 0;
-  }
-
-  .offset__content .order .arrow-right{
-    font-size: 18px;
-    padding: 0 5px;
-    transition: .3s ease-in-out;
-  }
-
-  .offset__content .order:hover .arrow-right{
-    padding: 0 9px;
-  }
   
   .card__container {
     display: flex;
@@ -335,7 +243,7 @@
   }
 
   .bg{
-    background: #f9bb44;
+    background: var(--banner-bg);
     padding: 2rem;
     font-family: sans-serif;
     border-radius: 10px;
@@ -355,7 +263,7 @@
   }
   
   .heading-xl {
-    color: var(--heading-xl-section);
+    color: var(--banner-heading-xl);
     font-family: inherit;
     font-size: 2.68em;
     /* font-size: clamp(2.948rem, 1vw, 4.241rem); */
@@ -365,7 +273,7 @@
   }
   
   .paragraph {
-    /* color: var(--paragraph-section); */
+    color: var(--banner-paragraph) !important;
     color: #141412;
     font-family: inherit;
     font-size: clamp(0.5rem, 2vw, 1.125rem);
@@ -373,7 +281,7 @@
   }
   
   .heading-xl-two {
-    color: var(--heading-xl-two-section);
+    color: var(--banner-heading-xl);
     font-family: inherit;
     font-size: 2.68em;
     /* font-size: clamp(2.648rem, 2vw, 3.341rem); */
@@ -383,7 +291,7 @@
   }
   
   .paragraph-two {
-    color: var(--paragraph-section);
+    color: var(--banner-paragraph);
     font-family: inherit;
     font-size: clamp(1rem, 2vw, 1.125rem);
     max-width: 550px;
@@ -673,7 +581,7 @@
   .product__content h2{
     font-size: 25px;
     font-weight: 600;
-    color: var(--product-heading-color);
+    color: var(--products-combos-heading-color);
     max-width: calc(90% - px);
     word-wrap: break-word;
 
@@ -681,7 +589,7 @@
 
   .product__content .paragraph{
     font-family: "Roboto", sans-serif;
-    color: var(--product-description-color);
+    color: var(--products-combos-paragraph-color) !important;
     font-size: 1.05em;
     max-width: calc(98% - 12px);
     word-wrap: break-word;
@@ -693,7 +601,7 @@
     max-width: max-content;
     height: 30px;
     padding: 10px 0;
-    color: var(--product-order-color);
+    color: var(--products-combos-order-color);
     margin-bottom: 1em;
   }
 
@@ -779,12 +687,12 @@
   .combos__content h2{
     font-size: 25px;
     font-weight: 600;
-    color: var(--heading-combos-color);
+    color: var(--products-combos-heading-color);
   }
 
   .combos__content span{
     font-family: "Roboto", sans-serif;
-    color: var(--description-combos-color);
+    color: var(--products-combos-paragraph-color);
     font-size: 1.25em;
   }
 
@@ -794,7 +702,7 @@
     max-width: max-content;
     height: 30px;
     padding: 10px 0;
-    color: var(--cta-combos-color);
+    color: var(--products-combos-order-color);
   }
 
 
@@ -823,7 +731,7 @@
   }
   
   .service__item{
-    background: var(--service);
+    background: var(--service-bg);
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     width: 100%;
@@ -1008,7 +916,7 @@
   }
 
   .buttons .button {
-    background: #FD5D5D;
+    background: #FE5000;
     color: #fff;
     border: none;
     width: 100%;
@@ -1024,18 +932,18 @@
   }
 
   .buttons #aceitarBtn:hover {
-    background-color: #ff3535;
+    background-color: #FC7740;
   }
 
   .buttons #declineBtn {
     background-color: transparent;
-    border:2px solid #FD5D5D;
+    border:2px solid #FE5000;
     color: #000;
   }
 
   .buttons #declineBtn:hover {
-    background-color: #FD5D5D;
-    border:2px solid #FD5D5D;
+    background-color: #FE5000;
+    border:2px solid #FE5000;
     color: #fff;
   }
   /*#319197 cor antiga dos buttons*/
@@ -1086,7 +994,7 @@
     height: 60px;
     font-size: 25px;
     line-height: 60px;
-    color: rgb(255, 122, 65);
+    color: #FE5000;
     text-align: center;
     text-decoration: none;
   }
@@ -1103,7 +1011,7 @@
     width: max-content;
     padding: 20px 15px;
     border-radius: 4px;
-    background: #272727;
+    background: #131312;
     color: #f6f5f9;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
     transform: translateY(30px);
@@ -1128,7 +1036,7 @@
     height: 3px;
     transform: scaleX(0);
     transform-origin: left;
-    background-image: linear-gradient(to right, #fbd28c, #FFBA00);
+    background-image: linear-gradient(to right, #FBBB62, #F05627);
     border-radius: inherit;
     animation: load 3s .25s linear forwards;
   }

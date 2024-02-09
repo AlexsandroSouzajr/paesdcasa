@@ -1,7 +1,6 @@
 const body = document.querySelector("body"),
   links = document.querySelectorAll('a[href="#"]'),
   nav = document.querySelector("header nav"),
-  logoImage = document.querySelector("header nav .logo img"),
   navToggle = document.querySelector("header nav .toggle"),
   navSpanMiddle = document.querySelector("header nav .toggle .middle"),
   navNavigationBar = document.querySelector("header nav .navigation-bar"),
@@ -15,15 +14,6 @@ navToggle.addEventListener("click", () => {
   navSpanMiddle.classList.toggle("hide");
   navNavigationBar.classList.toggle("show");
 });
-
-// show active navigationbar li
-// navNavigationBarLi.forEach(li =>
-//   li.addEventListener("click", () => {
-//     const arr = Array.from(li.parentElement.children);
-//     arr.forEach(li => li.classList.remove("active"));
-//     li.classList.add("active");
-//   })
-// );
 
 const menuItems = document.querySelectorAll('.menu a[href^="#"]');
 

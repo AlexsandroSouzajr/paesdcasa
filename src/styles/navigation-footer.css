@@ -57,7 +57,7 @@ header nav {
 
 header .logo h1 {
   color: var(--logo-color);
-  font-size: 18px;
+  font-size: 20px; /* 18px */
   font-family: var(--logo);
   font-weight: 500;
   transition: 0.3s ease-in-out;
@@ -66,7 +66,7 @@ header .logo h1 {
 header .logo h1 span {
   display: flex;
   color: var(--logo-color);
-  font-size: 8px;
+  font-size: 11px; /* 8px */
   line-height: 1.2;
 }
 
@@ -207,7 +207,7 @@ header .navigation-bar .underline {
 
 header nav .toggle {
   display: none;
-  top: 26px;
+  top: 30px;
   left: 20px;
   background-color: transparent;
   border: none;

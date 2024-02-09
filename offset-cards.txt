@@ -1,0 +1,133 @@
+      <!-- <div class="offset__container">
+        <h2 class="pre-title">Titulo</h2>
+        <section class="offset__card">
+          <div class="offset__item">
+            <div class="offset__image">
+              <img src="/src/assets/home/produtos/Salgado-Joelho.jpeg" alt="Salgado Joelho" title="Salgado Joelho">
+            </div>
+            <div class="offset__content">
+                <h1 class="heading">Salgado Joelho</h1>
+                <sapn class="text">Com presunto e queijo</sapn>
+                <a href="" target="_blank" class="order">
+                  <h3>Solicitar pedido</h3>
+                  <span class="ri-arrow-right-line arrow-right"></span>
+                </a>
+            </div>
+          </div>
+          <div class="offset__item">
+            <div class="offset__image">
+              <img src="/src/assets/home/produtos/Coxinha.jpeg" alt="Coxinha" title="Coxinha">
+            </div>
+            <div class="offset__content">
+                <h1 class="heading">Coxinha</h1>
+                <span class="text">Temos de carne ou frango</span>
+                <a href="" target="_blank" class="order">
+                  <h3>Solicitar pedido</h3>
+                  <span class="ri-arrow-right-line arrow-right"></span>
+                </a>
+            </div>
+          </div>
+        </section>
+      </div> -->
+
+.offset__container{
+    max-width: var(--max-width);
+    width: var(--width);
+    margin: 0 auto;
+  }
+
+  .offset__container .pre-title{
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 5vw;
+  }
+
+  .offset__container .offset__card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--grid-gap);
+    gap: var(--gap);
+  }
+
+  .offset__card .offset__item{
+    background: var(--offset-card-item-bg);
+    height: max-content;
+    padding: 0 0 10px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 0 20px;
+  }
+
+  .offset__item .offset__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: .5s ease-in-out;
+    border-radius: 0 20px 0 0;
+  }
+
+  .offset__item:hover .offset__image img{
+    opacity: 1;
+  }
+
+  .offset__item .offset__content{
+    padding: 0 10px;
+    color: var(--offset-card-item-color);
+  }
+  .offset__content .heading{
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+
+  .offset__content .text{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .offset__content .order{
+    display: flex;
+    max-width: max-content;
+    height: 30px;
+    padding: 10px 0;
+  }
+
+  .offset__content .order .arrow-right{
+    font-size: 18px;
+    padding: 0 5px;
+    transition: .3s ease-in-out;
+  }
+
+  .offset__content .order:hover .arrow-right{
+    padding: 0 9px;
+  }
+
+
+  @media screen and (max-width: 1040px){
+    .offset__container .offset__card{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 992px){
+    .offset__container{
+      max-width: var(--max-width);
+      width: var(--width-992);
+    }
+    .offset__container .offset__card{
+      grid-template-columns: 1fr 1fr;
+    }
+    .offset__item .offset__image img{
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    .offset__container{
+      max-width: var(--max-width);
+      width: var(--width-600);
+    }
+    .offset__container .offset__card{
+      grid-template-columns: 1fr;
+    }
+  }
