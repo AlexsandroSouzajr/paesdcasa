@@ -25,7 +25,7 @@
   --nav-color: #FEFCF3;
   --navlinks: #000;
   --menu: #2f3134;
-  --navigation-bar: #ffff;
+  --navigation-bar: #fff;
   --navigation-underline: #000;
   --navigation-bar-underline: #f7291a;
   --navigation-border: #333;
@@ -36,13 +36,17 @@
   --about-textImg-heading: #432d2f;
   --about-textImg-paragraph: #0c0a0b;
   --about-description-img: #333;
-  --heading-xl-section: #ed460fe2;
+  --heading-xl-section: #131312;/*#ed460fe2*/
   --heading-xl-two-section: #f74336;
   --paragraph-section: #333;
   --arrow-color: #111315;
   --offset-card-item-bg: #fff;
   --offset-card-item-color: #000;
-  --gallery--content-combos-bg: #fff;
+  --product-item-img-ilustrativa: #111;
+  --product-heading-color: #000;
+  --product-description-color: #000;
+  --product-order-color: #000;
+  --gallery--content-combos-bg: #000;
   --heading-combos-color: #202020;
   --description-combos-color: #444;
   --cta-combos-color: #666;
@@ -59,7 +63,7 @@
   --testimonials-text-client: #4b4b4b;
 }
 body.darkmode {
-  --background: #000;
+  --background: #070606;
   --nav-color: #0c0c0c;
   --logo-color: #f5f5f5;
   --navlinks: #f5f5f5;
@@ -75,11 +79,15 @@ body.darkmode {
   --about-textImg-heading: #e1e1e1;
   --about-textImg-paragraph: #e1e1e1;
   --about-description-img: #b3b3b3;
-  --heading-xl-section: #e1e1e1;
+  /* --heading-xl-section: #e1e1e1; */
   --heading-xl-two-section: #e1e1e1;
   --paragraph-section: #e1e1e1;
   --offset-card-item-bg: rgba(25, 25, 25, 0.9);
   --offset-card-item-color: #d2d2d2;
+  --product-item-img-ilustrativa: #202020;
+  --product-heading-color: #fff;
+  --product-description-color: #fff;
+  --product-order-color: #fff;
   --gallery--content-combos-bg: rgba(37, 37, 37, 0.9);
   --gallery--content-combos-color: #e3e3e3;
   --heading-combos-color: #e3e3e3;
@@ -88,11 +96,11 @@ body.darkmode {
   --cta-hover-combos-color: #9d9d9d;
   --card-title: #e1e1e1;
   --card-description: #b3b3b3;
-  --service: #191919e6;
+  --service: #121214;
   --service-heading: #e1e1e1;
   --service-paragraph: #b3b3b3;
   --testimonials-title: #d2d2d2;
-  --testimonials-box: rgba(25, 25, 25, 0.9);
+  --testimonials-box: #090a0c;
   --testimonials-name-primary: #d2d2d2;
   --testimonials-name-secondary: #d2d2d2;
   --testimonials-text-client: #d2d2d2;

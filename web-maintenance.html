@@ -40,7 +40,7 @@
     <header>
       <nav>
         <div class="logo">
-          <h1><img src="/src/assets/logo/icons/Logo.svg" />
+          <h1><img src="/src/assets/logo/icons/Logo.svg" alt="Logo da Pães d'Casa"/>
             Pães d'Casa
             <span>Gente que ama cheirinho de padaria</span>
           </h1>
@@ -83,7 +83,7 @@
             São Luís - MA. Com <m class="line-one">qualidade</m> e
             <m class="line-two">sabor</m> que você merece!
           </p>
-          <a href="#sobre">
+          <a href="#historia">
             <button class="button">
               <span>Saber mais</span>
             </button>
@@ -200,7 +200,7 @@
     </div>
 
     <section class="section banner banner-section">
-      <div class="container banner-column">
+      <div class="container bg banner-column">
         <div class="banner-inner">
           <h1 class="heading-xl">
             Descubra nossos deliciosos produtos da Pães d'Casa
@@ -211,7 +211,9 @@
             temos algo para satisfazer todos os desejos.
           </p>
         </div>
-        <div class="wrapper">
+
+        <div class="slider__container">
+        <section class="slider__box">
           <div class="slider right">
             <div class="arrow left">
               <span class="ri-arrow-left-s-line"></span>
@@ -244,63 +246,120 @@
               <span class="ri-arrow-right-s-line"></span>
             </div>
           </div>
-        </div>
+        </section>
+       </div>
       </div>
     </section>
 
-  <div class="gallery__container">
-    <h2 class="title__gallery">Combos Pães d'Casa</h2>
-      <section class="gallery__combos">
-        <div class="gallery__combos-item">
-          <div class="image">
-            <img src="/src/assets/home/combos/03.jpg" alt="Photo">
+    <div class="product__container">
+      <h2 class="title__product">Produtos Pães d'Casa</h2>
+      <section class="product">
+        <div class="product__item">
+          <div class="image__product">
+            <img src="/src/assets/home/produtos/pães/pão-caseiro-tradicional.jpg" alt="Photo">
+            <div class="text-picture">
+              <span>Imagem ilustrativa</span>
+            </div>
+          </div>
+          <div class="product__content">
+            <h2>Pão caseiro tradicional</h2>
+            <p class="paragraph">O melhor pão caseiro em toda região</p>
+            <a id="order" onclick="location.href='javascript:void()'" class=" Disabled order__link order-1">
+              <h3>Solicitar pedido</h3>
+              <span class="ri-arrow-right-line arrow-right"></span>
+            </a>
+          </div>
+        </div>
+        <div class="product__item">
+          <div class="image__product">
+            <img src="/src/assets/home/produtos/bolos/bolo-de-macaxeira.jpg" alt="Photo">
+            <div class="text-picture">
+              <span>Imagem ilustrativa</span>
+            </div>
+          </div>
+          <div class="product__content">
+            <h2>Bolo de macaxeira</h2>
+            <p class="paragraph">100% macaxeira pura</p>
+            <a id="order-2" onclick="location.href='javascript:void()'" class="Disabled order__link order-2">
+              <h3>Solicitar pedido</h3>
+              <p class="ri-arrow-right-line arrow-right"></p>
+            </a>
+          </div>
+        </div>
+        <div class="product__item">
+          <div class="image__product">
+            <img src="/src/assets/home/produtos/salgados/coxinha-de-frango.jpg" alt="Photo">
+            <div class="text-picture">
+              <span>Imagem ilustrativa</span>
+            </div>
+          </div>
+          <div class="product__content">
+            <h2>Coxinha de frango</h2>
+            <p class="paragraph">A melhor coxinha da região</p>
+            <a id="order-3" onclick="location.href='javascript:void()'" class="Disabled order__link order-3">
+              <h3>Solicitar pedido</h3>
+              <span class="ri-arrow-right-line arrow-right"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- <span class="btn-ver-mais">Ver mais produtos</span> -->
+    </div>
+  </div>
+    
+    <div class="combos__container">
+      <h2 class="title__combos">Combos Pães d'Casa</h2>
+      <section class="combos">
+        <div class="combos__item">
+          <div class="image__combo">
+            <img src="/src/assets/home/combos/04.jpg" alt="Photo">
             <div class="text">
               <span>Imagem ilustrativa</span>
             </div>
           </div>
-          <div class="gallery__combos-content">
+          <div class="combos__content">
             <h2>Combo #1</h2>
-            <span>Combo description</span>
-            <a id="order" class="isDisabled">
+            <span>Descrição do combo</span>
+            <a id="combo" onclick="location.href='javascript:void()'" class="Disabled combo-1">
               <h3>Solicitar combo</h3>
               <span class="ri-arrow-right-line arrow-right"></span>
             </a>
           </div>
         </div>
-        <div class="gallery__combos-item">
-          <div class="image">
-            <img src="/src/assets/home/combos/03.jpg" alt="Photo">
+        <div class="combos__item">
+          <div class="image__combo">
+            <img src="/src/assets/home/combos/01.jpg" alt="Photo">
             <div class="text">
               <span>Imagem ilustrativa</span>
             </div>
           </div>
-          <div class="gallery__combos-content">
+          <div class="combos__content">
             <h2>Combo #2</h2>
-            <span>Combo description</span>
-            <a id="order-2" class="isDisabled">
+            <span>Descrição do combo</span>
+            <a id="combo-2" onclick="location.href='javascript:void()'" class="Disabled combo-2">
               <h3>Solicitar combo</h3>
               <span class="ri-arrow-right-line arrow-right"></span>
             </a>
           </div>
         </div>
-        <div class="gallery__combos-item">
-          <div class="image">
-            <img src="/src/assets/home/combos/03.jpg" alt="Photo">
+        <div class="combos__item">
+          <div class="image__combo">
+            <img src="/src/assets/home/combos/07.jpg" alt="Photo">
             <div class="text">
               <span>Imagem ilustrativa</span>
             </div>
           </div>
-          <div class="gallery__combos-content">
+          <div class="combos__content">
             <h2>Combo #3</h2>
-            <span>Combo description</span>
-            <a id="order-3" class="isDisabled">
+            <span>Descrição do combo</span>
+            <a id="combo-3" onclick="location.href='javascript:void()'" class="Disabled combo-3">
               <h3>Solicitar combo</h3>
               <span class="ri-arrow-right-line arrow-right"></span>
             </a>
           </div>
         </div>
       </section>
-  </div>
+    </div>
   </div>
 
       <section class="section-two banner-two banner-section-two">
@@ -487,7 +546,7 @@
 
     <footer>
       <div class="text">
-        <img src="/src/assets/logo/icons/Logo.svg" alt="Logo">
+        <img src="/src/assets/logo/footer/logo-footer.png" alt="Logo da Pães d'Casa">
         <h2 class="logo">Pães d'Casa</h2>
         <p>Gente que ama cheirinho de padaria</p>
         <span>Copyright &copy; 2023 Pães d'Casa</span>

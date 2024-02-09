@@ -25,6 +25,57 @@ navToggle.addEventListener("click", () => {
 //   })
 // );
 
+const menuItems = document.querySelectorAll('.menu a[href^="#"]');
+
+menuItems.forEach(item => {
+  item.addEventListener('click', scrollToIdOnClick);
+})
+
+function getScrollTopByHref(element) {
+  const id = element.getAttribute('href');
+  return document.querySelector(id).offsetTop;
+}
+
+function scrollToIdOnClick(event) {
+  event.preventDefault();
+  const to = getScrollTopByHref(event.target) - 80;
+  scrollToPosition(to);
+}
+
+function scrollToPosition(to) {
+  //window.scroll({
+  //  top: to,
+  //  behavior: "smooth",
+  //});
+  smoothScrollTo(0, to);
+}
+
+function smoothScrollTo(endX, endY, duration) {
+  const startX = window.scrollX || window.pageXOffset
+  const startY = window.scrollY || window.pageYOffset
+  const distanceX = endX - startX;
+  const distanceY = endY - startY;
+  const startTime = new Date().getTime();
+
+  duration = typeof duration !== 'undefined' ? duration : 400;
+
+  // Easing function
+  const easeInOutQuart = (time, from, distance, duration) => {
+    if ((time /= duration / 2) < 1) return distance / 2 * time * time * time * time* + from;
+    return distance / 2 * ((time -= 2) * time * time * time - 2) + from;
+  };
+
+  const timer = setInterval(() => {
+    const time = new Date().getTime()- startTime;
+    const newX = easeInOutQuart(time, startX , distanceX, duration);
+    const newY = easeInOutQuart(time, startY , distanceY, duration);
+    if (time >= duration) {
+      clearInterval(timer);
+    }
+    window.scroll(newX, newY);
+  }, 1000 / 60); // 60 fps
+}
+
 window.addEventListener("load", function () {
   setTimeout(function open(event) {
     document.querySelector(".notification").style.display = "block";
@@ -188,7 +239,40 @@ $(window).on('load', function() {
 
 });
 
-$('#order, #order-2, #order-3').on('click', function (event) {
+$('.order-1, .order-2, .order-3').on('click', function (event) {
+  event.preventDefault();
+  alert('Produto não disponível!');
+});
+
+$('.combo-1, .combo-2, .combo-3').on('click', function (event) {
   event.preventDefault();
   alert('Combo não disponível!');
+});
+
+$(document).ready(function() {
+  $(".btn-ver-mais").each(function() {
+    $(this).click(function(e) {
+      e.preventDefault();
+      if ($(this).prev("section").hasClass("ver-mais")) {
+        $(this).prev("section").addClass("ver-mais-total").removeClass("ver-mais");
+        $(this).html("");
+      }
+    });
+  });
+});
+
+$(document).ready(function () {
+  setTimeout(function () {
+    $('a[href]#order, a[href]#order-2, a[href]#order-3, a[href]#combo, a[href]#combo-2, a[href]#combo-3,').each(function () {
+      var href = this.href;
+
+      $(this).removeAttr('href').css('cursor', 'pointer').click(function () {
+        if (href.toLowerCase().indexOf("#") >= 0){
+
+        }else {
+          window.open(href, '_blank');
+        }
+      });
+    });
+  }, 500);
 });

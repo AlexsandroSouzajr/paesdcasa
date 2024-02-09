@@ -333,6 +333,14 @@
     margin: 0 auto;
     padding: 0 1.25rem;
   }
+
+  .bg{
+    background: #f9bb44;
+    padding: 2rem;
+    font-family: sans-serif;
+    border-radius: 10px;
+    max-width: 80rem;
+  }
   
   .section-two {
     margin: 0 auto;
@@ -357,7 +365,8 @@
   }
   
   .paragraph {
-    color: var(--paragraph-section);
+    /* color: var(--paragraph-section); */
+    color: #141412;
     font-family: inherit;
     font-size: clamp(0.5rem, 2vw, 1.125rem);
     max-width: 600px;
@@ -430,8 +439,13 @@
     padding: 1em;
   }
 
-  .wrapper{
-    max-width: 500px;
+  .slider__container{
+    display: flex;
+    max-width: calc(100% - 20px);
+  }
+
+  .slider__container .slider__box{
+    max-width: calc(90% - 20px);
     margin: 0 auto;
   }
 
@@ -440,7 +454,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: -10px;
   }
 
   .slider .arrow{
@@ -543,7 +556,47 @@
     opacity: 1;
   }
 
-  .gallery__container .title__gallery{
+  .ver-mais {
+    max-height: 360px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .ver-mais-total {    
+    max-height: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .btn-ver-mais{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 1em;
+    color: #000;
+    cursor: pointer;
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+    font-size: 1.15em;
+    padding: 5px 20px;
+    border-radius: 6px;
+    transition: .3s ease;
+  }
+
+  .btn-ver-mais:hover{
+    letter-spacing: 2px;
+    color: #555;
+  }
+
+  .product__container{
+    margin-top: 4em;
+    margin-bottom: 5em;
+  }
+
+  .product__container .title__product{
     text-align: center;
     font-size: 2em;
     font-weight: 500;
@@ -558,7 +611,118 @@
     margin: auto;
   }
 
-  .gallery__combos{
+  .product__container .product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 3em;
+  }
+
+  .product .product__item{
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+  }
+  
+  .product__item .image__product{
+    width: auto;
+    height: auto;
+  }
+
+  .product__item .image__product img{
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .product__item .image__product .text-picture{
+    position: relative;
+    bottom: 15px;
+    right: 0;
+    margin: auto;
+    border-radius: 12px;
+    width: max-content;
+    background: var(--product-item-img-ilustrativa);
+    color: #fff;
+  }
+
+  .product__item .image__product .text-picture span{
+    display: flex;
+    text-align: center;
+    font-size: .8em;
+    padding: .3em;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .product__content{
+    line-height: 1.5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product__content h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--product-heading-color);
+    max-width: calc(90% - px);
+    word-wrap: break-word;
+
+  }
+
+  .product__content .paragraph{
+    font-family: "Roboto", sans-serif;
+    color: var(--product-description-color);
+    font-size: 1.05em;
+    max-width: calc(98% - 12px);
+    word-wrap: break-word;
+  }
+
+  .product__content .order__link{
+    display: flex;
+    margin: auto;
+    max-width: max-content;
+    height: 30px;
+    padding: 10px 0;
+    color: var(--product-order-color);
+    margin-bottom: 1em;
+  }
+
+  .product__content .order__link .arrow-right{
+    font-size: 18px;
+    padding: 0 5px;
+    transition: .3s ease-in-out;
+  }
+
+  .product__content .order__link:hover .arrow-right{
+    transform: translateX(5px);
+  }
+
+  .combos__container .title__combos{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+    font-family: "Leckerli One", cursive;
+    background: #ff4949;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px 2px 20px;
+    width: 100%;
+    max-width: max-content;
+    margin: auto;
+  }
+
+  .combos__container .combos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
@@ -567,21 +731,26 @@
     margin-top: 2em;
   }
 
-  .gallery__combos .gallery__combos-item{
+  .combos .combos__item{
     display: block;
     margin: auto;
   }
-  .gallery__combos-item .image{
+
+  .combos__item .image__combo{
     width: 300px;
     height: auto;
+    display: block;
+    margin: auto;
   }
-  .gallery__combos-item .image img{
+
+  .combos__item .image__combo img{
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 12px;
   }
-  .gallery__combos-item .image .text{
+
+  .combos__item .image__combo .text{
     position: relative;
     bottom: 18px;
     right: 0;
@@ -591,32 +760,35 @@
     background: #111;
     color: #fff;
   }
-  .gallery__combos-item .image .text span{
+
+  .combos__item .image__combo .text span{
     display: flex;
     text-align: center;
+    max-width: 400px;
     font-size: .8em;
     padding: .3em;
     padding-left: 20px;
     padding-right: 20px;
   }
-  .gallery__combos-content{
+
+  .combos__content{
     line-height: 1.5;
     text-align: center;
   }
 
-  .gallery__combos-content h2{
+  .combos__content h2{
     font-size: 25px;
     font-weight: 600;
     color: var(--heading-combos-color);
   }
 
-  .gallery__combos-content span{
+  .combos__content span{
     font-family: "Roboto", sans-serif;
     color: var(--description-combos-color);
     font-size: 1.25em;
   }
 
-  .gallery__combos-content a{
+  .combos__content a{
     display: flex;
     margin: auto;
     max-width: max-content;
@@ -625,17 +797,18 @@
     color: var(--cta-combos-color);
   }
 
-  /* .gallery__combos-content a .arrow-right{
+
+  .combos__content a .arrow-right{
     font-size: 18px;
     padding: 0 5px;
     transition: .3s ease-in-out;
   }
 
-  .gallery__combos-content a:hover .arrow-right{
-    padding: 0 9px;
+  /* .combos__content a:hover .arrow-right{
+    transform: translateX(5px);
   } */
 
-  .isDisabled {
+  .Disabled {
     color: currentColor;
     cursor: not-allowed;
     opacity: 0.5;
@@ -803,6 +976,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1100px;
     width: 80%;
     bottom: -15%;
     left: 50%;
