@@ -36,9 +36,9 @@
   --about-textImg-paragraph: #0c0a0b;
 
   --banner-bg: #F99F48;
-  --heading-xl-section: #131312;/*#ed460fe2*/
-  --heading-xl-two-section: #f74336;
-  --paragraph-section: #000;
+  --banner-heading-xl: #131312;/*#ed460fe2*/
+  --banner-heading-xl-two: #f74336;
+  --banner-paragraph: #000;
 
   /* --offset-card-item-bg: #fff;
   --offset-card-item-color: #000; */
@@ -82,6 +82,7 @@ body.darkmode {
 
   --banner-bg: #0f0d0d;
   --banner-heading-xl: #e0e0e0;
+  --banner-heading-xl-two: #e0e0e0;
   --banner-paragraph: #e0e0e0;
 
   /* --offset-card-item-bg: rgba(25, 25, 25, 0.9);

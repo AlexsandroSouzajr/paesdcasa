@@ -281,7 +281,7 @@
   }
   
   .heading-xl-two {
-    color: var(--banner-heading-xl);
+    color: var(--banner-heading-xl-two);
     font-family: inherit;
     font-size: 2.68em;
     /* font-size: clamp(2.648rem, 2vw, 3.341rem); */
