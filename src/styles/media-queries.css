@@ -556,7 +556,7 @@
 
   @media screen and (max-width: 400px){
     .slider .container-images{
-      max-width: calc(350px - 40px);
+      max-width: calc(350px - 50px);
     }
     .heading-xl{
       font-size: clamp(1.448rem, 2vw, 4.241rem);
