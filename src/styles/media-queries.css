@@ -535,7 +535,7 @@
 
   @media screen and (max-width: 600px){
     .heading-xl{
-      font-size: clamp(1.748rem, 2vw, 4.241rem);
+      font-size: clamp(1.148rem, 2vw, 4.241rem);
       max-width: 400px;
     }
     .slider__container .slider__box{
@@ -564,7 +564,7 @@
       max-width: calc(350px - 30px);
     }
     .heading-xl{
-      font-size: clamp(1.448rem, 2vw, 4.241rem);
+      font-size: clamp(1.148rem, 2vw, 4.241rem);
     }
   }
 
