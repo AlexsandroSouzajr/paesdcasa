@@ -556,10 +556,10 @@
 
   @media screen and (max-width: 400px){
     .slider .container-images{
-      max-width: calc(350px - 30px);
+      max-width: calc(350px - 40px);
     }
     .heading-xl{
-      font-size: clamp(2.948rem, 2vw, 4.241rem);
+      font-size: clamp(1.448rem, 2vw, 4.241rem);
     }
   }
 
