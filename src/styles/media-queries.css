@@ -559,7 +559,7 @@
       max-width: calc(350px - 50px);
     }
     .heading-xl{
-      font-size: clamp(1.448rem, 2vw, 4.241rem);
+      font-size: clamp(1.648rem, 2vw, 4.241rem);
     }
   }
 
