@@ -535,8 +535,7 @@
 
   @media screen and (max-width: 600px){
     .heading-xl{
-      font-size: clamp(1.148rem, 2vw, 4.241rem);
-      max-width: 400px;
+      font-size: clamp(1.748rem, 2vw, 4.241rem);
     }
     .slider__container .slider__box{
       display: flex;
@@ -553,10 +552,6 @@
     .slider .container-images{
       max-width: calc(360px - 30px);
     }
-    .heading-xl{
-      font-size: clamp(1.148rem, 2vw, 4.241rem);
-      max-width: 400px;
-    }
   }
 
   @media screen and (max-width: 400px){
@@ -564,7 +559,7 @@
       max-width: calc(350px - 30px);
     }
     .heading-xl{
-      font-size: clamp(1.148rem, 2vw, 4.241rem);
+      font-size: clamp(2.948rem, 2vw, 4.241rem);
     }
   }
 
