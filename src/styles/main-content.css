@@ -915,6 +915,135 @@
     width: 50%;
   }
 
+  .closeBtn{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #FE5000;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  }
+
+  .closeBtn, button span{
+    transition: 200ms;
+  }
+
+  .closeBtn .text{
+    transform: translateX(35px);
+    color: #000;
+    font-weight: 600;
+  }
+
+  .closeBtn .icon{
+    position: absolute;
+    border-left: 1px solid #FE5000;
+    transform: translateX(110px);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .closeBtn svg{
+    width: 15px;
+    margin-left: 10px;
+    fill: #000;
+  }
+  .closeBtn:hover svg{
+    fill: #fff;
+    margin-left: 0;
+  }
+
+  .closeBtn:hover{
+    background: #FE5000;
+  }
+
+  .closeBtn:hover .text{
+    color: transparent;
+  }
+
+  .closeBtn:hover .icon{
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+  }
+
+  .closeBtn:focus{
+    outline: none;
+  }
+
+  .closeBtn:active .icon svg {
+    scale: .8;
+  }
+
+  .acceptBtn{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  }
+
+  .acceptBtn, button span{
+    transition: 200ms;
+  }
+
+  .acceptBtn .text{
+    transform: translateX(35px);
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .acceptBtn .icon{
+    position: absolute;
+    border-left: 1px solid #e3cac4;
+    transform: translateX(110px);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .acceptBtn svg{
+    width: 15px;
+    margin-left: 10px;
+    fill: #eee;
+  }
+
+  .acceptBtn .icon .check{
+    width: 20px;
+  }
+
+  .acceptBtn:hover{
+    background: #ff3636;
+  }
+
+  .acceptBtn:hover .text{
+    color: transparent;
+  }
+
+  .acceptBtn:hover .icon{
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+  }
+
+  .acceptBtn:focus{
+    outline: none;
+  }
+
+  .acceptBtn:active .icon svg {
+    scale: .8;
+  }
+
   .buttons .button {
     background: #FE5000;
     color: #fff;
@@ -937,13 +1066,13 @@
 
   .buttons #declineBtn {
     background-color: transparent;
-    border:2px solid #FE5000;
+    border: 2px solid #FE5000;
     color: #000;
   }
 
   .buttons #declineBtn:hover {
     background-color: #FE5000;
-    border:2px solid #FE5000;
+    border: 2px solid #FE5000;
     color: #fff;
   }
   /*#319197 cor antiga dos buttons*/
