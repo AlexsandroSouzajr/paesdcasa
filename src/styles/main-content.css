@@ -10,6 +10,78 @@
     margin-bottom: 3em;
   }
 
+  .splide{
+    max-width: 1080px;
+    margin: 1rem auto;
+  }
+  
+  .splide__slide .splide__slide__container{
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+       border-radius: 12px;
+  }
+
+  .splide__slide__container .text{
+    position: absolute;
+    bottom: 115px;
+    left: 50px;
+    right: 50px;
+    margin: auto;
+    border-radius: 12px;
+    width: max-content;
+    background: var(--product-item-img-ilustrativa);
+    color: #fff;
+  }
+
+  .splide__slide__container .text span{
+    display: flex;
+    text-align: center;
+    font-size: .8em;
+    padding: .3em;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .slide__content {
+    margin-top: 15px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .slide__content .title{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--slide-content-title);
+  }
+
+  .slide__content .description{
+    color: var(--slide-content-description);
+    font-size: 1.05em;
+  }
+
+  .slide__content .order{
+    display: flex;
+    margin: auto;
+    max-width: max-content;
+    height: 30px;
+    padding: 10px 0;
+    color: var(--products-combos-order-color);
+    margin-bottom: 1em;
+  }
+
+  .slide__content .order .arrow-right{
+    font-size: 18px;
+    padding: 0 5px;
+    transition: .3s ease-in-out;
+  }
+
+  .slide__content .order:hover .arrow-right{
+    transform: translateX(5px);
+  }
+
   .hero video{
     position: absolute;
     inset: 0;
@@ -247,7 +319,7 @@
     padding: 2rem;
     font-family: sans-serif;
     border-radius: 10px;
-    max-width: 80rem;
+    max-width: 78rem;
   }
   
   .section-two {
@@ -349,11 +421,11 @@
 
   .slider__container{
     display: flex;
-    max-width: calc(100% - 20px);
+    max-width: 100%;
   }
 
   .slider__container .slider__box{
-    max-width: calc(90% - 20px);
+    max-width: calc(90% - 5px);
     margin: 0 auto;
   }
 
@@ -913,135 +985,6 @@
     position: relative;
     left: 1%;
     width: 50%;
-  }
-
-  .closeBtn{
-    width: 150px;
-    height: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    background: #FE5000;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
-  }
-
-  .closeBtn, button span{
-    transition: 200ms;
-  }
-
-  .closeBtn .text{
-    transform: translateX(35px);
-    color: #000;
-    font-weight: 600;
-  }
-
-  .closeBtn .icon{
-    position: absolute;
-    border-left: 1px solid #FE5000;
-    transform: translateX(110px);
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .closeBtn svg{
-    width: 15px;
-    margin-left: 10px;
-    fill: #000;
-  }
-  .closeBtn:hover svg{
-    fill: #fff;
-    margin-left: 0;
-  }
-
-  .closeBtn:hover{
-    background: #FE5000;
-  }
-
-  .closeBtn:hover .text{
-    color: transparent;
-  }
-
-  .closeBtn:hover .icon{
-    width: 150px;
-    border-left: none;
-    transform: translateX(0);
-  }
-
-  .closeBtn:focus{
-    outline: none;
-  }
-
-  .closeBtn:active .icon svg {
-    scale: .8;
-  }
-
-  .acceptBtn{
-    width: 150px;
-    height: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
-  }
-
-  .acceptBtn, button span{
-    transition: 200ms;
-  }
-
-  .acceptBtn .text{
-    transform: translateX(35px);
-    color: #fff;
-    font-weight: 600;
-  }
-
-  .acceptBtn .icon{
-    position: absolute;
-    border-left: 1px solid #e3cac4;
-    transform: translateX(110px);
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .acceptBtn svg{
-    width: 15px;
-    margin-left: 10px;
-    fill: #eee;
-  }
-
-  .acceptBtn .icon .check{
-    width: 20px;
-  }
-
-  .acceptBtn:hover{
-    background: #ff3636;
-  }
-
-  .acceptBtn:hover .text{
-    color: transparent;
-  }
-
-  .acceptBtn:hover .icon{
-    width: 150px;
-    border-left: none;
-    transform: translateX(0);
-  }
-
-  .acceptBtn:focus{
-    outline: none;
-  }
-
-  .acceptBtn:active .icon svg {
-    scale: .8;
   }
 
   .buttons .button {

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/src/styles/vars.css" />
     <link rel="stylesheet" href="/src/styles/config.css" />
     <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/vendor/styles/splide.min.css">
 </head>
 
   <body>
@@ -104,7 +105,7 @@
     <div id="produtos" class="card__container">
       <div class="card__item">
         <img
-          src="https://static.itdg.com.br/images/1200-630/421f428009c66fdce564599dba6b5b9a/328308-original.jpg"
+          src="/src/assets/home/produtos/img/pão-caseiro.jpg"
           alt="PÃES CASEIROS" title="PÃES CASEIROS"
         />
         <div class="content__card">
@@ -117,7 +118,7 @@
       </div>
       <div class="card__item">
         <img
-          src="https://bolosparavender.com.br/wp-content/uploads/2017/10/como-fazer-bolo-caseiro-em-grande-quantidade.jpg"
+          src="/src/assets/home/produtos/img/bolo-caseiro.jpg"
           alt="BOLOS CASEIROS" title="BOLOS CASEIROS"
         />
         <div class="content__card">
@@ -127,7 +128,7 @@
       </div>
       <div class="card__item">
         <img
-          src="https://www.tiaeliana.com.br/alimentacao-salgados/imagens/salgados-assados-e-fritos.jpg"
+          src="/src/assets/home/produtos/img/salgados-assados-e-fritos.jpg"
            alt="SALGADOS" title="SALGADOS"
         />
         <div class="content__card">
@@ -194,7 +195,7 @@
       <section class="product">
         <div class="product__item">
           <div class="image__product">
-            <img src="/src/assets/home/produtos/pães/pão-caseiro-tradicional.jpg" alt="Photo">
+            <img src="/src/assets/home/produtos/pães/pão-caseiro-tradicional.jpg" alt="Pão caseiro tradicional" title="Pão caseiro tradicional" />
             <div class="text-picture">
               <span>Imagem ilustrativa</span>
             </div>
@@ -210,7 +211,7 @@
         </div>
         <div class="product__item">
           <div class="image__product">
-            <img src="/src/assets/home/produtos/bolos/bolo-de-macaxeira.jpg" alt="Photo">
+            <img src="/src/assets/home/produtos/bolos/bolo-de-macaxeira.jpg" alt="Bolo de macaxeira" title="Bolo de macaxeira" />
             <div class="text-picture">
               <span>Imagem ilustrativa</span>
             </div>
@@ -226,7 +227,7 @@
         </div>
         <div class="product__item">
           <div class="image__product">
-            <img src="/src/assets/home/produtos/salgados/coxinha-de-frango.jpg" alt="Photo">
+            <img src="/src/assets/home/produtos/salgados/coxinha-de-frango.jpg" alt="Coxinha de frango" title="Coxinha de frango" />
             <div class="text-picture">
               <span>Imagem ilustrativa</span>
             </div>
@@ -242,6 +243,61 @@
         </div>
       </section>
       <!-- <span class="btn-ver-mais">Ver mais produtos</span> -->
+    </div>
+  </div>
+
+  <div class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <div class="splide__slide__container">
+            <img src="/src/assets/home/produtos/pães/pão-de-calabresa.jpeg" alt="Pão de calabresa">
+            <div class="text">
+              <span>Imagem ilustrativa</span>
+            </div>
+          </div>
+          <div class="slide__content">
+            <h2 class="title">Pão de calabresa</h2>
+            <p class="description">O melhor pão de calabresa em toda região</p>
+            <a id="order-1" onclick="location.href='javascript:void()'" class="Disabled order-1 order">
+              <h3>Solicitar pedido</h3>
+              <span class="ri-arrow-right-line arrow-right"></span>
+            </a>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="splide__slide__container">
+            <img src="/src/assets/home/produtos/bolos/bolo-de-milho.jpg" alt="Bolo de milho">
+            <div class="text">
+              <span>Imagem ilustrativa</span>
+            </div>
+          </div>
+          <div class="slide__content">
+            <h2 class="title">Bolo de milho</h2>
+            <p class="description"></p>
+            <a id="order-2" onclick="location.href='javascript:void()'" class="Disabled order-2 order">
+              <h3>Solicitar pedido</h3>
+              <span class="ri-arrow-right-line arrow-right"></span>
+            </a>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="splide__slide__container">
+            <img src="/src/assets/home/produtos/salgados/salgado-Joelho.jpeg" alt="Salgado joelho">
+            <div class="text">
+              <span>Imagem ilustrativa</span>
+            </div>
+          </div>
+          <div class="slide__content">
+            <h2 class="title">Salgado joelho</h2>
+            <p class="description">A melhor salgado joelho da região</p>
+            <a id="order-3" onclick="location.href='javascript:void()'" class="Disabled order-3 order">
+              <h3>Solicitar pedido</h3>
+              <span class="ri-arrow-right-line arrow-right"></span>
+            </a>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
     
@@ -511,11 +567,11 @@
           navegação superior e mais relevante no site.
         </p>
         <div class="buttons">
-          <button class="button acceptBtn" id="aceitarBtn">
-            <span class="text">Aceitar</span><span class="icon"><svg class="check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9.9997 15.1709L19.1921 5.97852L20.6063 7.39273L9.9997 17.9993L3.63574 11.6354L5.04996 10.2212L9.9997 15.1709Z"></path></svg></span>
+          <button class="button" id="aceitarBtn">
+            <span class="text">Aceitar</span>
           </button>
-          <button class="button closeBtn" id="declineBtn">
-            <span class="text">Fechar</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path></svg></span>
+          <button class="button" id="declineBtn">
+            <span>Fechar</span>
           </button>
         </div>
       </div>
@@ -525,5 +581,6 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/72900/jquery.knob.min.js"></script>
     <script src="/src/scripts/main.js"></script>
     <script src="/src/scripts/scrollTop.js"></script>
+    <script src="/src/vendor/scripts/splide.min.js"></script>
   </body>
 </html>

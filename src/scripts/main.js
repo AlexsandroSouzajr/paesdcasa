@@ -266,3 +266,36 @@ $(document).ready(function () {
     });
   }, 500);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide(".splide", {
+    perPage: 3,
+    cover: true,
+    heightRatio: 0.2,
+    pagination: boolean = false,
+    arrows: boolean = true,
+    // autoplay: true,
+    // interval: 2000,
+    gap: "1rem",
+    pauseOnHover: false,
+    pauseOnFocus: true,
+    lazyLoad: "sequential",
+    breakpoints: {
+      992: {
+        perPage: 2,
+        height: '18rem',
+      },
+      600: {
+        perPage: 1,
+        height: '20rem',
+      },
+      476: {
+        height: '16rem',
+      },
+      380: {
+        height: '14rem',
+      },
+      height: '6rem',
+    },
+  }).mount();
+});

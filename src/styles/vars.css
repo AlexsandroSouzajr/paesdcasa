@@ -35,10 +35,10 @@
   --about-textImg-heading: #432d2f;
   --about-textImg-paragraph: #0c0a0b;
 
-  --banner-bg: #F99F48;
-  --banner-heading-xl: #131312;/*#ed460fe2*/
+  --banner-bg: #D44A47;
+  --banner-heading-xl: #fff;/*#ed460fe2*/
   --banner-heading-xl-two: #f74336;
-  --banner-paragraph: #000;
+  --banner-paragraph: #fff;
 
   /* --offset-card-item-bg: #fff;
   --offset-card-item-color: #000; */
@@ -47,6 +47,10 @@
   --products-combos-heading-color: #ff4b11;
   --products-combos-paragraph-color: #4a4f51;
   --products-combos-order-color: #000;
+
+  --slide-content-title: #ff4b11;
+  --slide-content-description: #4a4f51;
+  --slide-content-order: #000;
 
   --card-title: #e03f05;
   --card-description: #797979;
@@ -92,6 +96,10 @@ body.darkmode {
   --products-combos-heading-color: #e0e0e0;
   --products-combos-paragraph-color: #e0e0e0;
   --products-combos-order-color: #e0e0e0;
+
+  --slide-content-title: #e0e0e0;
+  --slide-content-description: #e0e0e0;
+  --slide-content-order: #e0e0e0;
 
   --card-title: #e0e0e0;
   --card-description: #b3b3b3;
