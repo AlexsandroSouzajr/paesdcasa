@@ -585,105 +585,20 @@
     }
   }
 
-  @media only screen and (max-width: 1225px){
-    .product__container .product{
-      width: 95%;
-    }
-    .combos__container .combos{
-      width: 95%;
-    }
-  }
-
-  @media only screen and (max-width: 992px){
-    .product__container .product{
-      grid-template-columns: 1fr 1fr;
-    }
-    .product__item .image__product{
-      width: 260px;
-    }
-    .product__item .image__product{
-      width: 260px;
-    }
-    .product__content p{
-      max-width: 250px;
-      margin: auto;
-    }
-    .combos__container .combos{
-      grid-template-columns: 1fr 1fr;
-    }
-    .combos__item .image__combo{
-      width: 250px;
-    }
-  }
-
   @media only screen and (max-width: 600px){
     .title__product{
       font-size: 30px;
     }
-    .heading__combos{
-      font-size: 30px;
-    }
-    .product__container .product{
-      grid-template-columns: 1fr;
-      width: 100%;
-    }
-    .product .product__item{
-      margin-bottom: 1.5em;
-    }
-    .product__item .image__product{
-      width: 280px;
-    }
-    .product .product__content{
-      bottom: 1.1em;
-      right: 0;
-      border-radius: 0 0 6px 6px;
-    }
-    .product__content .paragraph{
-      text-align: center;
-    }
-    .product .image__combo img{
-      border-radius: 6px 6px 0px 0px;
-    }
-    .combos__container .combos{
-      grid-template-columns: 1fr;
-      width: 90%;
-    }
-    .combos .combos__item{
-      margin-bottom: 1.5em;
-    }
-    /* .combos .content__combo{
-      bottom: 1.1em;
-      right: 0;
-      border-radius: 0 0 6px 6px;
-    }
-    .combos .image__combo img{
-      border-radius: 6px 6px 0px 0px;
-    } */
   }
 
   @media only screen and (max-width: 320px){
     .title__product{
       width: 90%;
     }
-    .heading__combos{
-      width: 90%;
-    }
-    .product__item .image__product{
-      width: 250px;
-    }
-    .product__content h2{
-      font-size: 22px;
-    }
-    .product__content p{
-      font-size: 16px;
-    }
   }
   
   @media only screen and (max-width: 417px){
     .title__product h2{
-      font-size: 28px;
-    }
-    .heading__combos h2{
       font-size: 28px;
     }
   }
@@ -692,10 +607,9 @@
     .title__product{
       font-size: 25px;
     }
-    .heading__combos{
-      font-size: 25px;
-    }
   }
+
+    /* = Slides Splide & Swiper = */
 
   @media only screen and (max-width: 1100px){
     .splide{
@@ -707,8 +621,32 @@
     .splide{
       max-width: 960px;
       margin: 1rem;
+      margin-bottom: 3em;
+    }
+    .splide__slide .splide__slide__container{
+      aspect-ratio: 16/9;
+    }
+    .splide__pagination{
+      bottom: -1em;
     }
   }
+
+  @media only screen and (max-width: 280px){
+    .splide__slide__container .text{
+      bottom: 7.8em;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .swiper-navBtn{
+      display: none;
+    }
+    .swiper-bullet{
+      display: block;
+    }
+  }
+  
+  /* = // Slides Splide & Swiper = */
 
   @media only screen and (max-width: 1060px) {
     .testimonial__box {

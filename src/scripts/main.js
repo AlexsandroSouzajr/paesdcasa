@@ -229,7 +229,7 @@ $(window).on('load', function() {
 
 });
 
-$('.order-1, .order-2, .order-3').on('click', function (event) {
+$('.order-1, .order-2, .order-3, .order-4, .order-5, .order-6, .order-7, .order-8, .order-9').on('click', function (event) {
   event.preventDefault();
   alert('Produto não disponível!');
 });
@@ -253,7 +253,7 @@ $(document).ready(function() {
 
 $(document).ready(function () {
   setTimeout(function () {
-    $('a[href]#order, a[href]#order-2, a[href]#order-3, a[href]#combo, a[href]#combo-2, a[href]#combo-3,').each(function () {
+    $('a[href]#order, a[href]#order-2, a[href]#order-3, a[href]#order-4, a[href]#order-5, a[href]#order-6, a[href]#order-7, a[href]#order-8, a[href]#order-9, a[href]#combo, a[href]#combo-2, a[href]#combo-3,').each(function () {
       var href = this.href;
 
       $(this).removeAttr('href').css('cursor', 'pointer').click(function () {
@@ -284,6 +284,8 @@ document.addEventListener("DOMContentLoaded", function () {
       992: {
         perPage: 2,
         height: '18rem',
+        arrows: boolean = false,
+        pagination: boolean = true,
       },
       600: {
         perPage: 1,

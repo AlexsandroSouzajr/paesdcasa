@@ -49,11 +49,12 @@
   --products-combos-paragraph-color: #4a4f51;
   --products-combos-order-color: #000;
 
+  --splide-bullet-active: #ff4b11;
+
   --swiper-bullet-inactive: #000;
   --swiper-bullet-inactive-opacity: .2;
 
   --slide-content-title: #ff4b11;
-  --slide-content-description: #4a4f51;
   --slide-content-order: #000;
 
   --card-title: #e03f05;
@@ -106,7 +107,6 @@ body.darkmode {
   --swiper-bullet-inactive-opacity: .6;
 
   --slide-content-title: #e0e0e0;
-  --slide-content-description: #e0e0e0;
   --slide-content-order: #e0e0e0;
 
   --card-title: #e0e0e0;

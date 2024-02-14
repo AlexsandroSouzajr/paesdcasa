@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-br"><head><meta charset="UTF-8" /><meta http-equiv="x-ua-compatible" content="ie=edge" /><meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no"/><meta name="description" content="Website" /><meta name="description" content="Pães d'Casa - Gente que ama cheirinho de padaria" /><meta http-equiv="content-language" content="pt-br" /><link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" /><meta name="theme-color" content="#FE5000" /><title>Pães d'Casa - Gente que ama cheirinho de padaria</title>
+<html lang="pt-br"><head><meta charset="UTF-8" /><meta http-equiv="x-ua-compatible" content="ie=edge" /><meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no"/><meta name="description" content="Website" /><meta name="description" content="Pães d'Casa - Gente que ama cheirinho de padaria" /><meta http-equiv="content-language" content="pt-br" /><link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" /><meta name="theme-color" content="#FE5000" /><title>Pães d'Casa - Gente que ama cheirinho de padaria</title><link rel="stylesheet" href="/src/vendor/styles/swiper.min.css"><link rel="stylesheet" href="/src/vendor/styles/splide.min.css">
     <link rel="website icon" type="png" href="/src/assets/logo/icons/logo-icon.png"/>
-    <link rel="stylesheet" href="/src/vendor/styles/splide.min.css">
-    <link rel="stylesheet" href="/src/vendor/styles/swiper.min.css">
     <link rel="stylesheet" href="/src/styles/navigation-footer.css" />
     <link rel="stylesheet" href="/src/styles/main-content.css" />
     <link rel="stylesheet" href="/src/styles/media-queries.css" />
@@ -76,13 +74,6 @@
             Na Pães d'Casa acreditamos na utilização apenas dos melhores ingredientes
             e técnicas consagradas para fazer os nossos produtos.
             Cada pão, cada salgado e bolo é feito com amor e atenção aos detalhes.
-            <!-- Somos a Pãesd'Casa, uma padaria localizada morada do sol, Maracanã.
-            Nosso compromisso é oferecer aos nossos clientes pães e produtos de
-            alta qualidade, feitos com carinho e dedicação. <br /><br />
-            Garantimos que cada produto seja preparado com os melhores
-            ingredientes e seguindo os mais altos padrões de higiene e
-            qualidade. Nossa missão é proporcionar uma experiência única aos
-            amantes de pães fresquinhos e saborosos. -->
           </p>
         </div>
         <div>
@@ -97,8 +88,6 @@
               </div>
             </div>
           </div>
-          <!-- <img src="/src/assets/home/images/image-2.jpg" alt="Pastel folhado" title="Pastel folhado" />
-          <span>Pastel folhado</span> -->
         </div>
       </div>
     </section>
@@ -191,65 +180,28 @@
       </div>
     </section>
 
-    <div class="product__container">
+    <div class="container-text">
       <h2 class="title__product">Produtos Pães d'Casa</h2>
-      <section class="product">
-        <div class="product__item">
-          <div class="image__product">
-            <img src="/src/assets/home/produtos/pães/pão-caseiro-tradicional.jpg" alt="Pão caseiro tradicional" title="Pão caseiro tradicional" />
-            <div class="text-picture">
-              <span>Imagem ilustrativa</span>
-            </div>
-          </div>
-          <div class="product__content">
-            <h2>Pão caseiro tradicional</h2>
-            <p class="paragraph">O melhor pão caseiro em toda região</p>
-            <a id="order" onclick="location.href='javascript:void()'" class=" Disabled order__link order-1">
-              <h3>Solicitar pedido</h3>
-              <span class="ri-arrow-right-line arrow-right"></span>
-            </a>
-          </div>
-        </div>
-        <div class="product__item">
-          <div class="image__product">
-            <img src="/src/assets/home/produtos/bolos/bolo-de-macaxeira.jpg" alt="Bolo de macaxeira" title="Bolo de macaxeira" />
-            <div class="text-picture">
-              <span>Imagem ilustrativa</span>
-            </div>
-          </div>
-          <div class="product__content">
-            <h2>Bolo de macaxeira</h2>
-            <p class="paragraph">100% macaxeira pura</p>
-            <a id="order-2" onclick="location.href='javascript:void()'" class="Disabled order__link order-2">
-              <h3>Solicitar pedido</h3>
-              <p class="ri-arrow-right-line arrow-right"></p>
-            </a>
-          </div>
-        </div>
-        <div class="product__item">
-          <div class="image__product">
-            <img src="/src/assets/home/produtos/salgados/coxinha-de-frango.jpg" alt="Coxinha de frango" title="Coxinha de frango" />
-            <div class="text-picture">
-              <span>Imagem ilustrativa</span>
-            </div>
-          </div>
-          <div class="product__content">
-            <h2>Coxinha de frango</h2>
-            <p class="paragraph">A melhor coxinha da região</p>
-            <a id="order-3" onclick="location.href='javascript:void()'" class="Disabled order__link order-3">
-              <h3>Solicitar pedido</h3>
-              <span class="ri-arrow-right-line arrow-right"></span>
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- <span class="btn-ver-mais">Ver mais produtos</span> -->
     </div>
-  </div>
 
   <div class="splide">
     <div class="splide__track">
       <ul class="splide__list">
+        <li class="splide__slide">
+          <div class="splide__slide__container">
+            <img src="/src/assets/home/produtos/pães/pão-caseiro-tradicional.jpg" alt="Pão caseiro tradicional">
+            <div class="text">
+              <span>Imagem ilustrativa</span>
+            </div>
+          </div>
+          <div class="slide__content">
+            <h2 class="title">Pão de caseiro tradicional</h2>
+            <a id="order-1" onclick="location.href='javascript:void()'" class="Disabled order-1 order">
+              <h3>Solicitar pedido</h3>
+              <span class="ri-arrow-right-line arrow-right"></span>
+            </a>
+          </div>
+        </li>
         <li class="splide__slide">
           <div class="splide__slide__container">
             <img src="/src/assets/home/produtos/pães/pão-de-calabresa.jpeg" alt="Pão de calabresa">
@@ -259,8 +211,52 @@
           </div>
           <div class="slide__content">
             <h2 class="title">Pão de calabresa</h2>
-            <p class="description">O melhor pão de calabresa em toda região</p>
-            <a id="order-1" onclick="location.href='javascript:void()'" class="Disabled order-1 order">
+            <a id="order-2" onclick="location.href='javascript:void()'" class="Disabled order-2 order">
+              <h3>Solicitar pedido</h3>
+              <span class="ri-arrow-right-line arrow-right"></span>
+            </a>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="splide__slide__container">
+            <img src="/src/assets/home/produtos/pães/pão-de-milho.jpg" alt="Pão de milho">
+            <div class="text">
+              <span>Imagem ilustrativa</span>
+            </div>
+          </div>
+          <div class="slide__content">
+            <h2 class="title">Pão de milho</h2>
+            <a id="order-2" onclick="location.href='javascript:void()'" class="Disabled order-3 order">
+              <h3>Solicitar pedido</h3>
+              <span class="ri-arrow-right-line arrow-right"></span>
+            </a>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="splide__slide__container">
+            <img src="/src/assets/home/produtos/bolos/bolo-de-macaxeira.jpg" alt="Bolo de macaxeira">
+            <div class="text">
+              <span>Imagem ilustrativa</span>
+            </div>
+          </div>
+          <div class="slide__content">
+            <h2 class="title">Bolo de macaxeira</h2>
+            <a id="order-4" onclick="location.href='javascript:void()'" class="Disabled order-4 order">
+              <h3>Solicitar pedido</h3>
+              <span class="ri-arrow-right-line arrow-right"></span>
+            </a>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="splide__slide__container">
+            <img src="/src/assets/home/produtos/bolos/bolo-de-tapioca.jpeg" alt="Bolo de tapioca">
+            <div class="text">
+              <span>Imagem ilustrativa</span>
+            </div>
+          </div>
+          <div class="slide__content">
+            <h2 class="title">Bolo de tapioca</h2>
+            <a id="order-5" onclick="location.href='javascript:void()'" class="Disabled order-5 order">
               <h3>Solicitar pedido</h3>
               <span class="ri-arrow-right-line arrow-right"></span>
             </a>
@@ -275,8 +271,7 @@
           </div>
           <div class="slide__content">
             <h2 class="title">Bolo de milho</h2>
-            <p class="description"></p>
-            <a id="order-2" onclick="location.href='javascript:void()'" class="Disabled order-2 order">
+            <a id="order-3" onclick="location.href='javascript:void()'" class="Disabled order-6 order">
               <h3>Solicitar pedido</h3>
               <span class="ri-arrow-right-line arrow-right"></span>
             </a>
@@ -284,15 +279,44 @@
         </li>
         <li class="splide__slide">
           <div class="splide__slide__container">
-            <img src="/src/assets/home/produtos/salgados/salgado-Joelho.jpeg" alt="Salgado joelho">
+            <img src="/src/assets/home/produtos/salgados/coxinha-de-frango.jpg" alt="Coxinha de frango">
             <div class="text">
               <span>Imagem ilustrativa</span>
             </div>
           </div>
           <div class="slide__content">
-            <h2 class="title">Salgado joelho</h2>
-            <p class="description">A melhor salgado joelho da região</p>
-            <a id="order-3" onclick="location.href='javascript:void()'" class="Disabled order-3 order">
+            <h2 class="title">Coxinha de frango</h2>
+            <a id="order-3" onclick="location.href='javascript:void()'" class="Disabled order-7 order">
+              <h3>Solicitar pedido</h3>
+              <span class="ri-arrow-right-line arrow-right"></span>
+            </a>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="splide__slide__container">
+            <img src="/src/assets/home/produtos/salgados/esfirra-de-carne.png" alt="Esfirra de carne">
+            <div class="text">
+              <span>Imagem ilustrativa</span>
+            </div>
+          </div>
+          <div class="slide__content">
+            <h2 class="title">Esfirra de carne</h2>
+            <a id="order-3" onclick="location.href='javascript:void()'" class="Disabled order-8 order">
+              <h3>Solicitar pedido</h3>
+              <span class="ri-arrow-right-line arrow-right"></span>
+            </a>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="splide__slide__container">
+            <img src="/src/assets/home/produtos/salgados/salgado-Joelho.jpeg" alt="Salgado Joelho">
+            <div class="text">
+              <span>Imagem ilustrativa</span>
+            </div>
+          </div>
+          <div class="slide__content">
+            <h2 class="title">Salgado Joelho</h2>
+            <a id="order-3" onclick="location.href='javascript:void()'" class="Disabled order-9 order">
               <h3>Solicitar pedido</h3>
               <span class="ri-arrow-right-line arrow-right"></span>
             </a>
@@ -302,67 +326,16 @@
     </div>
   </div>
     
-    <div id="combos" class="combos__container">
+    <div id="combos" class="container-text">
       <h2 class="title__combos">Combos Pães d'Casa</h2>
-      <section class="combos">
-        <div class="combos__item">
-          <div class="image__combo">
-            <img src="/src/assets/home/combos/04.jpg" alt="Photo">
-            <div class="text">
-              <span>Imagem ilustrativa</span>
-            </div>
-          </div>
-          <div class="combos__content">
-            <h2>Combo #1</h2>
-            <span>Descrição do combo</span>
-            <a id="combo" onclick="location.href='javascript:void()'" class="Disabled combo-1">
-              <h3>Solicitar combo</h3>
-              <span class="ri-arrow-right-line arrow-right"></span>
-            </a>
-          </div>
-        </div>
-        <div class="combos__item">
-          <div class="image__combo">
-            <img src="/src/assets/home/combos/03.jpg" alt="Photo">
-            <div class="text">
-              <span>Imagem ilustrativa</span>
-            </div>
-          </div>
-          <div class="combos__content">
-            <h2>Combo #2</h2>
-            <span>Descrição do combo</span>
-            <a id="combo-2" onclick="location.href='javascript:void()'" class="Disabled combo-2">
-              <h3>Solicitar combo</h3>
-              <span class="ri-arrow-right-line arrow-right"></span>
-            </a>
-          </div>
-        </div>
-        <div class="combos__item">
-          <div class="image__combo">
-            <img src="/src/assets/home/combos/07.jpg" alt="Photo">
-            <div class="text">
-              <span>Imagem ilustrativa</span>
-            </div>
-          </div>
-          <div class="combos__content">
-            <h2>Combo #3</h2>
-            <span>Descrição do combo</span>
-            <a id="combo-3" onclick="location.href='javascript:void()'" class="Disabled combo-3">
-              <h3>Solicitar combo</h3>
-              <span class="ri-arrow-right-line arrow-right"></span>
-            </a>
-          </div>
-        </div>
-      </section>
     </div>
-  </div>
 
-  <div class="container swiper">
+  <div class="container-swiper container swiper">
     <div class="slide-container">
-      <div class="card-wrapper swiper-wrapper">
+      <div class="card__wrapper swiper-wrapper">
         <div class="card swiper-slide">
           <div class="image-box">
-            <img src="https://www.designi.com.br/images/preview/10230470.jpg" alt="" />
+            <img src="https://www.designi.com.br/images/preview/10230470.jpg" alt="Combo 1" title="Combo 1" />
             <div class="text">
               <span>Imagem ilustrativa</span>
             </div>
@@ -378,7 +351,7 @@
         </div>
         <div class="card swiper-slide">
           <div class="image-box">
-            <img src="https://scontent.fslz9-1.fna.fbcdn.net/v/t39.30808-6/244682485_849183735743289_2378287880639485723_n.png?_nc_cat=102&ccb=1-7&_nc_sid=3635dc&_nc_ohc=nlWnxjyugKAAX-CV2k_&_nc_ht=scontent.fslz9-1.fna&oh=00_AfCEj6uL4kpsfaWIB26G_OtffiR2XLEKQHncQC2hsV-Wqg&oe=65D067DB" alt="" />
+            <img src="https://scontent.fslz9-1.fna.fbcdn.net/v/t39.30808-6/244682485_849183735743289_2378287880639485723_n.png?_nc_cat=102&ccb=1-7&_nc_sid=3635dc&_nc_ohc=nlWnxjyugKAAX-CV2k_&_nc_ht=scontent.fslz9-1.fna&oh=00_AfCEj6uL4kpsfaWIB26G_OtffiR2XLEKQHncQC2hsV-Wqg&oe=65D067DB" alt="Combo 2" title="Combo 2" />
             <div class="text">
               <span>Imagem ilustrativa</span>
             </div>
@@ -394,7 +367,7 @@
         </div>
         <div class="card swiper-slide">
           <div class="image-box">
-            <img src="https://scontent.fslz9-1.fna.fbcdn.net/v/t1.6435-9/83242279_1016881702019173_119142839467638784_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c2f564&_nc_ohc=FbRUSVqMb7oAX8DkJN5&_nc_ht=scontent.fslz9-1.fna&oh=00_AfCobN_F-8xsJYoCOV3lRg0fISEwxp0H3korJTcTX1Ar-g&oe=65F3859E" alt="" />
+            <img src="https://scontent.fslz9-1.fna.fbcdn.net/v/t1.6435-9/83242279_1016881702019173_119142839467638784_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c2f564&_nc_ohc=FbRUSVqMb7oAX8DkJN5&_nc_ht=scontent.fslz9-1.fna&oh=00_AfCobN_F-8xsJYoCOV3lRg0fISEwxp0H3korJTcTX1Ar-g&oe=65F3859E" alt="Combo 3" title="Combo 3" />
             <div class="text">
               <span>Imagem ilustrativa</span>
             </div>
@@ -410,7 +383,7 @@
         </div>
         <div class="card swiper-slide">
           <div class="image-box">
-            <img src="https://scontent.fslz9-1.fna.fbcdn.net/v/t1.6435-9/106656931_2658864647774874_1046063243464214240_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=AdMxObmD8-YAX-1L-Cj&_nc_ht=scontent.fslz9-1.fna&oh=00_AfBcEZJvLoyOacC2w5Tg-EHELHUGCMNcT2vRMmP4iOIvYA&oe=65F389EC" alt="" />
+            <img src="https://scontent.fslz9-1.fna.fbcdn.net/v/t1.6435-9/106656931_2658864647774874_1046063243464214240_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=AdMxObmD8-YAX-1L-Cj&_nc_ht=scontent.fslz9-1.fna&oh=00_AfBcEZJvLoyOacC2w5Tg-EHELHUGCMNcT2vRMmP4iOIvYA&oe=65F389EC" alt="Combo 4" title="Combo 4" />
             <div class="text">
               <span>Imagem ilustrativa</span>
             </div>
@@ -426,7 +399,7 @@
         </div>
         <div class="card swiper-slide">
           <div class="image-box">
-            <img src="https://scontent.fslz9-1.fna.fbcdn.net/v/t1.6435-9/158973161_4037522036270793_3252361767604544696_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=QumgQkK14Y4AX8S9alu&_nc_ht=scontent.fslz9-1.fna&oh=00_AfA8gDtrw-v1nvVwqU-LYR36ClXNzjKCcDS4Va6hLkMDuw&oe=65F382EE" alt="" />
+            <img src="https://scontent.fslz9-1.fna.fbcdn.net/v/t1.6435-9/158973161_4037522036270793_3252361767604544696_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=QumgQkK14Y4AX8S9alu&_nc_ht=scontent.fslz9-1.fna&oh=00_AfA8gDtrw-v1nvVwqU-LYR36ClXNzjKCcDS4Va6hLkMDuw&oe=65F382EE" alt="Combo 5" title="Combo 5" />
             <div class="text">
               <span>Imagem ilustrativa</span>
             </div>
@@ -442,7 +415,7 @@
         </div>
         <div class="card swiper-slide">
           <div class="image-box">
-            <img src="https://scontent.fslz9-1.fna.fbcdn.net/v/t31.18172-8/22519866_1606424442742394_1758216548707461631_o.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=IM795q01WkoAX9I3-aE&_nc_ht=scontent.fslz9-1.fna&oh=00_AfCi2HCN931H_Z6T0T3-NXtLIsd-SF3g8zGWhFrQ_VyX4g&oe=65F39D06" alt="" />
+            <img src="https://scontent.fslz9-1.fna.fbcdn.net/v/t31.18172-8/22519866_1606424442742394_1758216548707461631_o.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=IM795q01WkoAX9I3-aE&_nc_ht=scontent.fslz9-1.fna&oh=00_AfCi2HCN931H_Z6T0T3-NXtLIsd-SF3g8zGWhFrQ_VyX4g&oe=65F39D06" alt="Combo 6" title="Combo 6" />
             <div class="text">
               <span>Imagem ilustrativa</span>
             </div>
@@ -458,7 +431,7 @@
         </div>
         <div class="card swiper-slide">
           <div class="image-box">
-            <img src="https://scontent.fslz9-1.fna.fbcdn.net/v/t1.6435-9/119798632_3351267638252592_1632833931774429093_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=DPPqWPT7V8EAX8_Hug3&_nc_ht=scontent.fslz9-1.fna&oh=00_AfDeb8GKPZq249IoQ36PLmjxdIwOVRRdMXn3P_83SeKV9w&oe=65F384B6" alt="" />
+            <img src="https://scontent.fslz9-1.fna.fbcdn.net/v/t1.6435-9/119798632_3351267638252592_1632833931774429093_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=DPPqWPT7V8EAX8_Hug3&_nc_ht=scontent.fslz9-1.fna&oh=00_AfDeb8GKPZq249IoQ36PLmjxdIwOVRRdMXn3P_83SeKV9w&oe=65F384B6" alt="Combo 7" title="Combo 7" />
             <div class="text">
               <span>Imagem ilustrativa</span>
             </div>
@@ -474,7 +447,7 @@
         </div>
         <div class="card swiper-slide">
           <div class="image-box">
-            <img src="https://scontent.fslz9-1.fna.fbcdn.net/v/t1.6435-9/130883256_212131473702836_3463948895829063345_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=pp9O1EEMOfwAX8A-RiW&_nc_ht=scontent.fslz9-1.fna&oh=00_AfBNj9A0hCgClqz5z9p7rPlD1J9kLm7b7Y5-xX2f78URCw&oe=65F39EE1" alt="" />
+            <img src="https://scontent.fslz9-1.fna.fbcdn.net/v/t1.6435-9/130883256_212131473702836_3463948895829063345_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=pp9O1EEMOfwAX8A-RiW&_nc_ht=scontent.fslz9-1.fna&oh=00_AfBNj9A0hCgClqz5z9p7rPlD1J9kLm7b7Y5-xX2f78URCw&oe=65F39EE1" alt="Combo 8" title="Combo 8" />
             <div class="text">
               <span>Imagem ilustrativa</span>
             </div>
@@ -490,7 +463,7 @@
         </div>
         <div class="card swiper-slide">
           <div class="image-box">
-            <img src="/src/assets/home/combos/04.jpg" alt="" />
+            <img src="/src/assets/home/combos/04.jpg" alt="Combo 9" title="Combo 9" />
             <div class="text">
               <span>Imagem ilustrativa</span>
             </div>
