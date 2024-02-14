@@ -332,3 +332,10 @@ var swiper = new Swiper(".slide-container", {
     },
   },
 });
+
+const swiperSlideContainer = document.querySelectorAll('.swiper-slide-container');
+window.addEventListener('load', function () {
+  swiperSlideContainer.forEach(item => {
+    item.classList.remove('swiper-slide-container')
+  })
+});
