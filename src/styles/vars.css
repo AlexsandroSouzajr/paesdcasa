@@ -49,6 +49,9 @@
   --products-combos-paragraph-color: #4a4f51;
   --products-combos-order-color: #000;
 
+  --swiper-bullet-inactive: #000;
+  --swiper-bullet-inactive-opacity: .2;
+
   --slide-content-title: #ff4b11;
   --slide-content-description: #4a4f51;
   --slide-content-order: #000;
@@ -98,6 +101,9 @@ body.darkmode {
   --products-combos-heading-color: #e0e0e0;
   --products-combos-paragraph-color: #e0e0e0;
   --products-combos-order-color: #e0e0e0;
+
+  --swiper-bullet-inactive: #e0e0e0;
+  --swiper-bullet-inactive-opacity: .6;
 
   --slide-content-title: #e0e0e0;
   --slide-content-description: #e0e0e0;

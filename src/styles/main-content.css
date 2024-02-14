@@ -21,11 +21,13 @@
   }
 
   .card{
+    padding: 1em;
+    margin-top: 30px;
     border-radius: 8px;
   }
 
   .card .image-box{
-    height: 200px;
+    height: 100%;
   }
 
   .card .image-box img{
@@ -103,16 +105,19 @@
 
   .swiper-navBtn::before,
   .swiper-navBtn::after{
-    font-size: 18px;
+    font-size: 16px;
   }
 
-  .swiper-pagination-bullut{
-    background: #000;
+  .swiper-bullet{
+    display: none;
   }
 
   @media only screen and (max-width: 768px) {
     .swiper-navBtn{
       display: none;
+    }
+    .swiper-bullet{
+      display: block;
     }
   }
 
