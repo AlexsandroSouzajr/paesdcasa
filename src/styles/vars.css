@@ -39,6 +39,7 @@
   --banner-heading-xl: #fff;/*#ed460fe2*/
   --banner-heading-xl-two: #f74336;
   --banner-paragraph: #fff;
+  --banner-paragraph-two: #000;
 
   /* --offset-card-item-bg: #fff;
   --offset-card-item-color: #000; */
@@ -88,6 +89,7 @@ body.darkmode {
   --banner-heading-xl: #e0e0e0;
   --banner-heading-xl-two: #e0e0e0;
   --banner-paragraph: #e0e0e0;
+  --banner-paragraph-two: #e0e0e0;
 
   /* --offset-card-item-bg: rgba(25, 25, 25, 0.9);
   --offset-card-item-color: #d2d2d2; */
