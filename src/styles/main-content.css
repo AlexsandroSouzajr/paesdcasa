@@ -561,17 +561,13 @@
 
   .container-swiper{
     width: 100%;
-    padding: 40px 0;
   }
 
   .slide-container{
-    margin: 0 30px;
     overflow: hidden;
   }
 
   .card__wrapper .card{
-    padding: 1em;
-    margin-top: 30px;
     border-radius: 8px;
   }
 
