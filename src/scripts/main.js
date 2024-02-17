@@ -234,7 +234,7 @@ $('.order-1, .order-2, .order-3, .order-4, .order-5, .order-6, .order-7, .order-
   alert('Produto não disponível!');
 });
 
-$('.combo-1, .combo-2, .combo-3').on('click', function (event) {
+$('.combo-1, .combo-2, .combo-3, .combo-4, .combo-5').on('click', function (event) {
   event.preventDefault();
   alert('Combo não disponível!');
 });
@@ -253,7 +253,7 @@ $(document).ready(function() {
 
 $(document).ready(function () {
   setTimeout(function () {
-    $('a[href]#order, a[href]#order-2, a[href]#order-3, a[href]#order-4, a[href]#order-5, a[href]#order-6, a[href]#order-7, a[href]#order-8, a[href]#order-9, a[href]#combo, a[href]#combo-2, a[href]#combo-3,').each(function () {
+    $('a[href]#order, a[href]#order-2, a[href]#order-3, a[href]#order-4, a[href]#order-5, a[href]#order-6, a[href]#order-7, a[href]#order-8, a[href]#order-9, a[href]#combo, a[href]#combo-2, a[href]#combo-3, a[href]#combo-4, a[href]#combo-5').each(function () {
       var href = this.href;
 
       $(this).removeAttr('href').css('cursor', 'pointer').click(function () {
