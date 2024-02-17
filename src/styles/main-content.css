@@ -559,6 +559,21 @@
     margin: auto;
   }
 
+  .container-text .title__posts{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+    font-family: "Leckerli One", cursive;
+    background: #ff4949;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px 2px 20px;
+    width: 100%;
+    max-width: max-content;
+    margin: auto;
+  }
+
   .container-swiper{
     width: 100%;
   }
