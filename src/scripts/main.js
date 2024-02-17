@@ -330,6 +330,9 @@ var swiper = new Swiper(".slide-container", {
     1000: {
       slidesPerView: 4,
     },
+    1001: {
+      slidesPerView: 3,
+    },
   },
 });
 
