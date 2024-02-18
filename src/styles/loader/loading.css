@@ -7,7 +7,7 @@
     height: 100%;
     opacity: 1;
     transition: opacity .5s;
-    background: #ae0210;
+    background: #FE5000; /* #ae0210 */
     z-index: 99;
 }
 
@@ -21,8 +21,8 @@
 }
 
 .loader__spinner {
-    --orangered: #ff4500;
-    --yellow: #ffa700;
+    --average-orange: #F8973C;
+    --yellow: #ffd900;
     position: relative;
     width: 60px;
     margin: 20px auto;
@@ -111,7 +111,7 @@
   
 @keyframes colors {
     100%, 0% {
-      stroke: var(--orangered);
+      stroke: var(--average-orange);
     }
   
     80%, 90% {

@@ -43,22 +43,34 @@
     }
   }
   
-  @media only screen and (max-width: 992px) and (orientation: landscape) {
+  @media only screen and (max-width: 992px) {
     .hero {
       height: 100vh;
+    }
+  }
+
+  @media only screen and (max-width: 992px) and (orientation: landscape) {
+    .hero {
+      height: 60vw;
     }
   }
   
   @media only screen and (max-width: 640px) and (orientation: landscape) {
     .hero {
       height: 69vw;
-      margin-bottom: 35em;
+      margin-bottom: 30em;
     }
   }
   
   @media only screen and (max-width: 576px) and (orientation: landscape) {
     .hero {
-      height: 90vw;
+      height: 80vw;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .hero {
+      height: 170vw;
     }
   }
   
@@ -165,7 +177,7 @@
       top: 50%;
     }
     header .navigation-bar .switch {
-      top: -17.9em; /* -3.2rem */ /* -6.8rem | (Com o tradutor) -7.95rem */
+      bottom: 20.65em; /* -3.2rem */ /* -6.8rem | (Com o tradutor) -7.95rem */
       right: 0;
     }
     /* header .navigation-bar .switch-light, .switch-dark {
@@ -249,7 +261,7 @@
       top: 45%;
     }
     header .navigation-bar .switch {
-      top: -18.7em; /* -4.1rem */ /* 7.55rem | (Com o tradutor) -8.74rem */
+      bottom: 21.6em; /* -4.1rem */ /* 7.55rem | (Com o tradutor) -8.74rem */
       right: 10px;
     }
     header .navigation-bar .navigation_link {
@@ -271,7 +283,7 @@
       justify-content: center;
     }
     header .navigation-bar .switch {
-      top: -17.52em; /* -2.75rem */ /* 6.45rem | (Com o tradutor) -7.60rem */
+      bottom: 20.35em; /* -2.75rem */ /* 6.45rem | (Com o tradutor) -7.60rem */
       right: -10px;
     }
     header nav .toggle.active {
@@ -647,6 +659,18 @@
   }
   
   /* = // Slides Splide & Swiper = */
+
+  @media (max-width: 992px){
+    .posters__section .poster__wrapper{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 540px){
+    .posters__section .poster__wrapper{
+      grid-template-columns: 1fr;
+    }
+  }
 
   @media only screen and (max-width: 1060px) {
     .testimonial__box {
