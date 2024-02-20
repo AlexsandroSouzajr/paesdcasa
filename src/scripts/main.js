@@ -114,7 +114,7 @@ const executeCodes = () => {
       if (button.id == "aceitarBtn") {
         // definir cookies por 1 mês. 60 = 1 minuto, 60 = 1 hora, 24 = 1 dia, 30 = 30 dias
         document.cookie =
-          "cookie Pães d'Casa = Pães d'Casa; max-age=" + 60 * 60 * 24 * 30;
+          "Cookie Pães d'Casa = Pães d'Casa; max-age=" + 60 * 60 * 24 * 30;
       }
     });
   });
