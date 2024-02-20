@@ -104,7 +104,7 @@ const cookieBox = document.querySelector(".cookies__container"),
   buttons = document.querySelectorAll(".button");
 
 const executeCodes = () => {
-  if (document.cookie.includes("pães d'casa")) return;
+  if (document.cookie.includes("Pães d'Casa")) return;
   cookieBox.classList.add("show");
 
   buttons.forEach((button) => {
@@ -112,9 +112,9 @@ const executeCodes = () => {
       cookieBox.classList.remove("show");
 
       if (button.id == "aceitarBtn") {
-        //set cookies for 1 month. 60 = 1 min, 60 = 1 hours, 24 = 1 day, 30 = 30 days
+        // definir cookies por 1 mês. 60 = 1 minuto, 60 = 1 hora, 24 = 1 dia, 30 = 30 dias
         document.cookie =
-          "cookiePdc= pães d'casa; max-age=" + 60 * 60 * 24 * 30;
+          "cookie Pães d'Casa = Pães d'Casa; max-age=" + 60 * 60 * 24 * 30;
       }
     });
   });
