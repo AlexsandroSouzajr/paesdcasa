@@ -359,8 +359,7 @@
     height: auto;
   }
 
-  .slider .arrow.left span,
-  .slider .arrow.right span{
+  .slider :where(.arrow.left span, .arrow.right span){
     position: relative;
     width: 46px;
     height: 46px;

@@ -1,46 +1,38 @@
-header nav,
-header .navigation-bar ul {
+header :where(nav, .navigation-bar ul) {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
-header nav .toggle,
-header nav .toggle span,
-header .navigation-bar,
-header .navigation-bar ul {
+header :where(nav, .toggle, .toggle span, .navigation-bar, .navigation-bar ul) {
   transition: 0.3s;
 }
-
-header,
-header nav .toggle span,
-header .navigation-bar a {
+header :where(nav, .toggle span, .navigation-bar a) {
   position: relative;
 }
-
-header nav .toggle,
-header .navigation-bar .underline {
+header :where(nav, .toggle, .navigation-bar .underline) {
   position: absolute;
 }
-
-header nav,
-header .navigation-bar a:hover .underline,
-header .navigation-bar li.active .underline {
+header
+  :is(
+    nav,
+    .navigation-bar a:hover .underline,
+    .navigation-bar li.active .underline
+  ) {
   width: 100%;
 }
-
 header nav .toggle {
   cursor: pointer;
 }
-
 header .navigation-bar .underline {
   background: var(--navigation-underline);
 }
-
-header nav,
-header .navigation-bar.show,
-header .navigation-bar a:hover .underline,
-header .navigation-bar li.active .underline {
+header
+  :is(
+    nav,
+    .navigation-bar.show,
+    .navigation-bar a:hover .underline,
+    .navigation-bar li.active .underline
+  ) {
   left: 0;
 }
 
@@ -123,15 +115,15 @@ header .navigation-bar.show a {
 }
 
 header .navigation-bar.show ul li {
-  animation: show .6s backwards;
+  animation: show 0.6s backwards;
 }
 
-header .navigation-bar.show ul li.active{
-  animation-delay: .2s;
+header .navigation-bar.show ul li.active {
+  animation-delay: 0.2s;
 }
 
-header .navigation-bar.show ul li:nth-child(n + 3){
-  animation-delay: .4s;
+header .navigation-bar.show ul li:nth-child(n + 3) {
+  animation-delay: 0.4s;
 }
 
 header .navigation-bar.show .underline {
@@ -161,17 +153,18 @@ header .navigation-bar a {
   display: block;
   cursor: pointer;
   user-select: none;
-  margin-bottom: .3rem;
-  margin-right: .5rem;
+  margin-bottom: 0.3rem;
+  margin-right: 0.5rem;
 }
 
-.switch-light, .switch-dark {
+.switch-light,
+.switch-dark {
   position: absolute;
   top: 0%;
   left: 120%;
   transform-origin: center;
   transform: translate(-50%, -50%);
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .switch-light {
@@ -252,7 +245,7 @@ footer .text {
   margin-top: 35px;
 }
 
-footer .text img{
+footer .text img {
   position: absolute;
   transform: translate(-50%, -75%);
   width: 120px;
