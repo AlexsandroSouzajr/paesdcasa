@@ -7,7 +7,7 @@
     height: 100%;
     opacity: 1;
     transition: opacity .5s;
-    background: #FE5000; /* #ae0210 */
+    background: var(--loading-bg); /* #ae0210 */
     z-index: 99;
 }
 

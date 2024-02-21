@@ -69,6 +69,7 @@
   --testimonials-name-primary: #3d3d3d;
   --testimonials-name-secondary: #979797;
   --testimonials-text-client: #4b4b4b;
+  --loading-bg: #FE5000;
 }
 body.darkmode {
   --background: #070606;
@@ -121,4 +122,5 @@ body.darkmode {
   --testimonials-name-primary: #d2d2d2;
   --testimonials-name-secondary: #d2d2d2;
   --testimonials-text-client: #d2d2d2;
+  --loading-bg: #0f0f0f;
 }
