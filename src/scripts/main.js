@@ -1,7 +1,4 @@
-const body = document.querySelector("body"),
-  links = document.querySelectorAll('a[href="#"]'),
-  nav = document.querySelector("header nav"),
-  navToggle = document.querySelector("header nav .toggle"),
+const navToggle = document.querySelector("header nav .toggle"),
   navSpanMiddle = document.querySelector("header nav .toggle .middle"),
   navNavigationBar = document.querySelector("header nav .navigation-bar"),
   navNavigationBarLi = document.querySelectorAll(

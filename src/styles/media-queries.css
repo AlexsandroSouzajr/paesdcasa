@@ -124,18 +124,28 @@
       z-index: 1;
     }
   }
+
+  @media only screen and (max-width: 945px){
+    header .logo img {
+      transform: translate(-98%, -12%);
+    }
+  }
+
+  @media only screen and (max-width: 920px){
+    header .logo img {
+      transform: translate(-90%, -14%);
+    }
+  }
   
   @media only screen and (max-width: 768px) {
     header nav {
       display: block;
       width: 100%;
       text-align: center;
-      padding-top: 25px;
-      margin-top: -0.6px;
       transition: .3s ease-in-out;
     }
     header .logo img {
-      transform: translate(-90%, 0);
+      transform: translate(-98%, -12%);
     }
     header nav .logo{
       display: flex;
@@ -246,7 +256,6 @@
       top: 0;
       left: 0;
       text-align: center;
-      padding-top: 25px;
       transition: 0.3s ease-in-out;
     }
     header .navigation-bar .navigation_link .navlinks {
@@ -294,6 +303,12 @@
       width: 48%;
       padding: 20px;
     }
+  }
+
+  @media only screen and (max-width: 320px){
+    header .logo img{
+      transform: translate(-90%, -14%);
+    } 
   }
   
   @media only screen and (max-width: 535px) {

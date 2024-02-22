@@ -21,14 +21,22 @@
   
   --background: #fff;
   --nav-color: #FEFCF3;
+  --logo-color: #000;
   --navlinks: #000;
   --menu: #2f3134;
   --navigation-bar: #fff;
   --navigation-underline: #000;
   --navigation-bar-underline: #f7291a;
   --navigation-bar-navlinks: #f7291a;
-  --navigation-border: #333;
+  --navigation-border: #000;
   --switch-color: #000;
+
+  /* --logo-color-sticky: #000;
+  --navlinks-color-sticky: #000;
+  --menu-color-sticky: #2f3134;
+  --navlinks-underline-sticky: #000;
+  --navigation-border-sticky: #ef0000;
+  --switch-color-sticky: #000; */
 
   --about-title: #ff8e15;
   --about-paragraph: #333;
@@ -83,6 +91,13 @@ body.darkmode {
   --navigation-border: #f5f5f5;
   --navigation-bar-navlinks: #f5f5f5;
   --switch-color: #f5f5f5;
+
+  /* --logo-color-sticky: #f5f5f5;
+  --navlinks-color-sticky: #f5f5f5;
+  --menu-color-sticky: #f5f5f5;
+  --navlinks-underline-sticky: #f5f5f5;
+  --navigation-border-sticky: #f5f5f5;
+  --switch-color-sticky: #f5f5f5; */
 
   --about-title: #e0e0e0;
   --about-paragraph: #e0e0e0;
