@@ -6,7 +6,7 @@
     height: 100vh;
     position: relative;
     /* background: rgba(84, 77, 30, 0.5); */
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
     margin-bottom: 3em;
   }
 
@@ -48,7 +48,7 @@
     bottom: -25px;
     left: 50%;
     transform: translate(-50%);
-    background: #f87f29;
+    background: #ECEBBD;
     width: 200px;
     height: 5px;
     margin-bottom: 20px;
@@ -66,7 +66,7 @@
   
   .content__image .button {
     padding: 10px 30px;
-    background: #f87f29;
+    background: #FF5000;
     border-radius: 50px;
     border: none;
     outline: none;
@@ -80,12 +80,12 @@
   }
   
   .content__image .button:hover {
-    background: #e94444 radial-gradient(circle, transparent 1%, #e94444 1%)
+    background: #ED1D24 radial-gradient(circle, transparent 1%, #ED1D24 1%)
       center/15000%;
   }
   
   .content__image .button:active {
-    background-color: #ffab10;
+    background-color: #F6D155;
     background-size: 100%;
     transition: background 0s;
   }
@@ -241,11 +241,11 @@
   }
 
   .bg{
-    background: var(--banner-bg);
-    padding: 2rem;
+    /* background: var(--banner-bg); */
+    padding: .5rem 1.5rem 2rem;
     font-family: sans-serif;
     border-radius: 10px;
-    max-width: 78rem;
+    max-width: 75rem;
   }
   
   .section-two {
@@ -254,16 +254,16 @@
   }
   
   .container-two {
-    max-width: 77.9rem;
+    max-width: 75.9rem;
     height: auto;
     margin: 0 auto;
-    padding: 0 2.25rem;
+    padding: 0 5rem;
   }
   
   .heading-xl {
     color: var(--banner-heading-xl);
     font-family: inherit;
-    font-size: 2.68em;
+    font-size: 2.58em;
     /* font-size: clamp(2.948rem, 1vw, 4.241rem); */
     font-weight: 600;
     line-height: 1.15;
@@ -272,9 +272,8 @@
   
   .paragraph {
     color: var(--banner-paragraph) !important;
-    color: #141412;
     font-family: inherit;
-    font-size: clamp(0.5rem, 2vw, 1.125rem);
+    font-size: clamp(1rem, 1.25vw, 1.125rem);
     max-width: 600px;
   }
   
@@ -334,7 +333,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    row-gap: 1.75rem;
+    row-gap: 1rem;
   }
   
   .banner-inner-two {
@@ -472,7 +471,7 @@
     font-size: 2em;
     font-weight: 500;
     font-family: "Leckerli One", cursive;
-    background: #ff4949;
+    background: #FF4B11;
     color: #fff;
     text-align: center;
     padding: 10px 20px;
@@ -557,7 +556,7 @@
     font-size: 2em;
     font-weight: 500;
     font-family: "Leckerli One", cursive;
-    background: #ff4949;
+    background: #FF4B11;
     color: #fff;
     text-align: center;
     padding: 10px 20px;
@@ -572,7 +571,7 @@
     font-size: 2em;
     font-weight: 500;
     font-family: "Leckerli One", cursive;
-    background: #ff4949;
+    background: #FF4B11;
     color: #fff;
     text-align: center;
     padding: 10px 20px;
@@ -743,7 +742,7 @@
   
   .service__item svg{
     display: block;
-    background: #f26f11;
+    background: #ED1C24;
     fill: #fff;
     width: 100%;
     max-width: 80px;
@@ -795,7 +794,7 @@
     font-size: 2.2em;
     font-weight: 500;
     font-family: "Leckerli One", cursive;
-    background: #f8853e;
+    background: #FF4B11;
     color: #fff;
     text-align: center;
     padding: 10px 20px;
@@ -920,7 +919,8 @@
     color: #fff;
     border: none;
     width: 100%;
-    height: 40px;
+    max-width: 300px;
+    height: auto;
     margin: 0 .5em;
     padding: 8px 16px;
     font-size: 1rem;

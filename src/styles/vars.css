@@ -44,10 +44,10 @@
   --about-textImg-paragraph: #0c0a0b;
 
   --banner-bg: #D44A47;
-  --banner-heading-xl: #fff;/*#ed460fe2*/
-  --banner-heading-xl-two: #f74336;
-  --banner-paragraph: #fff;
-  --banner-paragraph-two: #000;
+  --banner-heading-xl: #F49223;
+  --banner-heading-xl-two: #F9423A;
+  --banner-paragraph: #525662;
+  --banner-paragraph-two: #525662;
 
   /* --offset-card-item-bg: #fff;
   --offset-card-item-color: #000; */
@@ -62,11 +62,11 @@
   --swiper-bullet-inactive: #000;
   --swiper-bullet-inactive-opacity: .2;
 
-  --slide-content-title: #ff4b11;
+  --slide-content-title: #FF2700;
   --slide-content-order: #000;
 
-  --card-title: #e03f05;
-  --card-description: #797979;
+  --card-title: #FF2700;
+  --card-description: #6C6868;
 
   --service-bg: #fff;
   --service-heading: #333;

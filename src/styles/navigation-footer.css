@@ -49,7 +49,7 @@ header nav {
 
 header .logo h1 {
   color: var(--logo-color);
-  font-size: 20px; /* 18px */
+  font-size: 20px;
   font-family: var(--logo);
   font-weight: 500;
   transition: 0.3s ease-in-out;
@@ -58,14 +58,14 @@ header .logo h1 {
 header .logo h1 span {
   display: flex;
   color: var(--logo-color);
-  font-size: 11px; /* 8px */
+  font-size: 11px;
   line-height: 1.2;
 }
 
 header .logo img {
   position: absolute;
   top: 0;
-  transform: translate(-90%, -14%);
+  transform: translate(-98%, -12%);
   width: 80px;
 }
 
@@ -83,8 +83,10 @@ header nav .logo {
 header nav .navigation-bar a {
   color: #fff;
 }
+
 header nav .toggle span {
   background-color: var(--menu);
+  bottom: 5px;
 }
 
 header nav .toggle.active {
@@ -142,7 +144,6 @@ header .navigation-bar .navigation_link .border {
 
 header .navigation-bar a {
   text-decoration: none;
-  transition: 0.5s;
   font-size: 16px;
   font-family: var(--font-primary);
   font-weight: 400;
