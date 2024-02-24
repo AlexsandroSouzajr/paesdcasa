@@ -57,7 +57,7 @@
   
   .content__image p {
     max-width: 600px;
-    margin: auto;
+    margin: 1rem;
   }
   
   .content__image a {
