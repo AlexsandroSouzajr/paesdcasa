@@ -391,11 +391,11 @@
 @media only screen and (min-width: 64rem) {
   .banner-column {
     grid-template-columns: 1fr max-content;
-    column-gap: 3rem;
+    column-gap: 5rem;
   }
   .banner-column-two {
     grid-template-columns: 1fr max-content;
-    column-gap: 0.5rem;
+    column-gap: 1.5rem;
     margin-top: 3rem;
   }
 }
@@ -409,12 +409,12 @@
 @media only screen and (min-width: 48rem) {
   .banner-image {
     order: 1;
-    max-width: 30rem;
+    max-width: 28rem;
     height: auto;
   }
   .banner-image-two {
     order: 0;
-    max-width: 22rem;
+    max-width: 25rem;
     height: auto;
   }
 }
@@ -442,7 +442,7 @@
   }
 } */
 
-@media only screen and (max-width: 836px) {
+@media only screen and (max-width: 884px) {
   .container-two {
     max-width: 77.9rem;
     padding: 0 2.5rem;
@@ -469,7 +469,7 @@
   }
   .container-two {
     max-width: 75rem;
-    padding: 0 0.25rem;
+    padding: 1.25rem;
   }
 }
 
