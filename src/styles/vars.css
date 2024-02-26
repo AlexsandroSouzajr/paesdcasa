@@ -15,7 +15,7 @@
 }
 
 :root {
-  --font-system: "system-ui";
+  --font-system: Roboto,"Open Sans", sans-serif;
   --logo: "Tilt Neon", sans-serif;
   --bg-footer: url("/src/assets/logo/footer/bg-footer.jpg");
   
