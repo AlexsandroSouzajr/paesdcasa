@@ -224,7 +224,13 @@
 
 @media only screen and (max-width: 576px) and (orientation: landscape) {
   .hero {
-    height: 80vw;
+    height: 60vw;
+  }
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+  .hero {
+    min-height: 80vw;
   }
 }
 
