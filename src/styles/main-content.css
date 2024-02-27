@@ -107,14 +107,14 @@
   }
   
   .text__box {
-    width: 600px;
-    max-width: 100%;
+    max-width: 95%;
+    margin: auto;
     padding: 0 10px;
+    text-align: center;
   }
   
   .content {
-    width: 1280px;
-    max-width: 95%;
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -124,26 +124,18 @@
   
   .text__box h1 {
     color: var(--about-title);
-    font-size: 2.28em;
-    margin-bottom: 20px;
+    font-size: clamp(2.80em, .25rem, 1rem);
     font-family: "Rethink Sans", sans-serif;
     font-weight: 500;
-  }
-  
-  .text__box h5 {
-    color: #000;
-    font-size: 25px;
-    margin-bottom: 25px;
-    text-transform: capitalize;
-    letter-spacing: 2px;
+    margin-bottom: 20px;
   }
   
   .text__box p {
     color: var(--about-paragraph);
-    font-size: 18px;
+    font-size: clamp(1.1em, 1.2vw, 1.3rem);
     line-height: 28px;
     margin-bottom: 40px;
-    font-family: "Rethink Sans", sans-serif;
+    font-family: system-ui;
   }
 
   .content .container{

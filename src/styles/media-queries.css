@@ -4,7 +4,7 @@
     height: auto;
   }
   .text__box p {
-    font-size: 1.75em;
+    /* font-size: 1.75em; */
     line-height: 1.5;
   }
 }
@@ -102,13 +102,13 @@
     margin-bottom: 3%;
   }
   .text__box h1 {
-    font-size: 40px;
+    /* font-size: 40px; */
     margin-bottom: 25px;
     text-align: center;
   }
   .text__box p {
-    font-size: 1.75em;
-    line-height: 40px;
+    /* font-size: 1.75em; */
+    line-height: 30px;
   }
   footer .text p {
     line-height: 27px;
@@ -187,7 +187,7 @@
     padding: 20px;
   }
   .text__box p {
-    font-size: 1.35rem;
+    /* font-size: 1.35rem; */
   }
 }
 
@@ -216,22 +216,21 @@
   }
 }
 
-@media only screen and (max-width: 992px) and (orientation: landscape) {
-  .hero {
-    height: 60vw;
-  }
-}
-
-@media only screen and (max-width: 640px) and (orientation: landscape) {
-  .hero {
-    height: 69vw;
-    margin-bottom: 30em;
+@media only screen and (max-width: 992px) and (orientation: landscape){
+  .hero{
+    min-height: 60vw;
   }
 }
 
 @media only screen and (max-width: 576px) and (orientation: landscape) {
   .hero {
     height: 80vw;
+  }
+}
+
+@media (orientation: portrait){
+  .hero{
+    height: 100vmax;
   }
 }
 
@@ -255,7 +254,7 @@
   }
 }
 
-@media only screen and (max-width: 655px) and (orientation: landscape) {
+/* @media only screen and (max-width: 655px) and (orientation: landscape) {
   .about__us {
     height: 20vh;
   }
@@ -269,7 +268,7 @@
     margin-bottom: 30em;
     margin-top: -5em;
   }
-}
+} */
 
 @media only screen and (max-width: 720px) {
   .content__image h2 {
@@ -287,11 +286,11 @@
     margin-bottom: 3%;
   }
   .text__box h1 {
-    font-size: 35px;
+    /* font-size: 35px; */
     margin-bottom: 25px;
   }
   .text__box p {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
   }
 }
 

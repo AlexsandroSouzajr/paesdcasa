@@ -339,3 +339,18 @@ window.addEventListener('load', function () {
     item.classList.remove('swiper-slide-container')
   })
 });
+
+window.addEventListener("orientationchange", function() {
+  if (window.orientation == 90 || window.orientation == -90){
+          console.log('[event]orientationcharge: landscape mode', window.orientation)
+  }else {
+    console.log('[event]orientationcharge: portrait mode', window.orientation)
+  }
+});
+
+var output = document.querySelector('#output')
+output.innerHTML = "orientation is " + screen.orientation.type
+screen.orientation.addEventListener('change', function(){
+    console.log("new orientation is ", screen.orientation.type)
+    output.innerHTML = "new orientation is " + screen.orientation.type
+});
