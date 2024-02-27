@@ -56,7 +56,8 @@
   }
   
   .content__image p {
-    max-width: 600px;
+    max-width: 620px;
+    text-align: center;
     margin: 1rem;
   }
   
